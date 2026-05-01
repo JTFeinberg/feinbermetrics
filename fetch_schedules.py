@@ -6,12 +6,35 @@ from datetime import datetime, timedelta
 import requests
 
 FANGRAPHS_SCHEDULE_URL = "https://www.fangraphs.com/api/scores/season-schedule"
+FANGRAPHS_BASE_URL = "https://www.fangraphs.com/scores/season-schedule-and-results"
 SEASON = 2026
 TEAM_ID_MIN = 1
 TEAM_ID_MAX = 30
 DATABASE_PATH = "schedules.db"
-REQUEST_DELAY_SECONDS = 0.5
-REQUEST_TIMEOUT_SECONDS = 10
+REQUEST_DELAY_SECONDS = 1.0
+REQUEST_TIMEOUT_SECONDS = 15
+
+# Headers that match what Chrome sends when visiting FanGraphs in a browser.
+# Without these, Cloudflare returns 403 even though the URL is public.
+BROWSER_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/124.0.0.0 Safari/537.36"
+    ),
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Accept-Encoding": "gzip, deflate",
+    "Referer": "https://www.fangraphs.com/scores/season-schedule-and-results",
+    "Origin": "https://www.fangraphs.com",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "sec-ch-ua": '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"',
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": '"macOS"',
+    "Connection": "keep-alive",
+}
 
 
 def get_monday_of_week(date_string: str) -> str:
@@ -21,39 +44,58 @@ def get_monday_of_week(date_string: str) -> str:
     return monday.strftime("%Y-%m-%d")
 
 
-def fetch_team_schedule(team_id: int) -> list:
+def create_session() -> requests.Session:
+    """
+    Opens a session that visits FanGraphs first so Cloudflare sets cookies,
+    then all subsequent API calls include those cookies automatically.
+    """
+    session = requests.Session()
+    session.headers.update(BROWSER_HEADERS)
+    print("Establishing browser session with FanGraphs...")
+    warmup = session.get(FANGRAPHS_BASE_URL, timeout=REQUEST_TIMEOUT_SECONDS)
+    warmup.raise_for_status()
+    print(f"Session ready (status {warmup.status_code}, {len(session.cookies)} cookies)\n")
+    time.sleep(1.0)
+    return session
+
+
+def fetch_team_schedule(session: requests.Session, team_id: int) -> list:
     params = {"season": SEASON, "teamid": team_id}
-    response = requests.get(
+    response = session.get(
         FANGRAPHS_SCHEDULE_URL,
         params=params,
         timeout=REQUEST_TIMEOUT_SECONDS,
-        headers={"User-Agent": "Mozilla/5.0"},
     )
     response.raise_for_status()
-    return response.json()
+    return response.json()["schedule"]
 
 
 def normalize_game(raw_game: dict, team_id: int) -> dict:
-    raw_date = raw_game.get("Date", raw_game.get("GameDate", ""))
-    game_date = str(raw_date)[:10] if raw_date else ""
+    game_date = raw_game.get("GameDateParam", "")
+    is_home = raw_game.get("HomeTeamId") == team_id
+    team_name = raw_game.get("HomeTeamName") if is_home else raw_game.get("AwayTeamName")
 
-    team_name = raw_game.get("Team", raw_game.get("TeamName", ""))
-    home_team = raw_game.get("HomeTeam", "")
+    raw_win_prob = raw_game.get("TeamWinProb")
+    win_probability = raw_win_prob if (raw_win_prob is not None and raw_win_prob >= 0) else None
+
+    team_runs = raw_game.get("TeamRuns", "")
+    opp_runs = raw_game.get("OppRuns", "")
+    score = f"{team_runs}-{opp_runs}" if team_runs != "" and opp_runs != "" else None
+
+    result = raw_game.get("Result") or None
 
     return {
-        "game_id": str(raw_game.get("GameId", raw_game.get("gameId", ""))),
+        "game_id": str(raw_game.get("GameId", "")),
         "team_id": team_id,
         "team_name": team_name,
         "game_date": game_date,
-        "home_team": home_team,
-        "away_team": raw_game.get("AwayTeam", ""),
-        "is_home": 1 if team_name == home_team else 0,
-        "opponent": raw_game.get("Opponent", raw_game.get("OppTeam", "")),
-        "win_probability": raw_game.get(
-            "WinProbability", raw_game.get("PreGameWinProb", None)
-        ),
-        "result": raw_game.get("Result", raw_game.get("WL", None)),
-        "score": raw_game.get("Score", None),
+        "home_team": raw_game.get("HomeTeamName", ""),
+        "away_team": raw_game.get("AwayTeamName", ""),
+        "is_home": 1 if is_home else 0,
+        "opponent": raw_game.get("Opponent", ""),
+        "win_probability": win_probability,
+        "result": result,
+        "score": score,
         "week_start": get_monday_of_week(game_date) if game_date else "",
     }
 
@@ -105,10 +147,12 @@ def main() -> None:
     connection = sqlite3.connect(DATABASE_PATH)
     create_schema(connection)
 
+    session = create_session()
     total_games = 0
+
     for team_id in range(TEAM_ID_MIN, TEAM_ID_MAX + 1):
         try:
-            raw_schedule = fetch_team_schedule(team_id)
+            raw_schedule = fetch_team_schedule(session, team_id)
 
             if team_id == TEAM_ID_MIN and raw_schedule:
                 print_sample_record(raw_schedule)

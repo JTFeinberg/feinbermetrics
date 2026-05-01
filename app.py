@@ -1,14 +1,24 @@
-import sqlite3
-from datetime import datetime, timedelta
-from functools import reduce
-from operator import mul
+from datetime import datetime
 
 import pandas as pd
 import streamlit as st
 
-DATABASE_PATH = "schedules.db"
-PASSWORD_SECRET_KEY = "app_password"
+from analytics import compute_biffle_metrics, compute_season_summary
+from data_loader import clear_live_cache, load_games
+from persistence import load_picks, save_picks
+from sidebar import (
+    USED_TEAMS_KEY,
+    format_week_label,
+    render_date_range,
+    render_used_teams_tracker,
+    render_week_picker,
+)
 
+PASSWORD_SECRET_KEY = "app_password"
+SEASON_PICKS_KEY = "season_picks"
+
+
+# ── Auth ──────────────────────────────────────────────────────────────────────
 
 def is_authenticated() -> bool:
     return st.session_state.get("authenticated", False)
@@ -17,160 +27,144 @@ def is_authenticated() -> bool:
 def render_login_gate() -> None:
     st.set_page_config(page_title="Feinbermetrics", layout="centered")
     st.title("Feinbermetrics")
-    st.markdown("MLB Schedule Win Probability Analyzer")
+    st.caption("Biffle Ball weekly schedule analyzer")
     st.divider()
-
     password_input = st.text_input("Password", type="password")
-
     if st.button("Sign in", type="primary"):
-        expected = st.secrets.get(PASSWORD_SECRET_KEY, "")
-        if password_input == expected:
+        if password_input == st.secrets.get(PASSWORD_SECRET_KEY, ""):
             st.session_state["authenticated"] = True
             st.rerun()
         else:
             st.error("Incorrect password.")
 
 
-def get_week_starts(connection: sqlite3.Connection) -> list:
-    result = pd.read_sql_query(
-        "SELECT DISTINCT week_start FROM games ORDER BY week_start", connection
-    )
-    return result["week_start"].tolist()
+# ── Data helpers ──────────────────────────────────────────────────────────────
+
+def get_week_starts(games: pd.DataFrame) -> list[str]:
+    return sorted(games["week_start"].dropna().unique().tolist())
 
 
-def load_games_for_range(
-    connection: sqlite3.Connection, start_date: str, end_date: str
-) -> pd.DataFrame:
-    query = """
-        SELECT
-            game_id, game_date, home_team, away_team, week_start,
-            team_id, team_name, is_home, opponent, win_probability, result, score
-        FROM games
-        WHERE game_date >= ? AND game_date <= ?
-        ORDER BY game_date ASC
-    """
-    return pd.read_sql_query(query, connection, params=(start_date, end_date))
-
-
-def compute_sweep_probabilities(games: pd.DataFrame) -> pd.DataFrame:
-    team_rows = []
-    for team_name, team_games in games.groupby("team_name"):
-        probabilities = team_games["win_probability"].dropna().tolist()
-        game_count = len(team_games)
-
-        sweep_probability = reduce(mul, probabilities, 1.0) if probabilities else None
-        average_win_probability = (
-            sum(probabilities) / len(probabilities) if probabilities else None
-        )
-
-        team_rows.append({
-            "Team": team_name,
-            "Games": game_count,
-            "Avg Win Prob": average_win_probability,
-            "Sweep Probability": sweep_probability,
-        })
-
-    return (
-        pd.DataFrame(team_rows)
-        .sort_values("Sweep Probability", ascending=False)
-        .reset_index(drop=True)
-    )
-
-
-def format_week_label(week_start: str) -> str:
-    monday = datetime.strptime(week_start, "%Y-%m-%d")
-    sunday = monday + timedelta(days=6)
-    return f"Week of {monday.strftime('%b %d')} \u2013 {sunday.strftime('%b %d, %Y')}"
-
-
-def render_sidebar_filters(week_starts: list) -> tuple[str, str]:
-    with st.sidebar:
-        st.header("Filters")
-        use_week_picker = st.toggle("Use week picker", value=True)
-
-        if use_week_picker:
-            return render_week_picker(week_starts)
-        return render_date_range_picker(week_starts)
-
-
-def render_week_picker(week_starts: list) -> tuple[str, str]:
-    week_labels = [format_week_label(w) for w in week_starts]
+def get_default_week_index(week_starts: list[str]) -> int:
     today = datetime.today().strftime("%Y-%m-%d")
+    index = next((i for i, w in enumerate(week_starts) if w <= today), 0)
+    return min(index, len(week_starts) - 1)
 
-    default_index = next(
-        (i for i, w in enumerate(week_starts) if w <= today), 0
+
+def filter_games(games: pd.DataFrame, start_date: str, end_date: str) -> pd.DataFrame:
+    return games[(games["game_date"] >= start_date) & (games["game_date"] <= end_date)].copy()
+
+
+# ── Sidebar ───────────────────────────────────────────────────────────────────
+
+def render_sidebar(games: pd.DataFrame) -> tuple[str, str]:
+    week_starts = get_week_starts(games)
+    with st.sidebar:
+        st.header("Feinbermetrics")
+        if st.button("Refresh data", help="Force re-fetch from FanGraphs"):
+            clear_live_cache()
+            st.rerun()
+        st.divider()
+        st.subheader("Week filter")
+        use_week_picker = st.toggle("Use week picker", value=True)
+        default_index = get_default_week_index(week_starts)
+        start_date, end_date = (
+            render_week_picker(week_starts, default_index) if use_week_picker
+            else render_date_range(week_starts)
+        )
+        st.divider()
+        render_used_teams_tracker(games)
+    return start_date, end_date
+
+
+# ── Tabs ──────────────────────────────────────────────────────────────────────
+
+def render_main(games: pd.DataFrame, start_date: str, end_date: str) -> None:
+    st.title("Feinbermetrics")
+    st.caption("Biffle Ball weekly win probability analysis")
+
+    tab_leaderboard, tab_breakdown, tab_season = st.tabs(
+        ["Weekly leaderboard", "Game breakdown", "Season tracker"]
     )
-    default_index = min(default_index, len(week_labels) - 1)
 
-    selected_label = st.selectbox("Select week (Mon\u2013Sun)", week_labels, index=default_index)
-    selected_week_start = week_starts[week_labels.index(selected_label)]
-    selected_week_end = (
-        datetime.strptime(selected_week_start, "%Y-%m-%d") + timedelta(days=6)
-    ).strftime("%Y-%m-%d")
+    week_games = filter_games(games, start_date, end_date)
 
-    return selected_week_start, selected_week_end
-
-
-def render_date_range_picker(week_starts: list) -> tuple[str, str]:
-    min_date = datetime.strptime(week_starts[0], "%Y-%m-%d").date()
-    max_date = (
-        datetime.strptime(week_starts[-1], "%Y-%m-%d") + timedelta(days=6)
-    ).date()
-
-    date_range = st.date_input(
-        "Custom date range", value=(min_date, max_date),
-        min_value=min_date, max_value=max_date,
-    )
-
-    if len(date_range) == 2:
-        return date_range[0].strftime("%Y-%m-%d"), date_range[1].strftime("%Y-%m-%d")
-    single_date = date_range[0].strftime("%Y-%m-%d")
-    return single_date, single_date
+    with tab_leaderboard:
+        _render_leaderboard(week_games, start_date, end_date)
+    with tab_breakdown:
+        _render_game_breakdown(week_games, start_date, end_date)
+    with tab_season:
+        _render_season_tracker(games)
 
 
-def render_leaderboard(games: pd.DataFrame, start_date: str, end_date: str) -> None:
-    st.subheader("Sweep probability leaderboard")
+def _render_leaderboard(week_games: pd.DataFrame, start_date: str, end_date: str) -> None:
+    if week_games.empty:
+        st.info("No games found for this date range.")
+        return
+
+    used_teams = st.session_state.get(USED_TEAMS_KEY, set())
+    metrics = compute_biffle_metrics(week_games)
+    available = metrics[~metrics["Team"].isin(used_teams)].copy()
+    used_rows = metrics[metrics["Team"].isin(used_teams)].copy()
+
+    col1, col2, col3, col4 = st.columns(4)
+    col1.metric("Teams available", len(available))
+    col2.metric("Max expected wins", f"{available['Expected Wins'].max():.1f}" if not available.empty else "—")
+    col3.metric("Max games", int(available["Games"].max()) if not available.empty else "—")
+    col4.metric("Date range", f"{start_date} \u2192 {end_date}")
+
+    st.subheader("Available teams")
     st.caption(
-        "P(sweep) = product of all win probabilities for a team's games in the selected window. "
-        "Higher = more likely to win every game that week."
+        "**Expected Wins** = sum of FanGraphs win probabilities for each game this week. "
+        "More games + higher probability = higher score. This is the primary Biffle Ball metric."
     )
+    _show_metrics_table(available, start_date, end_date, "leaderboard_available")
 
-    sweep_df = compute_sweep_probabilities(games)
+    if not used_rows.empty:
+        with st.expander(f"Already used ({len(used_rows)} teams)"):
+            _show_metrics_table(used_rows, start_date, end_date, "leaderboard_used")
 
+
+def _show_metrics_table(df: pd.DataFrame, start_date: str, end_date: str, key: str) -> None:
+    display = df[["Team", "Games", "Home", "Away", "Expected Wins",
+                  "Avg Win%", "Probs Available", "Actual W", "Games Played"]].copy()
     st.dataframe(
-        sweep_df.style.format(
-            {"Avg Win Prob": "{:.1%}", "Sweep Probability": "{:.1%}"},
-            na_rep="\u2014",
-        ),
+        display.style.format({
+            "Expected Wins": "{:.2f}",
+            "Avg Win%": lambda v: f"{v:.1%}" if v is not None else "—",
+            "Actual W": lambda v: str(int(v)) if v is not None else "—",
+            "Games Played": lambda v: str(int(v)) if v is not None else "—",
+        }, na_rep="—"),
         use_container_width=True,
         hide_index=True,
     )
     st.download_button(
-        "Download leaderboard CSV",
-        sweep_df.to_csv(index=False),
-        file_name=f"sweep_leaderboard_{start_date}_{end_date}.csv",
+        "Download CSV",
+        df.to_csv(index=False),
+        file_name=f"biffle_leaderboard_{start_date}_{end_date}.csv",
         mime="text/csv",
+        key=f"dl_{key}",
     )
 
 
-def render_game_breakdown(games: pd.DataFrame, start_date: str, end_date: str) -> None:
-    st.subheader("Game-by-game breakdown")
+def _render_game_breakdown(week_games: pd.DataFrame, start_date: str, end_date: str) -> None:
+    if week_games.empty:
+        st.info("No games found for this date range.")
+        return
 
-    selected_team = st.selectbox("Select team", sorted(games["team_name"].unique()))
-    team_games = games[games["team_name"] == selected_team].copy()
+    selected_team = st.selectbox("Select team", sorted(week_games["team_name"].dropna().unique()))
+    team_games = week_games[week_games["team_name"] == selected_team].copy()
     team_games["Win Prob"] = team_games["win_probability"].apply(
-        lambda prob: f"{prob:.1%}" if pd.notna(prob) else "\u2014"
+        lambda p: f"{p:.1%}" if pd.notna(p) else "\u2014"
     )
+    team_games["H/A"] = team_games["is_home"].map({1: "Home", 0: "Away"})
 
-    display_df = team_games.rename(columns={
-        "game_date": "Date",
-        "home_team": "Home",
-        "away_team": "Away",
-        "result": "Result",
-        "score": "Score",
-    })[["Date", "Home", "Away", "Win Prob", "Result", "Score"]]
-
-    st.dataframe(display_df, use_container_width=True, hide_index=True)
+    st.dataframe(
+        team_games.rename(columns={
+            "game_date": "Date", "home_team": "Home", "away_team": "Away",
+            "result": "Result", "score": "Score", "opponent": "Opponent",
+        })[["Date", "H/A", "Opponent", "Home", "Away", "Win Prob", "Result", "Score"]],
+        use_container_width=True, hide_index=True,
+    )
     st.download_button(
         f"Download {selected_team} CSV",
         team_games.to_csv(index=False),
@@ -179,45 +173,76 @@ def render_game_breakdown(games: pd.DataFrame, start_date: str, end_date: str) -
     )
 
 
+def _render_season_tracker(games: pd.DataFrame) -> None:
+    st.subheader("Season picks tracker")
+    st.caption("Log your weekly picks below to track your cumulative Biffle Ball score.")
+
+    week_starts = get_week_starts(games)
+    week_labels = [format_week_label(w) for w in week_starts]
+    all_teams = sorted(games["team_name"].dropna().unique().tolist())
+
+    if SEASON_PICKS_KEY not in st.session_state:
+        st.session_state[SEASON_PICKS_KEY] = []
+
+    with st.form("add_pick"):
+        col1, col2 = st.columns(2)
+        selected_week_label = col1.selectbox("Week", week_labels)
+        selected_team = col2.selectbox("Team picked", all_teams)
+        if st.form_submit_button("Add pick"):
+            week_start = week_starts[week_labels.index(selected_week_label)]
+            existing_weeks = {p["week_start"] for p in st.session_state[SEASON_PICKS_KEY]}
+            if week_start in existing_weeks:
+                st.warning("A pick already exists for that week. Remove it first.")
+            else:
+                st.session_state[SEASON_PICKS_KEY].append({
+                    "week_label": selected_week_label,
+                    "week_start": week_start,
+                    "team": selected_team,
+                })
+                st.rerun()
+
+    picks = st.session_state[SEASON_PICKS_KEY]
+    if picks:
+        summary = compute_season_summary(picks, games)
+        total_wins = int(summary["W"].sum())
+        st.metric("Total wins this season", total_wins)
+        st.dataframe(summary, use_container_width=True, hide_index=True)
+
+        if st.button("Clear all picks"):
+            st.session_state[SEASON_PICKS_KEY] = []
+            st.rerun()
+    else:
+        st.info("No picks logged yet.")
+
+
+# ── Entry point ───────────────────────────────────────────────────────────────
+
 def main() -> None:
     if not is_authenticated():
         render_login_gate()
         return
 
     st.set_page_config(page_title="Feinbermetrics", layout="wide")
-    st.title("Feinbermetrics")
-    st.caption("MLB schedule win probability analysis")
 
-    try:
-        connection = sqlite3.connect(DATABASE_PATH)
-    except sqlite3.OperationalError as error:
-        st.error(f"Could not open database: {error}. Run fetch_schedules.py first.")
-        return
+    if not st.session_state.get("picks_initialized"):
+        saved = load_picks()
+        st.session_state[USED_TEAMS_KEY] = set(saved["used_teams"])
+        st.session_state[SEASON_PICKS_KEY] = saved["season_picks"]
+        st.session_state["picks_initialized"] = True
 
-    week_starts = get_week_starts(connection)
-
-    if not week_starts:
-        st.warning("No schedule data found. Run `python fetch_schedules.py` first.")
-        connection.close()
-        return
-
-    start_date, end_date = render_sidebar_filters(week_starts)
-    games = load_games_for_range(connection, start_date, end_date)
-    connection.close()
+    games = load_games()
 
     if games.empty:
-        st.info("No games found for the selected date range.")
+        st.error("No schedule data. Run `python fetch_schedules.py` or check FanGraphs connectivity.")
         return
 
-    col1, col2, col3 = st.columns(3)
-    col1.metric("Games in range", games["game_id"].nunique())
-    col2.metric("Teams with games", games["team_name"].nunique())
-    col3.metric("Date range", f"{start_date}  \u2192  {end_date}")
+    start_date, end_date = render_sidebar(games)
+    render_main(games, start_date, end_date)
 
-    st.divider()
-    render_leaderboard(games, start_date, end_date)
-    st.divider()
-    render_game_breakdown(games, start_date, end_date)
+    save_picks(
+        used_teams=st.session_state.get(USED_TEAMS_KEY, set()),
+        season_picks=st.session_state.get(SEASON_PICKS_KEY, []),
+    )
 
 
 if __name__ == "__main__":
