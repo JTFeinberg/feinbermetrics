@@ -1,76 +1,84 @@
 import hashlib
 import json
 
+import requests
 import streamlit as st
-from supabase import Client, create_client
 
 PICKS_SAVE_HASH_KEY = "_picks_save_hash"
 WEATHER_SAVE_HASH_KEY = "_weather_save_hash"
 
 
-@st.cache_resource
-def _get_client() -> Client:
-    return create_client(
-        st.secrets["supabase_url"],
-        st.secrets["supabase_anon_key"],
-    )
+def _headers() -> dict:
+    key = st.secrets["supabase_anon_key"]
+    return {
+        "apikey": key,
+        "Authorization": f"Bearer {key}",
+        "Content-Type": "application/json",
+        "Prefer": "return=minimal",
+    }
+
+
+def _url(table: str, query: str = "") -> str:
+    base = st.secrets["supabase_url"].rstrip("/")
+    return f"{base}/rest/v1/{table}{query}"
+
+
+def _select(table: str, columns: str = "*", order: str = "") -> list:
+    params = f"?select={columns}" + (f"&order={order}" if order else "")
+    response = requests.get(_url(table, params), headers=_headers(), timeout=10)
+    response.raise_for_status()
+    return response.json()
+
+
+def _delete_all(table: str, primary_key: str) -> None:
+    requests.delete(_url(table, f"?{primary_key}=not.is.null"), headers=_headers(), timeout=10)
+
+
+def _insert(table: str, rows: list) -> None:
+    if not rows:
+        return
+    requests.post(_url(table), headers=_headers(), json=rows, timeout=10).raise_for_status()
 
 
 def load_picks() -> dict:
-    client = _get_client()
-    used_response = client.table("used_teams").select("team_name").execute()
-    picks_response = (
-        client.table("season_picks")
-        .select("week_start, week_label, team")
-        .order("week_start")
-        .execute()
-    )
+    used = _select("used_teams", columns="team_name")
+    picks = _select("season_picks", columns="week_start,week_label,team", order="week_start")
     return {
-        "used_teams": [row["team_name"] for row in used_response.data],
+        "used_teams": [row["team_name"] for row in used],
         "season_picks": [
             {"week_start": r["week_start"], "week_label": r["week_label"], "team": r["team"]}
-            for r in picks_response.data
+            for r in picks
         ],
     }
 
 
 def save_picks(used_teams: set, season_picks: list) -> None:
-    current_hash = _compute_hash({"used_teams": sorted(used_teams), "season_picks": season_picks})
+    current_hash = _hash({"used_teams": sorted(used_teams), "season_picks": season_picks})
     if st.session_state.get(PICKS_SAVE_HASH_KEY) == current_hash:
         return
-    client = _get_client()
-    client.table("used_teams").delete().neq("team_name", "").execute()
-    if used_teams:
-        client.table("used_teams").insert(
-            [{"team_name": t} for t in sorted(used_teams)]
-        ).execute()
-    client.table("season_picks").delete().neq("week_start", "").execute()
-    if season_picks:
-        client.table("season_picks").insert(
-            [{"week_start": p["week_start"], "week_label": p["week_label"], "team": p["team"]}
-             for p in season_picks]
-        ).execute()
+    _delete_all("used_teams", "team_name")
+    _insert("used_teams", [{"team_name": t} for t in sorted(used_teams)])
+    _delete_all("season_picks", "week_start")
+    _insert("season_picks", [
+        {"week_start": p["week_start"], "week_label": p["week_label"], "team": p["team"]}
+        for p in season_picks
+    ])
     st.session_state[PICKS_SAVE_HASH_KEY] = current_hash
 
 
 def load_weather_flags() -> set:
-    client = _get_client()
-    response = client.table("weather_flags").select("game_id").execute()
-    return {row["game_id"] for row in response.data}
+    rows = _select("weather_flags", columns="game_id")
+    return {row["game_id"] for row in rows}
 
 
 def save_weather_flags(game_ids: set) -> None:
-    current_hash = _compute_hash({"game_ids": sorted(game_ids)})
+    current_hash = _hash({"game_ids": sorted(game_ids)})
     if st.session_state.get(WEATHER_SAVE_HASH_KEY) == current_hash:
         return
-    client = _get_client()
-    client.table("weather_flags").delete().neq("game_id", "").execute()
-    if game_ids:
-        client.table("weather_flags").insert(
-            [{"game_id": g} for g in sorted(game_ids)]
-        ).execute()
+    _delete_all("weather_flags", "game_id")
+    _insert("weather_flags", [{"game_id": g} for g in sorted(game_ids)])
     st.session_state[WEATHER_SAVE_HASH_KEY] = current_hash
 
 
-def _compute_hash(state: dict) -> str:
+def _hash(state: dict) -> str:
     return hashlib.md5(json.dumps(state, sort_keys=True).encode()).hexdigest()
