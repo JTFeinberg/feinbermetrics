@@ -4,15 +4,20 @@ from operator import mul
 import pandas as pd
 
 NO_PROBABILITY_SENTINEL = -99
+BIFFLE_SCORE_SCALE = 7.0
 
 
-def compute_biffle_metrics(games: pd.DataFrame) -> pd.DataFrame:
+def compute_biffle_metrics(
+    games: pd.DataFrame,
+    excluded_game_ids: set | None = None,
+) -> pd.DataFrame:
+    active_games = games[~games["game_id"].isin(excluded_game_ids or set())]
     rows = []
-    for team_name, team_games in games.groupby("team_name"):
+    for team_name, team_games in active_games.groupby("team_name"):
         rows.append(_build_team_row(team_name, team_games))
     return (
         pd.DataFrame(rows)
-        .sort_values("Expected Wins", ascending=False)
+        .sort_values("Biffle Score", ascending=False)
         .reset_index(drop=True)
     )
 
@@ -28,6 +33,7 @@ def _build_team_row(team_name: str, team_games: pd.DataFrame) -> dict:
     expected_wins = round(sum(probabilities), 2) if probabilities else 0.0
     average_win_prob = round(sum(probabilities) / len(probabilities), 3) if probabilities else None
     sweep_probability = round(reduce(mul, probabilities, 1.0), 4) if probabilities else None
+    biffle_score = round(min(expected_wins / BIFFLE_SCORE_SCALE, 1.0) * 10, 1)
 
     completed = team_games[team_games["result"].notna()]
     actual_wins = int((completed["result"] == "W").sum())
@@ -35,6 +41,7 @@ def _build_team_row(team_name: str, team_games: pd.DataFrame) -> dict:
 
     return {
         "Team": team_name,
+        "Biffle Score": biffle_score,
         "Games": total_games,
         "Home": home_games,
         "Away": away_games,
@@ -48,13 +55,8 @@ def _build_team_row(team_name: str, team_games: pd.DataFrame) -> dict:
 
 
 def compute_season_summary(all_picks: list[dict], games: pd.DataFrame) -> pd.DataFrame:
-    """
-    Builds a season tracker row for each past pick.
-    all_picks: list of {"week_label": str, "week_start": str, "team": str}
-    """
     if not all_picks:
         return pd.DataFrame()
-
     rows = []
     for pick in all_picks:
         team_week_games = games[
@@ -73,5 +75,4 @@ def compute_season_summary(all_picks: list[dict], games: pd.DataFrame) -> pd.Dat
             "Remaining": remaining,
             "Total Games": len(team_week_games),
         })
-
     return pd.DataFrame(rows)

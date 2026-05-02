@@ -5,6 +5,7 @@ import streamlit as st
 from supabase import Client, create_client
 
 PICKS_SAVE_HASH_KEY = "_picks_save_hash"
+WEATHER_SAVE_HASH_KEY = "_weather_save_hash"
 
 
 @st.cache_resource
@@ -34,7 +35,7 @@ def load_picks() -> dict:
 
 
 def save_picks(used_teams: set, season_picks: list) -> None:
-    current_hash = _compute_hash(used_teams, season_picks)
+    current_hash = _compute_hash({"used_teams": sorted(used_teams), "season_picks": season_picks})
     if st.session_state.get(PICKS_SAVE_HASH_KEY) == current_hash:
         return
     client = _get_client()
@@ -52,6 +53,24 @@ def save_picks(used_teams: set, season_picks: list) -> None:
     st.session_state[PICKS_SAVE_HASH_KEY] = current_hash
 
 
-def _compute_hash(used_teams: set, season_picks: list) -> str:
-    state = {"used_teams": sorted(used_teams), "season_picks": season_picks}
+def load_weather_flags() -> set:
+    client = _get_client()
+    response = client.table("weather_flags").select("game_id").execute()
+    return {row["game_id"] for row in response.data}
+
+
+def save_weather_flags(game_ids: set) -> None:
+    current_hash = _compute_hash({"game_ids": sorted(game_ids)})
+    if st.session_state.get(WEATHER_SAVE_HASH_KEY) == current_hash:
+        return
+    client = _get_client()
+    client.table("weather_flags").delete().neq("game_id", "").execute()
+    if game_ids:
+        client.table("weather_flags").insert(
+            [{"game_id": g} for g in sorted(game_ids)]
+        ).execute()
+    st.session_state[WEATHER_SAVE_HASH_KEY] = current_hash
+
+
+def _compute_hash(state: dict) -> str:
     return hashlib.md5(json.dumps(state, sort_keys=True).encode()).hexdigest()

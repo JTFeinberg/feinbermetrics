@@ -97,6 +97,8 @@ def normalize_game(raw_game: dict, team_id: int) -> dict:
         "result": result,
         "score": score,
         "week_start": get_monday_of_week(game_date) if game_date else "",
+        "team_pitcher": raw_game.get("TeamPitcher", "").strip() or None,
+        "opp_pitcher": raw_game.get("OppPitcher", "").strip() or None,
     }
 
 
@@ -115,6 +117,8 @@ def create_schema(connection: sqlite3.Connection) -> None:
             result           TEXT,
             score            TEXT,
             week_start       TEXT,
+            team_pitcher     TEXT,
+            opp_pitcher      TEXT,
             PRIMARY KEY (game_id, team_id)
         )
     """)
@@ -126,10 +130,12 @@ def upsert_games(connection: sqlite3.Connection, games: list) -> None:
         """
         INSERT OR REPLACE INTO games
             (game_id, team_id, team_name, game_date, home_team, away_team,
-             is_home, opponent, win_probability, result, score, week_start)
+             is_home, opponent, win_probability, result, score, week_start,
+             team_pitcher, opp_pitcher)
         VALUES
             (:game_id, :team_id, :team_name, :game_date, :home_team, :away_team,
-             :is_home, :opponent, :win_probability, :result, :score, :week_start)
+             :is_home, :opponent, :win_probability, :result, :score, :week_start,
+             :team_pitcher, :opp_pitcher)
         """,
         games,
     )

@@ -4,6 +4,12 @@ import pandas as pd
 import streamlit as st
 
 USED_TEAMS_KEY = "used_teams"
+SEASON_PICKS_KEY = "season_picks"
+WEATHER_FLAGS_KEY = "weather_flags"
+
+
+def get_week_starts(games: pd.DataFrame) -> list[str]:
+    return sorted(games["week_start"].dropna().unique().tolist())
 
 
 def render_week_picker(week_starts: list[str], default_index: int) -> tuple[str, str]:
