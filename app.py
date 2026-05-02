@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 
 from analytics import compute_biffle_metrics, compute_season_summary
-from data_loader import clear_live_cache, load_games
+from data_loader import load_games
 from persistence import load_picks, save_picks
 from sidebar import (
     USED_TEAMS_KEY,
@@ -60,9 +60,6 @@ def render_sidebar(games: pd.DataFrame) -> tuple[str, str]:
     week_starts = get_week_starts(games)
     with st.sidebar:
         st.header("Feinbermetrics")
-        if st.button("Refresh data", help="Force re-fetch from FanGraphs"):
-            clear_live_cache()
-            st.rerun()
         st.divider()
         st.subheader("Week filter")
         use_week_picker = st.toggle("Use week picker", value=True)
