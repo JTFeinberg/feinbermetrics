@@ -41,13 +41,14 @@ def render_leaderboard_tab(
 
 
 def _show_metrics_table(df: pd.DataFrame, start_date: str, end_date: str, key: str) -> None:
-    display = df[["Team", "Biffle Score", "Games", "Home", "Away", "Expected Wins",
-                  "Avg Win%", "Probs Available", "Actual W", "Games Played"]].copy()
+    display = df[["Team", "Biffle Score", "Games", "DH", "Home", "Away", "Expected Wins",
+                  "Avg Win%", "Confidence", "Actual W", "Games Played"]].copy()
     st.dataframe(
         display.style.format({
             "Biffle Score": "{:.1f}",
             "Expected Wins": "{:.2f}",
             "Avg Win%": lambda v: f"{v:.1%}" if v is not None else "—",
+            "DH": lambda v: f"⚡ {int(v)}" if v and int(v) > 0 else "—",
             "Actual W": lambda v: str(int(v)) if v is not None else "—",
             "Games Played": lambda v: str(int(v)) if v is not None else "—",
         }, na_rep="—"),
@@ -81,10 +82,13 @@ def render_breakdown_tab(
     )
     team_games["H/A"] = team_games["is_home"].map({1: "Home", 0: "Away"})
     team_games["⛈ Weather"] = team_games["game_id"].isin(weather_flags)
+    if "dh" in team_games.columns:
+        team_games["DH"] = team_games["dh"].apply(lambda x: "⚡" if x == 1 else "")
 
     display_cols = ["game_id", "game_date", "H/A", "opponent", "team_pitcher",
                     "opp_pitcher", "Win Prob", "result", "score", "⛈ Weather"]
     has_pitchers = "team_pitcher" in team_games.columns
+    has_dh = "dh" in team_games.columns
 
     renamed = team_games.rename(columns={
         "game_date": "Date", "opponent": "Opponent",
@@ -98,6 +102,9 @@ def render_breakdown_tab(
         editable_cols = ["Date", "H/A", "Opponent", "Our Pitcher", "Opp Pitcher", "Win Prob", "Result", "Score"]
         shown_cols = ["game_id", "Date", "H/A", "Opponent", "Our Pitcher", "Opp Pitcher",
                       "Win Prob", "Result", "Score", "⛈ Weather"]
+    if has_dh:
+        editable_cols = [c for c in editable_cols] + ["DH"]
+        shown_cols = shown_cols[:-1] + ["DH", "⛈ Weather"]
 
     edited = st.data_editor(
         renamed[shown_cols],
@@ -130,7 +137,6 @@ def render_season_tab(games: pd.DataFrame) -> None:
     st.subheader("Season picks tracker")
     st.caption("Log your weekly picks below to track your cumulative Biffle Ball score.")
 
-    from app import get_week_starts
     week_starts = get_week_starts(games)
     week_labels = [format_week_label(w) for w in week_starts]
     all_teams = sorted(games["team_name"].dropna().unique().tolist())
@@ -160,6 +166,15 @@ def render_season_tab(games: pd.DataFrame) -> None:
         summary = compute_season_summary(picks, games)
         st.metric("Total wins this season", int(summary["W"].sum()))
         st.dataframe(summary, use_container_width=True, hide_index=True)
+
+        with st.expander("Remove a pick"):
+            for i, pick in enumerate(picks):
+                col_label, col_btn = st.columns([5, 1])
+                col_label.write(f"{pick['week_label']} — **{pick['team']}**")
+                if col_btn.button("Remove", key=f"remove_pick_{i}"):
+                    st.session_state[SEASON_PICKS_KEY].pop(i)
+                    st.rerun()
+
         if st.button("Clear all picks"):
             st.session_state[SEASON_PICKS_KEY] = []
             st.rerun()

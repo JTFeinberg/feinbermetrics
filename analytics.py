@@ -35,6 +35,8 @@ def _build_team_row(team_name: str, team_games: pd.DataFrame) -> dict:
     sweep_probability = round(reduce(mul, probabilities, 1.0), 4) if probabilities else None
     biffle_score = round(min(expected_wins / BIFFLE_SCORE_SCALE, 1.0) * 10, 1)
 
+    dh_games = int(team_games["dh"].sum()) if "dh" in team_games.columns else 0
+
     completed = team_games[team_games["result"].notna()]
     actual_wins = int((completed["result"] == "W").sum())
     games_played = len(completed)
@@ -43,12 +45,13 @@ def _build_team_row(team_name: str, team_games: pd.DataFrame) -> dict:
         "Team": team_name,
         "Biffle Score": biffle_score,
         "Games": total_games,
+        "DH": dh_games,
         "Home": home_games,
         "Away": away_games,
         "Expected Wins": expected_wins,
         "Avg Win%": average_win_prob,
         "Sweep Prob": sweep_probability,
-        "Probs Available": len(probabilities),
+        "Confidence": f"{len(probabilities)}/{total_games}",
         "Actual W": actual_wins if games_played > 0 else None,
         "Games Played": games_played if games_played > 0 else None,
     }
