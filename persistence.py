@@ -26,7 +26,8 @@ def _url(table: str, query: str = "") -> str:
 def _select(table: str, columns: str = "*", order: str = "") -> list:
     params = f"?select={columns}" + (f"&order={order}" if order else "")
     response = requests.get(_url(table, params), headers=_headers(), timeout=10)
-    response.raise_for_status()
+    if not response.ok:
+        raise ValueError(f"Supabase '{table}' returned HTTP {response.status_code}: {response.text[:400]}")
     return response.json()
 
 
