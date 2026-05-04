@@ -5,6 +5,13 @@ from analytics import compute_biffle_metrics, compute_season_summary
 from sidebar import USED_TEAMS_KEY, SEASON_PICKS_KEY, WEATHER_FLAGS_KEY, format_week_label, get_week_starts
 from weather import RAIN_WARNING_THRESHOLD, get_rain_probabilities
 
+DIALOG_TEAM_KEY = "_open_dialog_team"
+
+LEADERBOARD_ROW_CSS = """<style>
+[data-testid="stDataFrame"] canvas { cursor: pointer; }
+div[class*="stDataFrame"] span[data-testid="stDataFrameResizable"] > div > div > div:first-child { width: 0 !important; min-width: 0 !important; overflow: hidden; }
+</style>"""
+
 
 # ── Team breakdown dialog ──────────────────────────────────────────────────────
 
@@ -38,6 +45,7 @@ def render_leaderboard_tab(
     col4.metric("Date range", f"{start_date} \u2192 {end_date}")
 
     st.subheader("Available teams")
+    st.markdown(LEADERBOARD_ROW_CSS, unsafe_allow_html=True)
     st.caption(
         "**Biffle Score** (0–10) = Expected Wins on a weekly scale. "
         "Click any row to see that team's full game breakdown."
@@ -76,7 +84,14 @@ def _show_metrics_table(
     )
     if event.selection.rows:
         selected_team = display.iloc[event.selection.rows[0]]["Team"]
-        _show_team_dialog(selected_team, week_games, weather_flags)
+        tbl_key = f"tbl_{key}"
+        if st.session_state.get(DIALOG_TEAM_KEY) == selected_team:
+            st.session_state.pop(DIALOG_TEAM_KEY, None)
+            st.session_state[tbl_key] = {"selection": {"rows": [], "columns": []}}
+            st.rerun()
+        else:
+            st.session_state[DIALOG_TEAM_KEY] = selected_team
+            _show_team_dialog(selected_team, week_games, weather_flags)
 
     st.download_button(
         "Download CSV",
