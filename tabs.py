@@ -3,9 +3,18 @@ import streamlit as st
 
 from analytics import compute_biffle_metrics, compute_season_summary
 from sidebar import USED_TEAMS_KEY, SEASON_PICKS_KEY, WEATHER_FLAGS_KEY, format_week_label, get_week_starts
+from weather import RAIN_WARNING_THRESHOLD, get_rain_probabilities
 
-GAMES_WEEK_MAX = 7
 
+# ── Team breakdown dialog ──────────────────────────────────────────────────────
+
+@st.dialog("Game breakdown", width="large")
+def _show_team_dialog(team_name: str, week_games: pd.DataFrame, weather_flags: set) -> None:
+    rain_by_game = get_rain_probabilities(week_games)
+    _render_team_game_table(team_name, week_games, weather_flags, rain_by_game)
+
+
+# ── Leaderboard tab ────────────────────────────────────────────────────────────
 
 def render_leaderboard_tab(
     week_games: pd.DataFrame,
@@ -30,20 +39,27 @@ def render_leaderboard_tab(
 
     st.subheader("Available teams")
     st.caption(
-        "**Biffle Score** (0–10) = Expected Wins scaled to a weekly max of 7 games. "
-        "**Expected Wins** = sum of win probabilities. Weather-flagged games are excluded."
+        "**Biffle Score** (0–10) = Expected Wins on a weekly scale. "
+        "Click any row to see that team's full game breakdown."
     )
-    _show_metrics_table(available, start_date, end_date, "leaderboard_available")
+    _show_metrics_table(available, week_games, weather_flags, start_date, end_date, "available")
 
     if not used_rows.empty:
         with st.expander(f"Already used ({len(used_rows)} teams)"):
-            _show_metrics_table(used_rows, start_date, end_date, "leaderboard_used")
+            _show_metrics_table(used_rows, week_games, weather_flags, start_date, end_date, "used")
 
 
-def _show_metrics_table(df: pd.DataFrame, start_date: str, end_date: str, key: str) -> None:
-    display = df[["Team", "Biffle Score", "Games", "DH", "Home", "Away", "Expected Wins",
-                  "Avg Win%", "Confidence", "Actual W", "Games Played"]].copy()
-    st.dataframe(
+def _show_metrics_table(
+    df: pd.DataFrame,
+    week_games: pd.DataFrame,
+    weather_flags: set,
+    start_date: str,
+    end_date: str,
+    key: str,
+) -> None:
+    display = df[["Team", "Biffle Score", "Games", "DH", "Home", "Away",
+                  "Expected Wins", "Avg Win%", "Confidence", "Actual W", "Games Played"]].copy()
+    event = st.dataframe(
         display.style.format({
             "Biffle Score": "{:.1f}",
             "Expected Wins": "{:.2f}",
@@ -54,7 +70,14 @@ def _show_metrics_table(df: pd.DataFrame, start_date: str, end_date: str, key: s
         }, na_rep="—"),
         use_container_width=True,
         hide_index=True,
+        selection_mode="single-row",
+        on_select="rerun",
+        key=f"tbl_{key}",
     )
+    if event.selection.rows:
+        selected_team = display.iloc[event.selection.rows[0]]["Team"]
+        _show_team_dialog(selected_team, week_games, weather_flags)
+
     st.download_button(
         "Download CSV",
         df.to_csv(index=False),
@@ -63,6 +86,8 @@ def _show_metrics_table(df: pd.DataFrame, start_date: str, end_date: str, key: s
         key=f"dl_{key}",
     )
 
+
+# ── Breakdown tab ──────────────────────────────────────────────────────────────
 
 def render_breakdown_tab(
     week_games: pd.DataFrame,
@@ -75,18 +100,40 @@ def render_breakdown_tab(
         return
 
     selected_team = st.selectbox("Select team", sorted(week_games["team_name"].dropna().unique()))
-    team_games = week_games[week_games["team_name"] == selected_team].copy()
+
+    with st.spinner("Fetching weather forecast..."):
+        rain_by_game = get_rain_probabilities(week_games)
+
+    _render_team_game_table(selected_team, week_games, weather_flags, rain_by_game)
+
+    team_games = week_games[week_games["team_name"] == selected_team]
+    st.download_button(
+        f"Download {selected_team} CSV",
+        team_games.to_csv(index=False),
+        file_name=f"{selected_team.replace(' ', '_')}_{start_date}_{end_date}.csv",
+        mime="text/csv",
+    )
+
+
+def _render_team_game_table(
+    team_name: str,
+    week_games: pd.DataFrame,
+    weather_flags: set,
+    rain_by_game: dict,
+) -> None:
+    team_games = week_games[week_games["team_name"] == team_name].copy()
 
     team_games["Win Prob"] = team_games["win_probability"].apply(
         lambda p: f"{p:.1%}" if pd.notna(p) else "\u2014"
     )
     team_games["H/A"] = team_games["is_home"].map({1: "Home", 0: "Away"})
     team_games["⛈ Weather"] = team_games["game_id"].isin(weather_flags)
+    team_games["🌧 Rain%"] = team_games["game_id"].map(
+        lambda gid: _format_rain(rain_by_game.get(gid))
+    )
     if "dh" in team_games.columns:
         team_games["DH"] = team_games["dh"].apply(lambda x: "⚡" if x == 1 else "")
 
-    display_cols = ["game_id", "game_date", "H/A", "opponent", "team_pitcher",
-                    "opp_pitcher", "Win Prob", "result", "score", "⛈ Weather"]
     has_pitchers = "team_pitcher" in team_games.columns
     has_dh = "dh" in team_games.columns
 
@@ -96,42 +143,46 @@ def render_breakdown_tab(
         "result": "Result", "score": "Score",
     })
 
-    editable_cols = ["Date", "H/A", "Opponent", "Win Prob", "Result", "Score"]
-    shown_cols = ["game_id", "Date", "H/A", "Opponent", "Win Prob", "Result", "Score", "⛈ Weather"]
+    base_cols = ["game_id", "Date", "H/A", "Opponent", "Win Prob", "🌧 Rain%", "Result", "Score"]
     if has_pitchers:
-        editable_cols = ["Date", "H/A", "Opponent", "Our Pitcher", "Opp Pitcher", "Win Prob", "Result", "Score"]
-        shown_cols = ["game_id", "Date", "H/A", "Opponent", "Our Pitcher", "Opp Pitcher",
-                      "Win Prob", "Result", "Score", "⛈ Weather"]
+        base_cols = ["game_id", "Date", "H/A", "Opponent", "Our Pitcher", "Opp Pitcher",
+                     "Win Prob", "🌧 Rain%", "Result", "Score"]
     if has_dh:
-        editable_cols = [c for c in editable_cols] + ["DH"]
-        shown_cols = shown_cols[:-1] + ["DH", "⛈ Weather"]
+        base_cols = base_cols[:-2] + ["DH"] + base_cols[-2:]
+    shown_cols = base_cols + ["⛈ Weather"]
+    editable_cols = [c for c in shown_cols if c not in ("game_id", "⛈ Weather")]
 
     edited = st.data_editor(
         renamed[shown_cols],
         column_config={
             "game_id": None,
-            "⛈ Weather": st.column_config.CheckboxColumn("⛈ Weather", help="Flag this game as a weather risk — excludes it from Expected Wins"),
+            "⛈ Weather": st.column_config.CheckboxColumn(
+                "⛈ Weather",
+                help="Exclude this game from Expected Wins (weather risk)",
+            ),
         },
         disabled=editable_cols,
         use_container_width=True,
         hide_index=True,
-        key=f"breakdown_{selected_team}",
+        key=f"breakdown_{team_name}",
     )
 
     team_game_ids = set(team_games["game_id"].tolist())
-    flagged_this_team = set(edited[edited["⛈ Weather"]]["game_id"].tolist())
-    updated_flags = (weather_flags - team_game_ids) | flagged_this_team
+    flagged = set(edited[edited["⛈ Weather"]]["game_id"].tolist())
+    updated_flags = (weather_flags - team_game_ids) | flagged
     if updated_flags != weather_flags:
         st.session_state[WEATHER_FLAGS_KEY] = updated_flags
         st.rerun()
 
-    st.download_button(
-        f"Download {selected_team} CSV",
-        team_games.to_csv(index=False),
-        file_name=f"{selected_team.replace(' ', '_')}_{start_date}_{end_date}.csv",
-        mime="text/csv",
-    )
 
+def _format_rain(pct: int | None) -> str:
+    if pct is None:
+        return "—"
+    warning = " ⚠️" if pct >= RAIN_WARNING_THRESHOLD else ""
+    return f"{pct}%{warning}"
+
+
+# ── Season tab ─────────────────────────────────────────────────────────────────
 
 def render_season_tab(games: pd.DataFrame) -> None:
     st.subheader("Season picks tracker")
