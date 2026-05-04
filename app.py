@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 
 import pandas as pd
 import streamlit as st
@@ -17,12 +17,19 @@ from sidebar import (
 from tabs import render_breakdown_tab, render_leaderboard_tab, render_season_tab
 
 PASSWORD_SECRET_KEY = "app_password"
+AUTH_TOKEN_KEY = "auth_token"
 
 
 # ── Auth ──────────────────────────────────────────────────────────────────────
 
 def is_authenticated() -> bool:
-    return st.session_state.get("authenticated", False)
+    if st.session_state.get("authenticated", False):
+        return True
+    token = st.query_params.get("token", "")
+    if token and token == st.secrets.get(AUTH_TOKEN_KEY, ""):
+        st.session_state["authenticated"] = True
+        return True
+    return False
 
 
 def render_login_gate() -> None:
@@ -42,9 +49,11 @@ def render_login_gate() -> None:
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
 def get_default_week_index(week_starts: list[str]) -> int:
-    today = datetime.today().strftime("%Y-%m-%d")
-    index = next((i for i, w in enumerate(week_starts) if w <= today), 0)
-    return min(index, len(week_starts) - 1)
+    today = datetime.today()
+    days_since_monday = today.weekday()
+    next_monday = (today - timedelta(days=days_since_monday) + timedelta(weeks=1)).strftime("%Y-%m-%d")
+    future = [i for i, w in enumerate(week_starts) if w >= next_monday]
+    return future[0] if future else len(week_starts) - 1
 
 
 def filter_games(games: pd.DataFrame, start_date: str, end_date: str) -> pd.DataFrame:
