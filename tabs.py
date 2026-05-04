@@ -6,6 +6,7 @@ from sidebar import USED_TEAMS_KEY, SEASON_PICKS_KEY, WEATHER_FLAGS_KEY, format_
 from weather import RAIN_WARNING_THRESHOLD, get_rain_probabilities
 
 DIALOG_TEAM_KEY = "_open_dialog_team"
+TABLE_COUNTER_KEY = "_tbl_counter"
 
 LEADERBOARD_ROW_CSS = """<style>
 [data-testid="stDataFrame"] canvas { cursor: pointer; }
@@ -67,6 +68,8 @@ def _show_metrics_table(
 ) -> None:
     display = df[["Team", "Biffle Score", "Games", "DH", "Home", "Away",
                   "Expected Wins", "Avg Win%", "Confidence", "Actual W", "Games Played"]].copy()
+    counter = st.session_state.get(f"{TABLE_COUNTER_KEY}_{key}", 0)
+    tbl_key = f"tbl_{key}_{counter}"
     event = st.dataframe(
         display.style.format({
             "Biffle Score": "{:.1f}",
@@ -80,14 +83,13 @@ def _show_metrics_table(
         hide_index=True,
         selection_mode="single-row",
         on_select="rerun",
-        key=f"tbl_{key}",
+        key=tbl_key,
     )
     if event.selection.rows:
         selected_team = display.iloc[event.selection.rows[0]]["Team"]
-        tbl_key = f"tbl_{key}"
         if st.session_state.get(DIALOG_TEAM_KEY) == selected_team:
             st.session_state.pop(DIALOG_TEAM_KEY, None)
-            st.session_state[tbl_key] = {"selection": {"rows": [], "columns": []}}
+            st.session_state[f"{TABLE_COUNTER_KEY}_{key}"] = counter + 1
             st.rerun()
         else:
             st.session_state[DIALOG_TEAM_KEY] = selected_team
