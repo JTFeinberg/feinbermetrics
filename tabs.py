@@ -43,7 +43,7 @@ def render_leaderboard_tab(
     st.subheader("Available teams")
     st.caption(
         "**Biffle Score** (0–10) = Expected Wins on a weekly scale. "
-        "Use the dropdown below the table to view a team's full game breakdown."
+        "Click any row to see that team's full game breakdown."
     )
     _show_metrics_table(available, week_games, weather_flags, start_date, end_date, "available")
 
@@ -62,7 +62,9 @@ def _show_metrics_table(
 ) -> None:
     display = df[["Team", "Biffle Score", "Games", "DH", "Home", "Away",
                   "Expected Wins", "Avg Win%", "Confidence", "Actual W", "Games Played"]].copy()
-    st.dataframe(
+    counter = st.session_state.get(f"{TABLE_COUNTER_KEY}_{key}", 0)
+    tbl_key = f"tbl_{key}_{counter}"
+    event = st.dataframe(
         display.style.format({
             "Biffle Score": "{:.1f}",
             "Expected Wins": "{:.2f}",
@@ -73,22 +75,19 @@ def _show_metrics_table(
         }, na_rep="—"),
         use_container_width=True,
         hide_index=True,
+        selection_mode="single-row",
+        on_select="rerun",
+        key=tbl_key,
     )
-    counter = st.session_state.get(f"{TABLE_COUNTER_KEY}_{key}", 0)
-    selected = st.selectbox(
-        "🔍 View game breakdown",
-        options=[""] + df["Team"].tolist(),
-        format_func=lambda x: "Choose a team..." if x == "" else x,
-        key=f"view_{key}_{counter}",
-    )
-    if selected:
-        if st.session_state.get(DIALOG_TEAM_KEY) == selected:
+    if event.selection.rows:
+        selected_team = display.iloc[event.selection.rows[0]]["Team"]
+        if st.session_state.get(DIALOG_TEAM_KEY) == selected_team:
             st.session_state.pop(DIALOG_TEAM_KEY, None)
             st.session_state[f"{TABLE_COUNTER_KEY}_{key}"] = counter + 1
             st.rerun()
         else:
-            st.session_state[DIALOG_TEAM_KEY] = selected
-            _show_team_dialog(selected, week_games, weather_flags)
+            st.session_state[DIALOG_TEAM_KEY] = selected_team
+            _show_team_dialog(selected_team, week_games, weather_flags)
 
     st.download_button(
         "Download CSV",
@@ -111,7 +110,12 @@ def render_breakdown_tab(
         st.info("No games found for this date range.")
         return
 
-    selected_team = st.selectbox("Select team", sorted(week_games["team_name"].dropna().unique()))
+    metrics = compute_biffle_metrics(week_games, excluded_game_ids=weather_flags)
+    top_team = metrics.iloc[0]["Team"] if not metrics.empty else None
+    all_teams = sorted(week_games["team_name"].dropna().unique())
+    default_index = all_teams.index(top_team) if top_team in all_teams else 0
+
+    selected_team = st.selectbox("Select team", all_teams, index=default_index)
 
     with st.spinner("Fetching weather forecast..."):
         rain_by_game = get_rain_probabilities(week_games)
