@@ -25,12 +25,9 @@ def _url(table: str, query: str = "") -> str:
 
 def _select(table: str, columns: str = "*", order: str = "") -> list:
     params = f"?select={columns}" + (f"&order={order}" if order else "")
-    full_url = _url(table, params)
-    response = requests.get(full_url, headers=_headers(), timeout=10)
+    response = requests.get(_url(table, params), headers=_headers(), timeout=10)
     if not response.ok:
-        st.error(f"Supabase error on table `{table}` — HTTP {response.status_code}")
-        st.code(f"URL called: {full_url}\n\n{response.text[:500]}")
-        st.stop()
+        raise RuntimeError(f"Supabase error on '{table}': HTTP {response.status_code}")
     return response.json()
 
 
