@@ -1,0 +1,35 @@
+name: Daily schedule refresh
+
+on:
+  schedule:
+    - cron: '0 10 * * *'  # Every day at 10am UTC (6am ET)
+  workflow_dispatch:       # Allows manual trigger from the GitHub Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests pandas
+
+      - name: Fetch schedule data
+        run: python fetch_schedules.py
+
+      - name: Export to CSV
+        run: python export_csv.py
+
+      - name: Commit and push updated data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-refresh schedule data"
+          file_pattern: schedules.csv pitcher_fip.csv
