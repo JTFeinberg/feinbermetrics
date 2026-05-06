@@ -12,7 +12,7 @@ source .venv/bin/activate
 python fetch_schedules.py >> "$LOG_FILE" 2>&1
 python export_csv.py >> "$LOG_FILE" 2>&1
 
-git add schedules.csv
+git add schedules.csv pitcher_fip.csv
 git commit -m "Refresh schedule data $(date +%Y-%m-%d)" >> "$LOG_FILE" 2>&1
 git push origin main >> "$LOG_FILE" 2>&1
 

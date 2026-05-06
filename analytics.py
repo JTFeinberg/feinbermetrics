@@ -5,6 +5,40 @@ import pandas as pd
 
 NO_PROBABILITY_SENTINEL = -99
 BIFFLE_SCORE_SCALE = 7.0
+RECENT_FORM_GAMES = 10
+
+
+def compute_recent_form(all_games: pd.DataFrame, before_date: str) -> dict[str, str]:
+    """
+    Returns {team_name: "7-3 W3"} showing last-N completed games before before_date.
+    Streak suffix is the current win/loss streak (e.g. "W3" or "L1").
+    """
+    completed = all_games[
+        (all_games["result"].notna()) & (all_games["game_date"] < before_date)
+    ].copy()
+    completed = completed.sort_values("game_date")
+
+    form_by_team: dict[str, str] = {}
+    for team_name, team_games in completed.groupby("team_name"):
+        recent = team_games.tail(RECENT_FORM_GAMES)
+        wins = int((recent["result"] == "W").sum())
+        losses = int((recent["result"] == "L").sum())
+        streak = _compute_streak(team_games["result"].tolist())
+        form_by_team[team_name] = f"{wins}-{losses} {streak}"
+    return form_by_team
+
+
+def _compute_streak(results: list[str]) -> str:
+    if not results:
+        return ""
+    last = results[-1]
+    count = 0
+    for result in reversed(results):
+        if result == last:
+            count += 1
+        else:
+            break
+    return f"{last}{count}"
 
 
 def compute_biffle_metrics(

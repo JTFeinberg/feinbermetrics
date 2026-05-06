@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 import pandas as pd
 import streamlit as st
 
-from data_loader import load_games
+from data_loader import load_games, load_pitcher_fip
 from persistence import load_picks, load_weather_flags, save_picks, save_weather_flags
 from sidebar import (
     SEASON_PICKS_KEY,
@@ -14,7 +14,9 @@ from sidebar import (
     render_used_teams_tracker,
     render_week_picker,
 )
-from tabs import render_breakdown_tab, render_leaderboard_tab, render_season_tab
+from compare_tab import render_compare_tab
+from season_tab import render_season_tab
+from tabs import render_breakdown_tab, render_leaderboard_tab
 
 PASSWORD_SECRET_KEY = "app_password"
 AUTH_TOKEN_KEY = "auth_token"
@@ -81,20 +83,22 @@ def render_sidebar(games: pd.DataFrame) -> tuple[str, str]:
 
 # ── Main layout ───────────────────────────────────────────────────────────────
 
-def render_main(games: pd.DataFrame, start_date: str, end_date: str) -> None:
+def render_main(games: pd.DataFrame, start_date: str, end_date: str, pitcher_fip: dict) -> None:
     st.title("Feinbermetrics")
     st.caption("Biffle Ball weekly win probability analysis")
 
-    tab_leaderboard, tab_breakdown, tab_season = st.tabs(
-        ["Weekly leaderboard", "Game breakdown", "Season tracker"]
+    tab_leaderboard, tab_breakdown, tab_compare, tab_season = st.tabs(
+        ["Weekly leaderboard", "Game breakdown", "Compare teams", "Season tracker"]
     )
     week_games = filter_games(games, start_date, end_date)
     weather_flags = st.session_state.get(WEATHER_FLAGS_KEY, set())
 
     with tab_leaderboard:
-        render_leaderboard_tab(week_games, start_date, end_date, weather_flags)
+        render_leaderboard_tab(week_games, start_date, end_date, weather_flags, pitcher_fip, games)
     with tab_breakdown:
-        render_breakdown_tab(week_games, start_date, end_date, weather_flags)
+        render_breakdown_tab(week_games, start_date, end_date, weather_flags, pitcher_fip)
+    with tab_compare:
+        render_compare_tab(week_games, start_date, end_date, weather_flags, pitcher_fip, games)
     with tab_season:
         render_season_tab(games)
 
@@ -116,13 +120,14 @@ def main() -> None:
         st.session_state["picks_initialized"] = True
 
     games = load_games()
+    pitcher_fip = load_pitcher_fip()
 
     if games.empty:
         st.error("No schedule data found. Run `python fetch_schedules.py` then `python export_csv.py`.")
         return
 
     start_date, end_date = render_sidebar(games)
-    render_main(games, start_date, end_date)
+    render_main(games, start_date, end_date, pitcher_fip)
 
     save_picks(
         used_teams=st.session_state.get(USED_TEAMS_KEY, set()),

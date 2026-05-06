@@ -1,8 +1,8 @@
 import pandas as pd
 import streamlit as st
 
-from analytics import compute_biffle_metrics, compute_season_summary
-from sidebar import USED_TEAMS_KEY, SEASON_PICKS_KEY, WEATHER_FLAGS_KEY, format_week_label, get_week_starts
+from analytics import compute_biffle_metrics, compute_recent_form
+from sidebar import USED_TEAMS_KEY, WEATHER_FLAGS_KEY, format_week_label, get_week_starts
 from weather import RAIN_WARNING_THRESHOLD, get_rain_probabilities
 
 DIALOG_TEAM_KEY = "_open_dialog_team"
@@ -12,9 +12,9 @@ TABLE_COUNTER_KEY = "_tbl_counter"
 # ── Team breakdown dialog ──────────────────────────────────────────────────────
 
 @st.dialog("Game breakdown", width="large")
-def _show_team_dialog(team_name: str, week_games: pd.DataFrame, weather_flags: set) -> None:
+def _show_team_dialog(team_name: str, week_games: pd.DataFrame, weather_flags: set, pitcher_fip: dict) -> None:
     rain_by_game = get_rain_probabilities(week_games)
-    _render_team_game_table(team_name, week_games, weather_flags, rain_by_game)
+    _render_team_game_table(team_name, week_games, weather_flags, rain_by_game, pitcher_fip)
 
 
 # ── Leaderboard tab ────────────────────────────────────────────────────────────
@@ -24,6 +24,8 @@ def render_leaderboard_tab(
     start_date: str,
     end_date: str,
     weather_flags: set,
+    pitcher_fip: dict | None = None,
+    all_games: pd.DataFrame | None = None,
 ) -> None:
     if week_games.empty:
         st.info("No games found for this date range.")
@@ -31,6 +33,8 @@ def render_leaderboard_tab(
 
     used_teams = st.session_state.get(USED_TEAMS_KEY, set())
     metrics = compute_biffle_metrics(week_games, excluded_game_ids=weather_flags)
+    recent_form = compute_recent_form(all_games, start_date) if all_games is not None else {}
+    metrics["Form"] = metrics["Team"].map(lambda t: recent_form.get(t, "—"))
     available = metrics[~metrics["Team"].isin(used_teams)].copy()
     used_rows = metrics[metrics["Team"].isin(used_teams)].copy()
 
@@ -45,11 +49,11 @@ def render_leaderboard_tab(
         "**Biffle Score** (0–10) = Expected Wins on a weekly scale. "
         "Click any row to see that team's full game breakdown."
     )
-    _show_metrics_table(available, week_games, weather_flags, start_date, end_date, "available")
+    _show_metrics_table(available, week_games, weather_flags, start_date, end_date, "available", pitcher_fip or {})
 
     if not used_rows.empty:
         with st.expander(f"Already used ({len(used_rows)} teams)"):
-            _show_metrics_table(used_rows, week_games, weather_flags, start_date, end_date, "used")
+            _show_metrics_table(used_rows, week_games, weather_flags, start_date, end_date, "used", pitcher_fip or {})
 
 
 def _show_metrics_table(
@@ -59,9 +63,12 @@ def _show_metrics_table(
     start_date: str,
     end_date: str,
     key: str,
+    pitcher_fip: dict,
 ) -> None:
-    display = df[["Team", "Biffle Score", "Games", "DH", "Home", "Away",
-                  "Expected Wins", "Avg Win%", "Confidence", "Actual W", "Games Played"]].copy()
+    cols_to_show = ["Team", "Biffle Score", "Games", "DH", "Home", "Away",
+                    "Expected Wins", "Avg Win%", "Confidence", "Form", "Actual W", "Games Played"]
+    available_cols = [c for c in cols_to_show if c in df.columns]
+    display = df[available_cols].copy()
     counter = st.session_state.get(f"{TABLE_COUNTER_KEY}_{key}", 0)
     tbl_key = f"tbl_{key}_{counter}"
     event = st.dataframe(
@@ -87,7 +94,7 @@ def _show_metrics_table(
             st.rerun()
         else:
             st.session_state[DIALOG_TEAM_KEY] = selected_team
-            _show_team_dialog(selected_team, week_games, weather_flags)
+            _show_team_dialog(selected_team, week_games, weather_flags, pitcher_fip)
 
     st.download_button(
         "Download CSV",
@@ -105,6 +112,7 @@ def render_breakdown_tab(
     start_date: str,
     end_date: str,
     weather_flags: set,
+    pitcher_fip: dict | None = None,
 ) -> None:
     if week_games.empty:
         st.info("No games found for this date range.")
@@ -120,7 +128,7 @@ def render_breakdown_tab(
     with st.spinner("Fetching weather forecast..."):
         rain_by_game = get_rain_probabilities(week_games)
 
-    _render_team_game_table(selected_team, week_games, weather_flags, rain_by_game)
+    _render_team_game_table(selected_team, week_games, weather_flags, rain_by_game, pitcher_fip or {})
 
     team_games = week_games[week_games["team_name"] == selected_team]
     st.download_button(
@@ -136,6 +144,7 @@ def _render_team_game_table(
     week_games: pd.DataFrame,
     weather_flags: set,
     rain_by_game: dict,
+    pitcher_fip: dict,
 ) -> None:
     team_games = week_games[week_games["team_name"] == team_name].copy()
 
@@ -151,7 +160,16 @@ def _render_team_game_table(
         team_games["DH"] = team_games["dh"].apply(lambda x: "⚡" if x == 1 else "")
 
     has_pitchers = "team_pitcher" in team_games.columns
+    has_pitcher_ids = "team_pitcher_id" in team_games.columns and pitcher_fip
     has_dh = "dh" in team_games.columns
+
+    if has_pitcher_ids:
+        team_games["Our FIP"] = team_games["team_pitcher_id"].map(
+            lambda pid: f"{pitcher_fip[int(pid)]:.2f}" if pd.notna(pid) and int(pid) in pitcher_fip else "—"
+        )
+        team_games["Opp FIP"] = team_games["opp_pitcher_id"].map(
+            lambda pid: f"{pitcher_fip[int(pid)]:.2f}" if pd.notna(pid) and int(pid) in pitcher_fip else "—"
+        )
 
     renamed = team_games.rename(columns={
         "game_date": "Date", "opponent": "Opponent",
@@ -159,13 +177,7 @@ def _render_team_game_table(
         "result": "Result", "score": "Score",
     })
 
-    base_cols = ["game_id", "Date", "H/A", "Opponent", "Win Prob", "🌧 Rain%", "Result", "Score"]
-    if has_pitchers:
-        base_cols = ["game_id", "Date", "H/A", "Opponent", "Our Pitcher", "Opp Pitcher",
-                     "Win Prob", "🌧 Rain%", "Result", "Score"]
-    if has_dh:
-        base_cols = base_cols[:-2] + ["DH"] + base_cols[-2:]
-    shown_cols = base_cols + ["⛈ Weather"]
+    shown_cols = _build_display_columns(has_pitchers, has_pitcher_ids, has_dh)
     editable_cols = [c for c in shown_cols if c not in ("game_id", "⛈ Weather")]
 
     edited = st.data_editor(
@@ -191,6 +203,21 @@ def _render_team_game_table(
         st.rerun()
 
 
+def _build_display_columns(has_pitchers: bool, has_pitcher_ids: bool, has_dh: bool) -> list[str]:
+    if has_pitchers and has_pitcher_ids:
+        cols = ["game_id", "Date", "H/A", "Opponent",
+                "Our Pitcher", "Our FIP", "Opp Pitcher", "Opp FIP",
+                "Win Prob", "🌧 Rain%", "Result", "Score"]
+    elif has_pitchers:
+        cols = ["game_id", "Date", "H/A", "Opponent",
+                "Our Pitcher", "Opp Pitcher", "Win Prob", "🌧 Rain%", "Result", "Score"]
+    else:
+        cols = ["game_id", "Date", "H/A", "Opponent", "Win Prob", "🌧 Rain%", "Result", "Score"]
+    if has_dh:
+        cols = cols[:-2] + ["DH"] + cols[-2:]
+    return cols + ["⛈ Weather"]
+
+
 def _format_rain(pct: int | None) -> str:
     if pct is None:
         return "—"
@@ -198,52 +225,4 @@ def _format_rain(pct: int | None) -> str:
     return f"{pct}%{warning}"
 
 
-# ── Season tab ─────────────────────────────────────────────────────────────────
 
-def render_season_tab(games: pd.DataFrame) -> None:
-    st.subheader("Season picks tracker")
-    st.caption("Log your weekly picks below to track your cumulative Biffle Ball score.")
-
-    week_starts = get_week_starts(games)
-    week_labels = [format_week_label(w) for w in week_starts]
-    all_teams = sorted(games["team_name"].dropna().unique().tolist())
-
-    if SEASON_PICKS_KEY not in st.session_state:
-        st.session_state[SEASON_PICKS_KEY] = []
-
-    with st.form("add_pick"):
-        col1, col2 = st.columns(2)
-        selected_week_label = col1.selectbox("Week", week_labels)
-        selected_team = col2.selectbox("Team picked", all_teams)
-        if st.form_submit_button("Add pick"):
-            week_start = week_starts[week_labels.index(selected_week_label)]
-            existing_weeks = {p["week_start"] for p in st.session_state[SEASON_PICKS_KEY]}
-            if week_start in existing_weeks:
-                st.warning("A pick already exists for that week. Remove it first.")
-            else:
-                st.session_state[SEASON_PICKS_KEY].append({
-                    "week_label": selected_week_label,
-                    "week_start": week_start,
-                    "team": selected_team,
-                })
-                st.rerun()
-
-    picks = st.session_state[SEASON_PICKS_KEY]
-    if picks:
-        summary = compute_season_summary(picks, games)
-        st.metric("Total wins this season", int(summary["W"].sum()))
-        st.dataframe(summary, use_container_width=True, hide_index=True)
-
-        with st.expander("Remove a pick"):
-            for i, pick in enumerate(picks):
-                col_label, col_btn = st.columns([5, 1])
-                col_label.write(f"{pick['week_label']} — **{pick['team']}**")
-                if col_btn.button("Remove", key=f"remove_pick_{i}"):
-                    st.session_state[SEASON_PICKS_KEY].pop(i)
-                    st.rerun()
-
-        if st.button("Clear all picks"):
-            st.session_state[SEASON_PICKS_KEY] = []
-            st.rerun()
-    else:
-        st.info("No picks logged yet.")

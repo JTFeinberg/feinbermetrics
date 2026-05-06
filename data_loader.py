@@ -5,6 +5,7 @@ import pandas as pd
 
 DATABASE_PATH = "schedules.db"
 CSV_PATH = "schedules.csv"
+PITCHER_FIP_CSV_PATH = "pitcher_fip.csv"
 
 
 def load_games() -> pd.DataFrame:
@@ -13,6 +14,13 @@ def load_games() -> pd.DataFrame:
     if os.path.exists(CSV_PATH):
         return _load_from_csv()
     return pd.DataFrame()
+
+
+def load_pitcher_fip() -> dict[int, float]:
+    if not os.path.exists(PITCHER_FIP_CSV_PATH):
+        return {}
+    data = pd.read_csv(PITCHER_FIP_CSV_PATH)
+    return dict(zip(data["pitcher_id"].astype(int), data["fip"].astype(float)))
 
 
 def _load_from_database() -> pd.DataFrame:

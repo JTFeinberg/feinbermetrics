@@ -13,6 +13,6 @@ export:
 
 push:
 	@echo "Pushing to GitHub..."
-	git add schedules.csv
+	git add schedules.csv pitcher_fip.csv
 	git commit -m "Refresh schedule data $$(date +%Y-%m-%d)"
 	git push origin main
