@@ -11,6 +11,10 @@ FANGRAPHS_SCHEDULE_URL = "https://www.fangraphs.com/api/scores/season-schedule"
 FANGRAPHS_PITCHER_URL = "https://www.fangraphs.com/api/leaders/major-league/data"
 FANGRAPHS_BASE_URL = "https://www.fangraphs.com/scores/season-schedule-and-results"
 FANGRAPHS_LEADERBOARD_PAGE = "https://www.fangraphs.com/leaders/major-league"
+HTML_ACCEPT = (
+    "text/html,application/xhtml+xml,application/xml;q=0.9,"
+    "image/avif,image/webp,image/apng,*/*;q=0.8"
+)
 SEASON = 2026
 TEAM_ID_MIN = 1
 TEAM_ID_MAX = 30
@@ -74,13 +78,14 @@ def create_session() -> requests.Session:
 def fetch_pitcher_fip(session: requests.Session) -> dict[int, float]:
     """
     Pulls season FIP for every pitcher from the FanGraphs leaderboard.
-    The leaderboard API requires a separate Cloudflare warmup against the
-    leaderboard page — a different Cloudflare zone from the schedule page.
+    Warmup uses HTML Accept headers so Cloudflare treats it as a real browser
+    page load rather than a script hitting an API endpoint directly.
     """
-    session.get(FANGRAPHS_LEADERBOARD_PAGE, timeout=REQUEST_TIMEOUT_SECONDS)
-    time.sleep(1.0)
+    html_headers = {**dict(session.headers), "Accept": HTML_ACCEPT}
+    session.get(FANGRAPHS_LEADERBOARD_PAGE, headers=html_headers, timeout=REQUEST_TIMEOUT_SECONDS)
+    time.sleep(2.0)
 
-    leaderboard_headers = {**session.headers, "Referer": FANGRAPHS_LEADERBOARD_PAGE}
+    leaderboard_headers = {**dict(session.headers), "Referer": FANGRAPHS_LEADERBOARD_PAGE}
     response = session.get(
         FANGRAPHS_PITCHER_URL,
         params=PITCHER_LEADERBOARD_PARAMS,
