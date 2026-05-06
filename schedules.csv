@@ -35,25 +35,25 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260497,1,Angels,2026-05-02,Angels,Mets,1,NYM,0.4826,W,4-3,2026-04-27,Reid Detmers,Nolan McLean,0
 20260510,1,Angels,2026-05-03,Angels,Mets,1,NYM,0.4439,L,1-5,2026-04-27,Jack Kochanowicz,Clay Holmes,0
 20260523,1,Angels,2026-05-04,Angels,White Sox,1,CHW,0.5947,L,0-6,2026-05-04,José Soriano,Davis Martin,0
-20260537,1,Angels,2026-05-05,Angels,White Sox,1,CHW,0.5378,,,2026-05-04,Sam Aldegheri,Erick Fedde,0
-20260546,1,Angels,2026-05-06,Angels,White Sox,1,CHW,0.4903,,,2026-05-04,Walbert Urena,Noah Schultz,0
-20260568,1,Angels,2026-05-08,Blue Jays,Angels,0,TOR,0.379,,,2026-05-04,Reid Detmers,Dylan Cease,0
-20260580,1,Angels,2026-05-09,Blue Jays,Angels,0,TOR,0.3402,,,2026-05-04,Jack Kochanowicz,Trey Yesavage,0
-20260599,1,Angels,2026-05-10,Blue Jays,Angels,0,TOR,0.482,,,2026-05-04,José Soriano,Eric Lauer,0
-20260610,1,Angels,2026-05-11,Guardians,Angels,0,CLE,0.3611,,,2026-05-11,Sam Aldegheri,Joey Cantillo,0
-20260616,1,Angels,2026-05-12,Guardians,Angels,0,CLE,0.4118,,,2026-05-11,Walbert Urena,Slade Cecconi,0
-20260631,1,Angels,2026-05-13,Guardians,Angels,0,CLE,0.4487,,,2026-05-11,Reid Detmers,Parker Messick,0
-20260669,1,Angels,2026-05-15,Angels,Dodgers,1,LAD,0.3695,,,2026-05-11,Jack Kochanowicz,Blake Snell,0
-20260685,1,Angels,2026-05-16,Angels,Dodgers,1,LAD,0.4927,,,2026-05-11,José Soriano,Justin Wrobleski,0
-20260700,1,Angels,2026-05-17,Angels,Dodgers,1,LAD,0.3255,,,2026-05-11,Sam Aldegheri,Yoshinobu Yamamoto,0
-20260712,1,Angels,2026-05-18,Angels,Athletics,1,ATH,0.4421,,,2026-05-18,Walbert Urena,J.T. Ginn,0
-20260727,1,Angels,2026-05-19,Angels,Athletics,1,ATH,0.5357,,,2026-05-18,Reid Detmers,Jacob Lopez,0
-20260745,1,Angels,2026-05-20,Angels,Athletics,1,ATH,0.4754,,,2026-05-18,Jack Kochanowicz,Aaron Civale,0
-20260751,1,Angels,2026-05-21,Angels,Athletics,1,ATH,0.5318,,,2026-05-18,José Soriano,Luis Severino,0
-20260764,1,Angels,2026-05-22,Angels,Rangers,1,TEX,0.3958,,,2026-05-18,Sam Aldegheri,Jacob deGrom,0
-20260781,1,Angels,2026-05-23,Angels,Rangers,1,TEX,0.4395,,,2026-05-18,Walbert Urena,Nathan Eovaldi,0
-20260797,1,Angels,2026-05-24,Angels,Rangers,1,TEX,0.5152,,,2026-05-18,Reid Detmers,MacKenzie Gore,0
-20260814,1,Angels,2026-05-26,Tigers,Angels,0,DET,,,,2026-05-25,,,0
+20260537,1,Angels,2026-05-05,Angels,White Sox,1,CHW,0.5555,W,4-3,2026-05-04,Sam Aldegheri,Erick Fedde,0
+20260546,1,Angels,2026-05-06,Angels,White Sox,1,CHW,0.4898,,,2026-05-04,Walbert Urena,Noah Schultz,0
+20260568,1,Angels,2026-05-08,Blue Jays,Angels,0,TOR,0.3802,,,2026-05-04,Reid Detmers,Dylan Cease,0
+20260580,1,Angels,2026-05-09,Blue Jays,Angels,0,TOR,0.3412,,,2026-05-04,Jack Kochanowicz,Trey Yesavage,0
+20260599,1,Angels,2026-05-10,Blue Jays,Angels,0,TOR,0.4839,,,2026-05-04,José Soriano,Eric Lauer,0
+20260610,1,Angels,2026-05-11,Guardians,Angels,0,CLE,0.3631,,,2026-05-11,Sam Aldegheri,Joey Cantillo,0
+20260616,1,Angels,2026-05-12,Guardians,Angels,0,CLE,0.4126,,,2026-05-11,Walbert Urena,Slade Cecconi,0
+20260631,1,Angels,2026-05-13,Guardians,Angels,0,CLE,0.451,,,2026-05-11,Reid Detmers,Parker Messick,0
+20260669,1,Angels,2026-05-15,Angels,Dodgers,1,LAD,0.3706,,,2026-05-11,Jack Kochanowicz,Blake Snell,0
+20260685,1,Angels,2026-05-16,Angels,Dodgers,1,LAD,0.4944,,,2026-05-11,José Soriano,Justin Wrobleski,0
+20260700,1,Angels,2026-05-17,Angels,Dodgers,1,LAD,0.3262,,,2026-05-11,Sam Aldegheri,Yoshinobu Yamamoto,0
+20260712,1,Angels,2026-05-18,Angels,Athletics,1,ATH,0.4429,,,2026-05-18,Walbert Urena,J.T. Ginn,0
+20260727,1,Angels,2026-05-19,Angels,Athletics,1,ATH,0.5379,,,2026-05-18,Reid Detmers,Jacob Lopez,0
+20260745,1,Angels,2026-05-20,Angels,Athletics,1,ATH,0.4778,,,2026-05-18,Jack Kochanowicz,Aaron Civale,0
+20260751,1,Angels,2026-05-21,Angels,Athletics,1,ATH,0.5365,,,2026-05-18,José Soriano,Luis Severino,0
+20260764,1,Angels,2026-05-22,Angels,Rangers,1,TEX,0.4,,,2026-05-18,Sam Aldegheri,Jacob deGrom,0
+20260781,1,Angels,2026-05-23,Angels,Rangers,1,TEX,0.4396,,,2026-05-18,Walbert Urena,Nathan Eovaldi,0
+20260797,1,Angels,2026-05-24,Angels,Rangers,1,TEX,0.5169,,,2026-05-18,Reid Detmers,MacKenzie Gore,0
+20260814,1,Angels,2026-05-26,Tigers,Angels,0,DET,0.3488,,,2026-05-25,Jack Kochanowicz,Framber Valdez,0
 20260834,1,Angels,2026-05-27,Tigers,Angels,0,DET,,,,2026-05-25,,,0
 20260841,1,Angels,2026-05-28,Tigers,Angels,0,DET,,,,2026-05-25,,,0
 20260853,1,Angels,2026-05-29,Rays,Angels,0,TBR,,,,2026-05-25,,,0
@@ -190,32 +190,32 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260394,2,Orioles,2026-04-25,Orioles,Red Sox,1,BOS,0.4926,L,1-17,2026-04-20,Trevor Rogers,Garrett Crochet,0
 20260408,2,Orioles,2026-04-26,Orioles,Red Sox,1,BOS,0.5766,L,3-5,2026-04-20,Kyle Bradish,Connelly Early,0
 20260431,2,Orioles,2026-04-28,Orioles,Astros,1,HOU,0.5476,W,5-3,2026-04-27,Shane Baz,Kai-Wei Teng,0
-20260452,2,Orioles,2026-04-30,Orioles,Astros,1,HOU,0.5441,L,5-11,2026-04-27,Brandon Young,Lance McCullers Jr.,2
 20260461,2,Orioles,2026-04-30,Orioles,Astros,1,HOU,0.5501,W,10-3,2026-04-27,Chris Bassitt,Peter Lambert,1
+20260452,2,Orioles,2026-04-30,Orioles,Astros,1,HOU,0.5441,L,5-11,2026-04-27,Brandon Young,Lance McCullers Jr.,2
 20260473,2,Orioles,2026-05-01,Yankees,Orioles,0,NYY,0.4155,L,2-7,2026-04-27,Cade Povich,Will Warren,0
 20260484,2,Orioles,2026-05-02,Yankees,Orioles,0,NYY,0.4546,L,4-9,2026-04-27,Kyle Bradish,Ryan Weathers,0
 20260503,2,Orioles,2026-05-03,Yankees,Orioles,0,NYY,0.3631,L,3-11,2026-04-27,Trey Gibson,Max Fried,0
 20260517,2,Orioles,2026-05-04,Yankees,Orioles,0,NYY,0.3864,L,1-12,2026-05-04,Shane Baz,Cam Schlittler,0
-20260529,2,Orioles,2026-05-05,Marlins,Orioles,0,MIA,0.4614,,,2026-05-04,Chris Bassitt,Sandy Alcantara,0
-20260550,2,Orioles,2026-05-06,Marlins,Orioles,0,MIA,0.4472,,,2026-05-04,Brandon Young,Eury Pérez,0
-20260562,2,Orioles,2026-05-07,Marlins,Orioles,0,MIA,0.4735,,,2026-05-04,Cade Povich,Max Meyer,0
-20260567,2,Orioles,2026-05-08,Orioles,Athletics,1,ATH,0.5906,,,2026-05-04,Kyle Bradish,Jacob Lopez,0
-20260581,2,Orioles,2026-05-09,Orioles,Athletics,1,ATH,0.5678,,,2026-05-04,Shane Baz,Aaron Civale,0
-20260596,2,Orioles,2026-05-10,Orioles,Athletics,1,ATH,0.5282,,,2026-05-04,Chris Bassitt,Luis Severino,0
-20260611,2,Orioles,2026-05-11,Orioles,Yankees,1,NYY,0.5023,,,2026-05-11,Trevor Rogers,Will Warren,0
-20260617,2,Orioles,2026-05-12,Orioles,Yankees,1,NYY,0.462,,,2026-05-11,Brandon Young,Ryan Weathers,0
+20260529,2,Orioles,2026-05-05,Marlins,Orioles,0,MIA,0.4558,W,9-7,2026-05-04,Chris Bassitt,Sandy Alcantara,0
+20260550,2,Orioles,2026-05-06,Marlins,Orioles,0,MIA,0.447,,,2026-05-04,Brandon Young,Eury Pérez,0
+20260562,2,Orioles,2026-05-07,Marlins,Orioles,0,MIA,0.4734,,,2026-05-04,Cade Povich,Max Meyer,0
+20260567,2,Orioles,2026-05-08,Orioles,Athletics,1,ATH,0.5925,,,2026-05-04,Kyle Bradish,Jacob Lopez,0
+20260581,2,Orioles,2026-05-09,Orioles,Athletics,1,ATH,0.5703,,,2026-05-04,Shane Baz,Aaron Civale,0
+20260596,2,Orioles,2026-05-10,Orioles,Athletics,1,ATH,0.5323,,,2026-05-04,Chris Bassitt,Luis Severino,0
+20260611,2,Orioles,2026-05-11,Orioles,Yankees,1,NYY,0.5035,,,2026-05-11,Trevor Rogers,Will Warren,0
+20260617,2,Orioles,2026-05-12,Orioles,Yankees,1,NYY,0.4599,,,2026-05-11,Brandon Young,Ryan Weathers,0
 20260632,2,Orioles,2026-05-13,Orioles,Yankees,1,NYY,0.4724,,,2026-05-11,Kyle Bradish,Max Fried,0
-20260659,2,Orioles,2026-05-15,Nationals,Orioles,0,WSN,0.5767,,,2026-05-11,Shane Baz,Zack Littell,0
-20260675,2,Orioles,2026-05-16,Nationals,Orioles,0,WSN,0.4823,,,2026-05-11,Chris Bassitt,Cade Cavalli,0
-20260688,2,Orioles,2026-05-17,Nationals,Orioles,0,WSN,0.5994,,,2026-05-11,Trevor Rogers,Miles Mikolas,0
-20260704,2,Orioles,2026-05-18,Rays,Orioles,0,TBR,0.4232,,,2026-05-18,Brandon Young,Joe Boyle,0
-20260719,2,Orioles,2026-05-19,Rays,Orioles,0,TBR,0.5242,,,2026-05-18,Kyle Bradish,Steven Matz,0
-20260732,2,Orioles,2026-05-20,Rays,Orioles,0,TBR,0.4812,,,2026-05-18,Shane Baz,Nick Martinez,0
-20260760,2,Orioles,2026-05-22,Orioles,Tigers,1,DET,0.5479,,,2026-05-18,Chris Bassitt,Jack Flaherty,0
-20260771,2,Orioles,2026-05-23,Orioles,Tigers,1,DET,0.6015,,,2026-05-18,Trevor Rogers,Justin Verlander,0
-20260784,2,Orioles,2026-05-24,Orioles,Tigers,1,DET,0.5692,,,2026-05-18,Dean Kremer,Keider Montero,0
-20260798,2,Orioles,2026-05-25,Orioles,Rays,1,TBR,0.6042,,,2026-05-25,Kyle Bradish,Steven Matz,0
-20260812,2,Orioles,2026-05-26,Orioles,Rays,1,TBR,,,,2026-05-25,,,0
+20260659,2,Orioles,2026-05-15,Nationals,Orioles,0,WSN,0.5781,,,2026-05-11,Shane Baz,Zack Littell,0
+20260675,2,Orioles,2026-05-16,Nationals,Orioles,0,WSN,0.4861,,,2026-05-11,Chris Bassitt,Cade Cavalli,0
+20260688,2,Orioles,2026-05-17,Nationals,Orioles,0,WSN,0.6003,,,2026-05-11,Trevor Rogers,Miles Mikolas,0
+20260704,2,Orioles,2026-05-18,Rays,Orioles,0,TBR,0.4796,,,2026-05-18,Brandon Young,Jesse Scholtens,0
+20260719,2,Orioles,2026-05-19,Rays,Orioles,0,TBR,0.5007,,,2026-05-18,Kyle Bradish,Joe Boyle,0
+20260732,2,Orioles,2026-05-20,Rays,Orioles,0,TBR,0.4921,,,2026-05-18,Shane Baz,Nick Martinez,0
+20260760,2,Orioles,2026-05-22,Orioles,Tigers,1,DET,0.5471,,,2026-05-18,Chris Bassitt,Jack Flaherty,0
+20260771,2,Orioles,2026-05-23,Orioles,Tigers,1,DET,0.6004,,,2026-05-18,Trevor Rogers,Justin Verlander,0
+20260784,2,Orioles,2026-05-24,Orioles,Tigers,1,DET,0.5688,,,2026-05-18,Dean Kremer,Keider Montero,0
+20260798,2,Orioles,2026-05-25,Orioles,Rays,1,TBR,0.5807,,,2026-05-25,Kyle Bradish,Joe Boyle,0
+20260812,2,Orioles,2026-05-26,Orioles,Rays,1,TBR,0.5721,,,2026-05-25,Shane Baz,Nick Martinez,0
 20260832,2,Orioles,2026-05-27,Orioles,Rays,1,TBR,,,,2026-05-25,,,0
 20260844,2,Orioles,2026-05-28,Orioles,Blue Jays,1,TOR,,,,2026-05-25,,,0
 20260850,2,Orioles,2026-05-29,Orioles,Blue Jays,1,TOR,,,,2026-05-25,,,0
@@ -358,25 +358,25 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260490,3,Red Sox,2026-05-02,Red Sox,Astros,1,HOU,0.5579,L,3-6,2026-04-27,Connelly Early,Spencer Arrighetti,0
 20260501,3,Red Sox,2026-05-03,Red Sox,Astros,1,HOU,0.5946,L,1-3,2026-04-27,Ranger Suarez,Cody Bolton,0
 20260515,3,Red Sox,2026-05-04,Tigers,Red Sox,0,DET,0.4591,W,5-4,2026-05-04,Payton Tolle,Tyler Holton,0
-20260526,3,Red Sox,2026-05-05,Tigers,Red Sox,0,DET,0.4445,,,2026-05-04,Jovani Morán,Framber Valdez,0
-20260548,3,Red Sox,2026-05-06,Tigers,Red Sox,0,DET,0.4927,,,2026-05-04,Sonny Gray,Jack Flaherty,0
-20260563,3,Red Sox,2026-05-07,Red Sox,Rays,1,TBR,0.5834,,,2026-05-04,Connelly Early,Jesse Scholtens,0
-20260570,3,Red Sox,2026-05-08,Red Sox,Rays,1,TBR,0.5897,,,2026-05-04,Ranger Suarez,Steven Matz,0
-20260583,3,Red Sox,2026-05-09,Red Sox,Rays,1,TBR,0.567,,,2026-05-04,Payton Tolle,Nick Martinez,0
-20260598,3,Red Sox,2026-05-10,Red Sox,Rays,1,TBR,0.4881,,,2026-05-04,Brayan Bello,Drew Rasmussen,0
-20260620,3,Red Sox,2026-05-12,Red Sox,Phillies,1,PHI,0.5255,,,2026-05-11,Garrett Crochet,Zack Wheeler,0
+20260526,3,Red Sox,2026-05-05,Tigers,Red Sox,0,DET,0.4376,W,10-3,2026-05-04,Jovani Morán,Framber Valdez,0
+20260548,3,Red Sox,2026-05-06,Tigers,Red Sox,0,DET,0.4917,,,2026-05-04,Sonny Gray,Jack Flaherty,0
+20260563,3,Red Sox,2026-05-07,Red Sox,Rays,1,TBR,0.5916,,,2026-05-04,Connelly Early,Jesse Scholtens,0
+20260570,3,Red Sox,2026-05-08,Red Sox,Rays,1,TBR,0.518,,,2026-05-04,Ranger Suarez,Griffin Jax,0
+20260583,3,Red Sox,2026-05-09,Red Sox,Rays,1,TBR,0.5771,,,2026-05-04,Payton Tolle,Nick Martinez,0
+20260598,3,Red Sox,2026-05-10,Red Sox,Rays,1,TBR,0.5024,,,2026-05-04,Brayan Bello,Drew Rasmussen,0
+20260620,3,Red Sox,2026-05-12,Red Sox,Phillies,1,PHI,0.5252,,,2026-05-11,Garrett Crochet,Zack Wheeler,0
 20260635,3,Red Sox,2026-05-13,Red Sox,Phillies,1,PHI,0.5689,,,2026-05-11,Sonny Gray,Andrew Painter,0
 20260653,3,Red Sox,2026-05-14,Red Sox,Phillies,1,PHI,0.4854,,,2026-05-11,Connelly Early,Jesús Luzardo,0
-20260662,3,Red Sox,2026-05-15,Braves,Red Sox,0,ATL,0.4268,,,2026-05-11,Ranger Suarez,Spencer Strider,0
-20260683,3,Red Sox,2026-05-16,Braves,Red Sox,0,ATL,0.4763,,,2026-05-11,Payton Tolle,JR Ritchie,0
-20260690,3,Red Sox,2026-05-17,Braves,Red Sox,0,ATL,0.4144,,,2026-05-11,Brayan Bello,Bryce Elder,0
-20260709,3,Red Sox,2026-05-18,Royals,Red Sox,0,KCR,0.5531,,,2026-05-18,Garrett Crochet,Seth Lugo,0
-20260723,3,Red Sox,2026-05-19,Royals,Red Sox,0,KCR,0.4538,,,2026-05-18,Sonny Gray,Kris Bubic,0
-20260742,3,Red Sox,2026-05-20,Royals,Red Sox,0,KCR,0.4834,,,2026-05-18,Connelly Early,Michael Wacha,0
-20260758,3,Red Sox,2026-05-22,Red Sox,Twins,1,MIN,0.5844,,,2026-05-18,Ranger Suarez,Taj Bradley,0
-20260776,3,Red Sox,2026-05-23,Red Sox,Twins,1,MIN,0.5441,,,2026-05-18,Brayan Bello,Bailey Ober,0
-20260786,3,Red Sox,2026-05-24,Red Sox,Twins,1,MIN,0.6702,,,2026-05-18,Garrett Crochet,Simeon Woods Richardson,0
-20260815,3,Red Sox,2026-05-26,Red Sox,Braves,1,ATL,,,,2026-05-25,,,0
+20260662,3,Red Sox,2026-05-15,Braves,Red Sox,0,ATL,0.4259,,,2026-05-11,Ranger Suarez,Spencer Strider,0
+20260683,3,Red Sox,2026-05-16,Braves,Red Sox,0,ATL,0.4755,,,2026-05-11,Payton Tolle,JR Ritchie,0
+20260690,3,Red Sox,2026-05-17,Braves,Red Sox,0,ATL,0.4155,,,2026-05-11,Brayan Bello,Bryce Elder,0
+20260709,3,Red Sox,2026-05-18,Royals,Red Sox,0,KCR,0.5539,,,2026-05-18,Garrett Crochet,Seth Lugo,0
+20260723,3,Red Sox,2026-05-19,Royals,Red Sox,0,KCR,0.455,,,2026-05-18,Sonny Gray,Kris Bubic,0
+20260742,3,Red Sox,2026-05-20,Royals,Red Sox,0,KCR,0.4842,,,2026-05-18,Connelly Early,Michael Wacha,0
+20260758,3,Red Sox,2026-05-22,Red Sox,Twins,1,MIN,0.5804,,,2026-05-18,Ranger Suarez,Taj Bradley,0
+20260776,3,Red Sox,2026-05-23,Red Sox,Twins,1,MIN,0.5477,,,2026-05-18,Brayan Bello,Bailey Ober,0
+20260786,3,Red Sox,2026-05-24,Red Sox,Twins,1,MIN,0.6701,,,2026-05-18,Garrett Crochet,Simeon Woods Richardson,0
+20260815,3,Red Sox,2026-05-26,Red Sox,Braves,1,ATL,0.4958,,,2026-05-25,Sonny Gray,Spencer Strider,0
 20260835,3,Red Sox,2026-05-27,Red Sox,Braves,1,ATL,,,,2026-05-25,,,0
 20260843,3,Red Sox,2026-05-28,Red Sox,Braves,1,ATL,,,,2026-05-25,,,0
 20260852,3,Red Sox,2026-05-29,Guardians,Red Sox,0,CLE,,,,2026-05-25,,,0
@@ -520,25 +520,25 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260496,4,White Sox,2026-05-02,Padres,White Sox,0,SDP,0.3475,W,4-0,2026-04-27,Sean Burke,Michael King,0
 20260512,4,White Sox,2026-05-03,Padres,White Sox,0,SDP,0.3935,L,3-4,2026-04-27,Anthony Kay,Griffin Canning,0
 20260523,4,White Sox,2026-05-04,Angels,White Sox,0,LAA,0.4053,W,6-0,2026-05-04,Davis Martin,José Soriano,0
-20260537,4,White Sox,2026-05-05,Angels,White Sox,0,LAA,0.4622,,,2026-05-04,Erick Fedde,Sam Aldegheri,0
-20260546,4,White Sox,2026-05-06,Angels,White Sox,0,LAA,0.5097,,,2026-05-04,Noah Schultz,Walbert Urena,0
-20260574,4,White Sox,2026-05-08,White Sox,Mariners,1,SEA,0.4724,,,2026-05-04,Sean Burke,Emerson Hancock,0
-20260590,4,White Sox,2026-05-09,White Sox,Mariners,1,SEA,0.4442,,,2026-05-04,Anthony Kay,Luis Castillo,0
-20260603,4,White Sox,2026-05-10,White Sox,Mariners,1,SEA,0.4484,,,2026-05-04,Davis Martin,Logan Gilbert,0
-20260624,4,White Sox,2026-05-12,White Sox,Royals,1,KCR,0.413,,,2026-05-11,Erick Fedde,Cole Ragans,0
-20260639,4,White Sox,2026-05-13,White Sox,Royals,1,KCR,0.5082,,,2026-05-11,Noah Schultz,Seth Lugo,0
-20260655,4,White Sox,2026-05-14,White Sox,Royals,1,KCR,0.4552,,,2026-05-11,Sean Burke,Kris Bubic,0
-20260664,4,White Sox,2026-05-15,White Sox,Cubs,1,CHC,0.4307,,,2026-05-11,Anthony Kay,Edward Cabrera,0
-20260680,4,White Sox,2026-05-16,White Sox,Cubs,1,CHC,0.5318,,,2026-05-11,Davis Martin,Jameson Taillon,0
-20260695,4,White Sox,2026-05-17,White Sox,Cubs,1,CHC,0.4449,,,2026-05-11,Erick Fedde,Colin Rea,0
-20260714,4,White Sox,2026-05-18,Mariners,White Sox,0,SEA,0.4119,,,2026-05-18,Noah Schultz,Bryce Miller,0
-20260729,4,White Sox,2026-05-19,Mariners,White Sox,0,SEA,0.376,,,2026-05-18,Sean Burke,Luis Castillo,0
-20260736,4,White Sox,2026-05-20,Mariners,White Sox,0,SEA,0.328,,,2026-05-18,Anthony Kay,Logan Gilbert,0
-20260767,4,White Sox,2026-05-22,Giants,White Sox,0,SFG,0.3825,,,2026-05-18,Davis Martin,Logan Webb,0
-20260773,4,White Sox,2026-05-23,Giants,White Sox,0,SFG,0.4017,,,2026-05-18,Erick Fedde,Adrian Houser,0
-20260793,4,White Sox,2026-05-24,Giants,White Sox,0,SFG,0.4389,,,2026-05-18,Noah Schultz,Robbie Ray,0
-20260800,4,White Sox,2026-05-25,White Sox,Twins,1,MIN,0.503,,,2026-05-25,Sean Burke,Mick Abel,0
-20260818,4,White Sox,2026-05-26,White Sox,Twins,1,MIN,,,,2026-05-25,,,0
+20260537,4,White Sox,2026-05-05,Angels,White Sox,0,LAA,0.4445,L,3-4,2026-05-04,Erick Fedde,Sam Aldegheri,0
+20260546,4,White Sox,2026-05-06,Angels,White Sox,0,LAA,0.5102,,,2026-05-04,Noah Schultz,Walbert Urena,0
+20260574,4,White Sox,2026-05-08,White Sox,Mariners,1,SEA,0.4733,,,2026-05-04,Sean Burke,Emerson Hancock,0
+20260590,4,White Sox,2026-05-09,White Sox,Mariners,1,SEA,0.445,,,2026-05-04,Anthony Kay,Luis Castillo,0
+20260603,4,White Sox,2026-05-10,White Sox,Mariners,1,SEA,0.449,,,2026-05-04,Davis Martin,Logan Gilbert,0
+20260624,4,White Sox,2026-05-12,White Sox,Royals,1,KCR,0.4057,,,2026-05-11,Erick Fedde,Cole Ragans,0
+20260639,4,White Sox,2026-05-13,White Sox,Royals,1,KCR,0.5088,,,2026-05-11,Noah Schultz,Seth Lugo,0
+20260655,4,White Sox,2026-05-14,White Sox,Royals,1,KCR,0.4557,,,2026-05-11,Sean Burke,Kris Bubic,0
+20260664,4,White Sox,2026-05-15,White Sox,Cubs,1,CHC,0.43,,,2026-05-11,Anthony Kay,Edward Cabrera,0
+20260680,4,White Sox,2026-05-16,White Sox,Cubs,1,CHC,0.5332,,,2026-05-11,Davis Martin,Jameson Taillon,0
+20260695,4,White Sox,2026-05-17,White Sox,Cubs,1,CHC,0.4364,,,2026-05-11,Erick Fedde,Colin Rea,0
+20260714,4,White Sox,2026-05-18,Mariners,White Sox,0,SEA,0.4127,,,2026-05-18,Noah Schultz,Bryce Miller,0
+20260729,4,White Sox,2026-05-19,Mariners,White Sox,0,SEA,0.377,,,2026-05-18,Sean Burke,Luis Castillo,0
+20260736,4,White Sox,2026-05-20,Mariners,White Sox,0,SEA,0.3284,,,2026-05-18,Anthony Kay,Logan Gilbert,0
+20260767,4,White Sox,2026-05-22,Giants,White Sox,0,SFG,0.3833,,,2026-05-18,Davis Martin,Logan Webb,0
+20260773,4,White Sox,2026-05-23,Giants,White Sox,0,SFG,0.3935,,,2026-05-18,Erick Fedde,Adrian Houser,0
+20260793,4,White Sox,2026-05-24,Giants,White Sox,0,SFG,0.4395,,,2026-05-18,Noah Schultz,Robbie Ray,0
+20260800,4,White Sox,2026-05-25,White Sox,Twins,1,MIN,0.5025,,,2026-05-25,Sean Burke,Mick Abel,0
+20260818,4,White Sox,2026-05-26,White Sox,Twins,1,MIN,0.4401,,,2026-05-25,Anthony Kay,Joe Ryan,0
 20260837,4,White Sox,2026-05-27,White Sox,Twins,1,MIN,,,,2026-05-25,,,0
 20260842,4,White Sox,2026-05-28,White Sox,Twins,1,MIN,,,,2026-05-25,,,0
 20260855,4,White Sox,2026-05-29,White Sox,Tigers,1,DET,,,,2026-05-25,,,0
@@ -683,27 +683,27 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260487,5,Guardians,2026-05-02,Athletics,Guardians,0,ATH,0.4081,W,14-6,2026-04-27,Slade Cecconi,Jacob Lopez,0
 20260509,5,Guardians,2026-05-03,Athletics,Guardians,0,ATH,0.4891,L,1-7,2026-04-27,Parker Messick,Aaron Civale,0
 20260519,5,Guardians,2026-05-04,Royals,Guardians,0,KCR,0.4606,L,2-6,2026-05-04,Tanner Bibee,Michael Wacha,0
-20260533,5,Guardians,2026-05-05,Royals,Guardians,0,KCR,0.4896,,,2026-05-04,Gavin Williams,Stephen Kolek,0
-20260554,5,Guardians,2026-05-06,Royals,Guardians,0,KCR,0.4281,,,2026-05-04,Joey Cantillo,Cole Ragans,0
-20260558,5,Guardians,2026-05-07,Royals,Guardians,0,KCR,0.4268,,,2026-05-04,Slade Cecconi,Seth Lugo,0
-20260571,5,Guardians,2026-05-08,Guardians,Twins,1,MIN,0.5606,,,2026-05-04,Parker Messick,Connor Prielipp,0
-20260586,5,Guardians,2026-05-09,Guardians,Twins,1,MIN,0.5085,,,2026-05-04,Tanner Bibee,Joe Ryan,0
-20260601,5,Guardians,2026-05-10,Guardians,Twins,1,MIN,0.5614,,,2026-05-04,Gavin Williams,Taj Bradley,0
-20260610,5,Guardians,2026-05-11,Guardians,Angels,1,LAA,0.6389,,,2026-05-11,Joey Cantillo,Sam Aldegheri,0
-20260616,5,Guardians,2026-05-12,Guardians,Angels,1,LAA,0.5882,,,2026-05-11,Slade Cecconi,Walbert Urena,0
-20260631,5,Guardians,2026-05-13,Guardians,Angels,1,LAA,0.5513,,,2026-05-11,Parker Messick,Reid Detmers,0
-20260660,5,Guardians,2026-05-15,Guardians,Reds,1,CIN,0.5138,,,2026-05-11,Tanner Bibee,Chase Burns,0
-20260678,5,Guardians,2026-05-16,Guardians,Reds,1,CIN,0.5792,,,2026-05-11,Gavin Williams,Andrew Abbott,0
-20260692,5,Guardians,2026-05-17,Guardians,Reds,1,CIN,0.5767,,,2026-05-11,Joey Cantillo,Brady Singer,0
-20260702,5,Guardians,2026-05-18,Tigers,Guardians,0,DET,0.4491,,,2026-05-18,Slade Cecconi,Keider Montero,0
-20260717,5,Guardians,2026-05-19,Tigers,Guardians,0,DET,0.4948,,,2026-05-18,Parker Messick,Ty Madden,0
-20260738,5,Guardians,2026-05-20,Tigers,Guardians,0,DET,0.4182,,,2026-05-18,Tanner Bibee,Framber Valdez,0
-20260746,5,Guardians,2026-05-21,Tigers,Guardians,0,DET,0.4669,,,2026-05-18,Gavin Williams,Casey Mize,0
-20260755,5,Guardians,2026-05-22,Phillies,Guardians,0,PHI,0.3621,,,2026-05-18,Joey Cantillo,Cristopher Sánchez,0
-20260772,5,Guardians,2026-05-23,Phillies,Guardians,0,PHI,0.3217,,,2026-05-18,Slade Cecconi,Zack Wheeler,0
-20260785,5,Guardians,2026-05-24,Phillies,Guardians,0,PHI,0.4702,,,2026-05-18,Parker Messick,Andrew Painter,0
-20260804,5,Guardians,2026-05-25,Guardians,Nationals,1,WSN,0.642,,,2026-05-25,Tanner Bibee,Zack Littell,0
-20260811,5,Guardians,2026-05-26,Guardians,Nationals,1,WSN,,,,2026-05-25,,,0
+20260533,5,Guardians,2026-05-05,Royals,Guardians,0,KCR,0.4964,L,3-5,2026-05-04,Gavin Williams,Stephen Kolek,0
+20260554,5,Guardians,2026-05-06,Royals,Guardians,0,KCR,0.4275,,,2026-05-04,Joey Cantillo,Cole Ragans,0
+20260558,5,Guardians,2026-05-07,Royals,Guardians,0,KCR,0.426,,,2026-05-04,Slade Cecconi,Seth Lugo,0
+20260571,5,Guardians,2026-05-08,Guardians,Twins,1,MIN,0.559,,,2026-05-04,Parker Messick,Connor Prielipp,0
+20260586,5,Guardians,2026-05-09,Guardians,Twins,1,MIN,0.5069,,,2026-05-04,Tanner Bibee,Joe Ryan,0
+20260601,5,Guardians,2026-05-10,Guardians,Twins,1,MIN,0.553,,,2026-05-04,Gavin Williams,Taj Bradley,0
+20260610,5,Guardians,2026-05-11,Guardians,Angels,1,LAA,0.6369,,,2026-05-11,Joey Cantillo,Sam Aldegheri,0
+20260616,5,Guardians,2026-05-12,Guardians,Angels,1,LAA,0.5874,,,2026-05-11,Slade Cecconi,Walbert Urena,0
+20260631,5,Guardians,2026-05-13,Guardians,Angels,1,LAA,0.549,,,2026-05-11,Parker Messick,Reid Detmers,0
+20260660,5,Guardians,2026-05-15,Guardians,Reds,1,CIN,0.5136,,,2026-05-11,Tanner Bibee,Chase Burns,0
+20260678,5,Guardians,2026-05-16,Guardians,Reds,1,CIN,0.5772,,,2026-05-11,Gavin Williams,Andrew Abbott,0
+20260692,5,Guardians,2026-05-17,Guardians,Reds,1,CIN,0.5765,,,2026-05-11,Joey Cantillo,Brady Singer,0
+20260702,5,Guardians,2026-05-18,Tigers,Guardians,0,DET,0.4466,,,2026-05-18,Slade Cecconi,Keider Montero,0
+20260717,5,Guardians,2026-05-19,Tigers,Guardians,0,DET,0.4933,,,2026-05-18,Parker Messick,Ty Madden,0
+20260738,5,Guardians,2026-05-20,Tigers,Guardians,0,DET,0.4221,,,2026-05-18,Tanner Bibee,Framber Valdez,0
+20260746,5,Guardians,2026-05-21,Tigers,Guardians,0,DET,0.4614,,,2026-05-18,Gavin Williams,Casey Mize,0
+20260755,5,Guardians,2026-05-22,Phillies,Guardians,0,PHI,0.3564,,,2026-05-18,Joey Cantillo,Cristopher Sánchez,0
+20260772,5,Guardians,2026-05-23,Phillies,Guardians,0,PHI,0.32,,,2026-05-18,Slade Cecconi,Zack Wheeler,0
+20260785,5,Guardians,2026-05-24,Phillies,Guardians,0,PHI,0.4685,,,2026-05-18,Parker Messick,Andrew Painter,0
+20260804,5,Guardians,2026-05-25,Guardians,Nationals,1,WSN,0.6412,,,2026-05-25,Tanner Bibee,Zack Littell,0
+20260811,5,Guardians,2026-05-26,Guardians,Nationals,1,WSN,0.5734,,,2026-05-25,Gavin Williams,Cade Cavalli,0
 20260827,5,Guardians,2026-05-27,Guardians,Nationals,1,WSN,,,,2026-05-25,,,0
 20260852,5,Guardians,2026-05-29,Guardians,Red Sox,1,BOS,,,,2026-05-25,,,0
 20260868,5,Guardians,2026-05-30,Guardians,Red Sox,1,BOS,,,,2026-05-25,,,0
@@ -845,25 +845,25 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260493,6,Tigers,2026-05-02,Tigers,Rangers,1,TEX,0.5421,W,5-1,2026-04-27,Keider Montero,Kumar Rocker,0
 20260513,6,Tigers,2026-05-03,Tigers,Rangers,1,TEX,0.5812,W,7-1,2026-04-27,Tyler Holton,Jack Leiter,0
 20260515,6,Tigers,2026-05-04,Tigers,Red Sox,1,BOS,0.5409,L,4-5,2026-05-04,Tyler Holton,Payton Tolle,0
-20260526,6,Tigers,2026-05-05,Tigers,Red Sox,1,BOS,0.5555,,,2026-05-04,Framber Valdez,Jovani Morán,0
-20260548,6,Tigers,2026-05-06,Tigers,Red Sox,1,BOS,0.5073,,,2026-05-04,Jack Flaherty,Sonny Gray,0
-20260573,6,Tigers,2026-05-08,Royals,Tigers,0,KCR,0.3983,,,2026-05-04,Keider Montero,Kris Bubic,0
-20260588,6,Tigers,2026-05-09,Royals,Tigers,0,KCR,0.4381,,,2026-05-04,Ty Madden,Michael Wacha,0
-20260609,6,Tigers,2026-05-10,Royals,Tigers,0,KCR,0.5179,,,2026-05-04,Framber Valdez,Noah Cameron,0
-20260622,6,Tigers,2026-05-12,Mets,Tigers,0,NYM,0.3921,,,2026-05-11,Jack Flaherty,Freddy Peralta,0
-20260637,6,Tigers,2026-05-13,Mets,Tigers,0,NYM,0.3918,,,2026-05-11,Keider Montero,Christian Scott,0
-20260648,6,Tigers,2026-05-14,Mets,Tigers,0,NYM,0.3562,,,2026-05-11,Ty Madden,Nolan McLean,0
-20260658,6,Tigers,2026-05-15,Tigers,Blue Jays,1,TOR,0.5371,,,2026-05-11,Framber Valdez,Trey Yesavage,0
-20260672,6,Tigers,2026-05-16,Tigers,Blue Jays,1,TOR,0.5636,,,2026-05-11,Casey Mize,Eric Lauer,0
-20260691,6,Tigers,2026-05-17,Tigers,Blue Jays,1,TOR,0.4997,,,2026-05-11,Jack Flaherty,Kevin Gausman,0
-20260702,6,Tigers,2026-05-18,Tigers,Guardians,1,CLE,0.5509,,,2026-05-18,Keider Montero,Slade Cecconi,0
-20260717,6,Tigers,2026-05-19,Tigers,Guardians,1,CLE,0.5052,,,2026-05-18,Ty Madden,Parker Messick,0
-20260738,6,Tigers,2026-05-20,Tigers,Guardians,1,CLE,0.5818,,,2026-05-18,Framber Valdez,Tanner Bibee,0
-20260746,6,Tigers,2026-05-21,Tigers,Guardians,1,CLE,0.5331,,,2026-05-18,Casey Mize,Gavin Williams,0
-20260760,6,Tigers,2026-05-22,Orioles,Tigers,0,BAL,0.4521,,,2026-05-18,Jack Flaherty,Chris Bassitt,0
-20260771,6,Tigers,2026-05-23,Orioles,Tigers,0,BAL,0.3985,,,2026-05-18,Justin Verlander,Trevor Rogers,0
-20260784,6,Tigers,2026-05-24,Orioles,Tigers,0,BAL,0.4308,,,2026-05-18,Keider Montero,Dean Kremer,0
-20260814,6,Tigers,2026-05-26,Tigers,Angels,1,LAA,,,,2026-05-25,,,0
+20260526,6,Tigers,2026-05-05,Tigers,Red Sox,1,BOS,0.5624,L,3-10,2026-05-04,Framber Valdez,Jovani Morán,0
+20260548,6,Tigers,2026-05-06,Tigers,Red Sox,1,BOS,0.5083,,,2026-05-04,Jack Flaherty,Sonny Gray,0
+20260573,6,Tigers,2026-05-08,Royals,Tigers,0,KCR,0.4001,,,2026-05-04,Keider Montero,Kris Bubic,0
+20260588,6,Tigers,2026-05-09,Royals,Tigers,0,KCR,0.4388,,,2026-05-04,Ty Madden,Michael Wacha,0
+20260609,6,Tigers,2026-05-10,Royals,Tigers,0,KCR,0.5133,,,2026-05-04,Framber Valdez,Noah Cameron,0
+20260622,6,Tigers,2026-05-12,Mets,Tigers,0,NYM,0.39,,,2026-05-11,Jack Flaherty,Freddy Peralta,0
+20260637,6,Tigers,2026-05-13,Mets,Tigers,0,NYM,0.3893,,,2026-05-11,Keider Montero,Christian Scott,0
+20260648,6,Tigers,2026-05-14,Mets,Tigers,0,NYM,0.3528,,,2026-05-11,Ty Madden,Nolan McLean,0
+20260658,6,Tigers,2026-05-15,Tigers,Blue Jays,1,TOR,0.532,,,2026-05-11,Framber Valdez,Trey Yesavage,0
+20260672,6,Tigers,2026-05-16,Tigers,Blue Jays,1,TOR,0.5656,,,2026-05-11,Casey Mize,Eric Lauer,0
+20260691,6,Tigers,2026-05-17,Tigers,Blue Jays,1,TOR,0.5008,,,2026-05-11,Jack Flaherty,Kevin Gausman,0
+20260702,6,Tigers,2026-05-18,Tigers,Guardians,1,CLE,0.5534,,,2026-05-18,Keider Montero,Slade Cecconi,0
+20260717,6,Tigers,2026-05-19,Tigers,Guardians,1,CLE,0.5067,,,2026-05-18,Ty Madden,Parker Messick,0
+20260738,6,Tigers,2026-05-20,Tigers,Guardians,1,CLE,0.5779,,,2026-05-18,Framber Valdez,Tanner Bibee,0
+20260746,6,Tigers,2026-05-21,Tigers,Guardians,1,CLE,0.5386,,,2026-05-18,Casey Mize,Gavin Williams,0
+20260760,6,Tigers,2026-05-22,Orioles,Tigers,0,BAL,0.4529,,,2026-05-18,Jack Flaherty,Chris Bassitt,0
+20260771,6,Tigers,2026-05-23,Orioles,Tigers,0,BAL,0.3996,,,2026-05-18,Justin Verlander,Trevor Rogers,0
+20260784,6,Tigers,2026-05-24,Orioles,Tigers,0,BAL,0.4312,,,2026-05-18,Keider Montero,Dean Kremer,0
+20260814,6,Tigers,2026-05-26,Tigers,Angels,1,LAA,0.6512,,,2026-05-25,Framber Valdez,Jack Kochanowicz,0
 20260834,6,Tigers,2026-05-27,Tigers,Angels,1,LAA,,,,2026-05-25,,,0
 20260841,6,Tigers,2026-05-28,Tigers,Angels,1,LAA,,,,2026-05-25,,,0
 20260855,6,Tigers,2026-05-29,White Sox,Tigers,0,CHW,,,,2026-05-25,,,0
@@ -1006,26 +1006,26 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260498,7,Royals,2026-05-02,Mariners,Royals,0,SEA,0.4485,W,3-2,2026-04-27,Seth Lugo,Emerson Hancock,0
 20260511,7,Royals,2026-05-03,Mariners,Royals,0,SEA,0.4747,W,4-1,2026-04-27,Kris Bubic,Luis Castillo,0
 20260519,7,Royals,2026-05-04,Royals,Guardians,1,CLE,0.5394,W,6-2,2026-05-04,Michael Wacha,Tanner Bibee,0
-20260533,7,Royals,2026-05-05,Royals,Guardians,1,CLE,0.5104,,,2026-05-04,Stephen Kolek,Gavin Williams,0
-20260554,7,Royals,2026-05-06,Royals,Guardians,1,CLE,0.5719,,,2026-05-04,Cole Ragans,Joey Cantillo,0
-20260558,7,Royals,2026-05-07,Royals,Guardians,1,CLE,0.5732,,,2026-05-04,Seth Lugo,Slade Cecconi,0
-20260573,7,Royals,2026-05-08,Royals,Tigers,1,DET,0.6017,,,2026-05-04,Kris Bubic,Keider Montero,0
-20260588,7,Royals,2026-05-09,Royals,Tigers,1,DET,0.5619,,,2026-05-04,Michael Wacha,Ty Madden,0
-20260609,7,Royals,2026-05-10,Royals,Tigers,1,DET,0.4821,,,2026-05-04,Noah Cameron,Framber Valdez,0
-20260624,7,Royals,2026-05-12,White Sox,Royals,0,CHW,0.587,,,2026-05-11,Cole Ragans,Erick Fedde,0
-20260639,7,Royals,2026-05-13,White Sox,Royals,0,CHW,0.4918,,,2026-05-11,Seth Lugo,Noah Schultz,0
-20260655,7,Royals,2026-05-14,White Sox,Royals,0,CHW,0.5448,,,2026-05-11,Kris Bubic,Sean Burke,0
-20260667,7,Royals,2026-05-15,Cardinals,Royals,0,STL,0.4766,,,2026-05-11,Michael Wacha,Kyle Leahy,0
-20260673,7,Royals,2026-05-16,Cardinals,Royals,0,STL,0.4687,,,2026-05-11,Noah Cameron,Andre Pallante,0
-20260697,7,Royals,2026-05-17,Cardinals,Royals,0,STL,0.5304,,,2026-05-11,Cole Ragans,Matthew Liberatore,0
-20260709,7,Royals,2026-05-18,Royals,Red Sox,1,BOS,0.4469,,,2026-05-18,Seth Lugo,Garrett Crochet,0
-20260723,7,Royals,2026-05-19,Royals,Red Sox,1,BOS,0.5462,,,2026-05-18,Kris Bubic,Sonny Gray,0
-20260742,7,Royals,2026-05-20,Royals,Red Sox,1,BOS,0.5166,,,2026-05-18,Michael Wacha,Connelly Early,0
-20260762,7,Royals,2026-05-22,Royals,Mariners,1,SEA,0.4598,,,2026-05-18,Noah Cameron,George Kirby,0
-20260774,7,Royals,2026-05-23,Royals,Mariners,1,SEA,0.505,,,2026-05-18,Cole Ragans,Bryan Woo,0
-20260790,7,Royals,2026-05-24,Royals,Mariners,1,SEA,0.5236,,,2026-05-18,Seth Lugo,Bryce Miller,0
-20260801,7,Royals,2026-05-25,Royals,Yankees,1,NYY,0.479,,,2026-05-25,Kris Bubic,Cam Schlittler,0
-20260820,7,Royals,2026-05-26,Royals,Yankees,1,NYY,,,,2026-05-25,,,0
+20260533,7,Royals,2026-05-05,Royals,Guardians,1,CLE,0.5036,W,5-3,2026-05-04,Stephen Kolek,Gavin Williams,0
+20260554,7,Royals,2026-05-06,Royals,Guardians,1,CLE,0.5725,,,2026-05-04,Cole Ragans,Joey Cantillo,0
+20260558,7,Royals,2026-05-07,Royals,Guardians,1,CLE,0.574,,,2026-05-04,Seth Lugo,Slade Cecconi,0
+20260573,7,Royals,2026-05-08,Royals,Tigers,1,DET,0.5999,,,2026-05-04,Kris Bubic,Keider Montero,0
+20260588,7,Royals,2026-05-09,Royals,Tigers,1,DET,0.5612,,,2026-05-04,Michael Wacha,Ty Madden,0
+20260609,7,Royals,2026-05-10,Royals,Tigers,1,DET,0.4867,,,2026-05-04,Noah Cameron,Framber Valdez,0
+20260624,7,Royals,2026-05-12,White Sox,Royals,0,CHW,0.5943,,,2026-05-11,Cole Ragans,Erick Fedde,0
+20260639,7,Royals,2026-05-13,White Sox,Royals,0,CHW,0.4912,,,2026-05-11,Seth Lugo,Noah Schultz,0
+20260655,7,Royals,2026-05-14,White Sox,Royals,0,CHW,0.5443,,,2026-05-11,Kris Bubic,Sean Burke,0
+20260667,7,Royals,2026-05-15,Cardinals,Royals,0,STL,0.4494,,,2026-05-11,Michael Wacha,Dustin May,0
+20260673,7,Royals,2026-05-16,Cardinals,Royals,0,STL,0.4658,,,2026-05-11,Noah Cameron,Kyle Leahy,0
+20260697,7,Royals,2026-05-17,Cardinals,Royals,0,STL,0.5139,,,2026-05-11,Cole Ragans,Andre Pallante,0
+20260709,7,Royals,2026-05-18,Royals,Red Sox,1,BOS,0.4461,,,2026-05-18,Seth Lugo,Garrett Crochet,0
+20260723,7,Royals,2026-05-19,Royals,Red Sox,1,BOS,0.545,,,2026-05-18,Kris Bubic,Sonny Gray,0
+20260742,7,Royals,2026-05-20,Royals,Red Sox,1,BOS,0.5158,,,2026-05-18,Michael Wacha,Connelly Early,0
+20260762,7,Royals,2026-05-22,Royals,Mariners,1,SEA,0.4586,,,2026-05-18,Noah Cameron,George Kirby,0
+20260774,7,Royals,2026-05-23,Royals,Mariners,1,SEA,0.5052,,,2026-05-18,Cole Ragans,Bryan Woo,0
+20260790,7,Royals,2026-05-24,Royals,Mariners,1,SEA,0.5238,,,2026-05-18,Seth Lugo,Bryce Miller,0
+20260801,7,Royals,2026-05-25,Royals,Yankees,1,NYY,0.4777,,,2026-05-25,Kris Bubic,Cam Schlittler,0
+20260820,7,Royals,2026-05-26,Royals,Yankees,1,NYY,0.4711,,,2026-05-25,Michael Wacha,Carlos Rodón,0
 20260838,7,Royals,2026-05-27,Royals,Yankees,1,NYY,,,,2026-05-25,,,0
 20260856,7,Royals,2026-05-29,Rangers,Royals,0,TEX,,,,2026-05-25,,,0
 20260864,7,Royals,2026-05-30,Rangers,Royals,0,TEX,,,,2026-05-25,,,0
@@ -1168,26 +1168,26 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260477,8,Twins,2026-05-01,Twins,Blue Jays,1,TOR,0.5523,L,3-7,2026-04-27,Simeon Woods Richardson,Patrick Corbin,0
 20260485,8,Twins,2026-05-02,Twins,Blue Jays,1,TOR,0.4816,L,4-11,2026-04-27,Connor Prielipp,Dylan Cease,0
 20260499,8,Twins,2026-05-03,Twins,Blue Jays,1,TOR,0.5481,W,4-3,2026-04-27,Joe Ryan,Trey Yesavage,0
-20260530,8,Twins,2026-05-05,Nationals,Twins,0,WSN,0.473,,,2026-05-04,Taj Bradley,Cade Cavalli,0
-20260551,8,Twins,2026-05-06,Nationals,Twins,0,WSN,0.5558,,,2026-05-04,Bailey Ober,Miles Mikolas,0
-20260557,8,Twins,2026-05-07,Nationals,Twins,0,WSN,0.4929,,,2026-05-04,Simeon Woods Richardson,Jake Irvin,0
-20260571,8,Twins,2026-05-08,Guardians,Twins,0,CLE,0.4394,,,2026-05-04,Connor Prielipp,Parker Messick,0
-20260586,8,Twins,2026-05-09,Guardians,Twins,0,CLE,0.4915,,,2026-05-04,Joe Ryan,Tanner Bibee,0
-20260601,8,Twins,2026-05-10,Guardians,Twins,0,CLE,0.4386,,,2026-05-04,Taj Bradley,Gavin Williams,0
-20260625,8,Twins,2026-05-12,Twins,Marlins,1,MIA,0.525,,,2026-05-11,Bailey Ober,Eury Pérez,0
-20260640,8,Twins,2026-05-13,Twins,Marlins,1,MIA,0.4982,,,2026-05-11,Simeon Woods Richardson,Max Meyer,0
-20260649,8,Twins,2026-05-14,Twins,Marlins,1,MIA,0.5396,,,2026-05-11,Mick Abel,,0
-20260666,8,Twins,2026-05-15,Twins,Brewers,1,MIL,0.5472,,,2026-05-11,Joe Ryan,Logan Henderson,0
-20260681,8,Twins,2026-05-16,Twins,Brewers,1,MIL,0.5447,,,2026-05-11,Taj Bradley,Chad Patrick,0
-20260696,8,Twins,2026-05-17,Twins,Brewers,1,MIL,0.5282,,,2026-05-11,Bailey Ober,Brandon Sproat,0
-20260710,8,Twins,2026-05-18,Twins,Astros,1,HOU,0.4943,,,2026-05-18,Simeon Woods Richardson,Mike Burrows,0
-20260724,8,Twins,2026-05-19,Twins,Astros,1,HOU,0.515,,,2026-05-18,Mick Abel,Tatsuya Imai,0
-20260733,8,Twins,2026-05-20,Twins,Astros,1,HOU,0.579,,,2026-05-18,Joe Ryan,Spencer Arrighetti,0
-20260758,8,Twins,2026-05-22,Red Sox,Twins,0,BOS,0.4156,,,2026-05-18,Taj Bradley,Ranger Suarez,0
-20260776,8,Twins,2026-05-23,Red Sox,Twins,0,BOS,0.4559,,,2026-05-18,Bailey Ober,Brayan Bello,0
-20260786,8,Twins,2026-05-24,Red Sox,Twins,0,BOS,0.3298,,,2026-05-18,Simeon Woods Richardson,Garrett Crochet,0
-20260800,8,Twins,2026-05-25,White Sox,Twins,0,CHW,0.497,,,2026-05-25,Mick Abel,Sean Burke,0
-20260818,8,Twins,2026-05-26,White Sox,Twins,0,CHW,,,,2026-05-25,,,0
+20260530,8,Twins,2026-05-05,Nationals,Twins,0,WSN,0.479,W,11-3,2026-05-04,Taj Bradley,Cade Cavalli,0
+20260551,8,Twins,2026-05-06,Nationals,Twins,0,WSN,0.5566,,,2026-05-04,Bailey Ober,Miles Mikolas,0
+20260557,8,Twins,2026-05-07,Nationals,Twins,0,WSN,0.4934,,,2026-05-04,Simeon Woods Richardson,Jake Irvin,0
+20260571,8,Twins,2026-05-08,Guardians,Twins,0,CLE,0.441,,,2026-05-04,Connor Prielipp,Parker Messick,0
+20260586,8,Twins,2026-05-09,Guardians,Twins,0,CLE,0.4931,,,2026-05-04,Joe Ryan,Tanner Bibee,0
+20260601,8,Twins,2026-05-10,Guardians,Twins,0,CLE,0.447,,,2026-05-04,Taj Bradley,Gavin Williams,0
+20260625,8,Twins,2026-05-12,Twins,Marlins,1,MIA,0.5245,,,2026-05-11,Bailey Ober,Eury Pérez,0
+20260640,8,Twins,2026-05-13,Twins,Marlins,1,MIA,0.4978,,,2026-05-11,Simeon Woods Richardson,Max Meyer,0
+20260649,8,Twins,2026-05-14,Twins,Marlins,1,MIA,0.5392,,,2026-05-11,Mick Abel,,0
+20260666,8,Twins,2026-05-15,Twins,Brewers,1,MIL,0.5428,,,2026-05-11,Joe Ryan,Logan Henderson,0
+20260681,8,Twins,2026-05-16,Twins,Brewers,1,MIL,0.5445,,,2026-05-11,Taj Bradley,Chad Patrick,0
+20260696,8,Twins,2026-05-17,Twins,Brewers,1,MIL,0.524,,,2026-05-11,Bailey Ober,Brandon Sproat,0
+20260710,8,Twins,2026-05-18,Twins,Astros,1,HOU,0.4976,,,2026-05-18,Simeon Woods Richardson,Mike Burrows,0
+20260724,8,Twins,2026-05-19,Twins,Astros,1,HOU,0.5181,,,2026-05-18,Mick Abel,Tatsuya Imai,0
+20260733,8,Twins,2026-05-20,Twins,Astros,1,HOU,0.5822,,,2026-05-18,Joe Ryan,Spencer Arrighetti,0
+20260758,8,Twins,2026-05-22,Red Sox,Twins,0,BOS,0.4196,,,2026-05-18,Taj Bradley,Ranger Suarez,0
+20260776,8,Twins,2026-05-23,Red Sox,Twins,0,BOS,0.4523,,,2026-05-18,Bailey Ober,Brayan Bello,0
+20260786,8,Twins,2026-05-24,Red Sox,Twins,0,BOS,0.3299,,,2026-05-18,Simeon Woods Richardson,Garrett Crochet,0
+20260800,8,Twins,2026-05-25,White Sox,Twins,0,CHW,0.4975,,,2026-05-25,Mick Abel,Sean Burke,0
+20260818,8,Twins,2026-05-26,White Sox,Twins,0,CHW,0.5599,,,2026-05-25,Joe Ryan,Anthony Kay,0
 20260837,8,Twins,2026-05-27,White Sox,Twins,0,CHW,,,,2026-05-25,,,0
 20260842,8,Twins,2026-05-28,White Sox,Twins,0,CHW,,,,2026-05-25,,,0
 20260849,8,Twins,2026-05-29,Pirates,Twins,0,PIT,,,,2026-05-25,,,0
@@ -1330,27 +1330,27 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260484,9,Yankees,2026-05-02,Yankees,Orioles,1,BAL,0.5454,W,9-4,2026-04-27,Ryan Weathers,Kyle Bradish,0
 20260503,9,Yankees,2026-05-03,Yankees,Orioles,1,BAL,0.6369,W,11-3,2026-04-27,Max Fried,Trey Gibson,0
 20260517,9,Yankees,2026-05-04,Yankees,Orioles,1,BAL,0.6136,W,12-1,2026-05-04,Cam Schlittler,Shane Baz,0
-20260531,9,Yankees,2026-05-05,Yankees,Rangers,1,TEX,0.5262,,,2026-05-04,Elmer Rodríguez,Jacob deGrom,0
-20260552,9,Yankees,2026-05-06,Yankees,Rangers,1,TEX,0.5942,,,2026-05-04,Will Warren,Nathan Eovaldi,0
-20260556,9,Yankees,2026-05-07,Yankees,Rangers,1,TEX,0.5832,,,2026-05-04,Ryan Weathers,MacKenzie Gore,0
-20260572,9,Yankees,2026-05-08,Brewers,Yankees,0,MIL,0.5548,,,2026-05-04,Max Fried,Kyle Harrison,0
-20260589,9,Yankees,2026-05-09,Brewers,Yankees,0,MIL,0.5252,,,2026-05-04,Cam Schlittler,Logan Henderson,0
-20260602,9,Yankees,2026-05-10,Brewers,Yankees,0,MIL,0.5345,,,2026-05-04,Carlos Rodón,Chad Patrick,0
-20260611,9,Yankees,2026-05-11,Orioles,Yankees,0,BAL,0.4977,,,2026-05-11,Will Warren,Trevor Rogers,0
-20260617,9,Yankees,2026-05-12,Orioles,Yankees,0,BAL,0.538,,,2026-05-11,Ryan Weathers,Brandon Young,0
+20260531,9,Yankees,2026-05-05,Yankees,Rangers,1,TEX,0.5343,W,7-4,2026-05-04,Elmer Rodríguez,Jacob deGrom,0
+20260552,9,Yankees,2026-05-06,Yankees,Rangers,1,TEX,0.594,,,2026-05-04,Will Warren,Nathan Eovaldi,0
+20260556,9,Yankees,2026-05-07,Yankees,Rangers,1,TEX,0.5864,,,2026-05-04,Ryan Weathers,MacKenzie Gore,0
+20260572,9,Yankees,2026-05-08,Brewers,Yankees,0,MIL,0.5157,,,2026-05-04,Max Fried,Jacob Misiorowski,0
+20260589,9,Yankees,2026-05-09,Brewers,Yankees,0,MIL,0.5262,,,2026-05-04,Cam Schlittler,Kyle Harrison,0
+20260602,9,Yankees,2026-05-10,Brewers,Yankees,0,MIL,0.4907,,,2026-05-04,Carlos Rodón,Logan Henderson,0
+20260611,9,Yankees,2026-05-11,Orioles,Yankees,0,BAL,0.4965,,,2026-05-11,Will Warren,Trevor Rogers,0
+20260617,9,Yankees,2026-05-12,Orioles,Yankees,0,BAL,0.5401,,,2026-05-11,Ryan Weathers,Brandon Young,0
 20260632,9,Yankees,2026-05-13,Orioles,Yankees,0,BAL,0.5276,,,2026-05-11,Max Fried,Kyle Bradish,0
-20260663,9,Yankees,2026-05-15,Mets,Yankees,0,NYM,0.5074,,,2026-05-11,Cam Schlittler,Clay Holmes,0
-20260684,9,Yankees,2026-05-16,Mets,Yankees,0,NYM,0.4707,,,2026-05-11,Carlos Rodón,David Peterson,0
-20260693,9,Yankees,2026-05-17,Mets,Yankees,0,NYM,0.4544,,,2026-05-11,Gerrit Cole,Freddy Peralta,0
-20260707,9,Yankees,2026-05-18,Yankees,Blue Jays,1,TOR,0.6422,,,2026-05-18,Ryan Weathers,Patrick Corbin,0
-20260721,9,Yankees,2026-05-19,Yankees,Blue Jays,1,TOR,0.5813,,,2026-05-18,Max Fried,Dylan Cease,0
-20260740,9,Yankees,2026-05-20,Yankees,Blue Jays,1,TOR,0.6488,,,2026-05-18,Cam Schlittler,Max Scherzer,0
-20260750,9,Yankees,2026-05-21,Yankees,Blue Jays,1,TOR,0.5539,,,2026-05-18,Carlos Rodón,Trey Yesavage,0
-20260756,9,Yankees,2026-05-22,Yankees,Rays,1,TBR,0.5566,,,2026-05-18,Gerrit Cole,Drew Rasmussen,0
-20260768,9,Yankees,2026-05-23,Yankees,Rays,1,TBR,0.5483,,,2026-05-18,Ryan Weathers,Shane McClanahan,0
-20260787,9,Yankees,2026-05-24,Yankees,Rays,1,TBR,0.6356,,,2026-05-18,Max Fried,Joe Boyle,0
-20260801,9,Yankees,2026-05-25,Royals,Yankees,0,KCR,0.521,,,2026-05-25,Cam Schlittler,Kris Bubic,0
-20260820,9,Yankees,2026-05-26,Royals,Yankees,0,KCR,,,,2026-05-25,,,0
+20260663,9,Yankees,2026-05-15,Mets,Yankees,0,NYM,0.5043,,,2026-05-11,Cam Schlittler,Clay Holmes,0
+20260684,9,Yankees,2026-05-16,Mets,Yankees,0,NYM,0.468,,,2026-05-11,Carlos Rodón,David Peterson,0
+20260693,9,Yankees,2026-05-17,Mets,Yankees,0,NYM,0.4518,,,2026-05-11,Gerrit Cole,Freddy Peralta,0
+20260707,9,Yankees,2026-05-18,Yankees,Blue Jays,1,TOR,0.6458,,,2026-05-18,Ryan Weathers,Patrick Corbin,0
+20260721,9,Yankees,2026-05-19,Yankees,Blue Jays,1,TOR,0.5823,,,2026-05-18,Max Fried,Dylan Cease,0
+20260740,9,Yankees,2026-05-20,Yankees,Blue Jays,1,TOR,0.6501,,,2026-05-18,Cam Schlittler,Max Scherzer,0
+20260750,9,Yankees,2026-05-21,Yankees,Blue Jays,1,TOR,0.5551,,,2026-05-18,Carlos Rodón,Trey Yesavage,0
+20260756,9,Yankees,2026-05-22,Yankees,Rays,1,TBR,0.5682,,,2026-05-18,Gerrit Cole,Drew Rasmussen,0
+20260768,9,Yankees,2026-05-23,Yankees,Rays,1,TBR,0.5609,,,2026-05-18,Ryan Weathers,Shane McClanahan,0
+20260787,9,Yankees,2026-05-24,Yankees,Rays,1,TBR,0.6784,,,2026-05-18,Max Fried,Steven Matz,0
+20260801,9,Yankees,2026-05-25,Royals,Yankees,0,KCR,0.5223,,,2026-05-25,Cam Schlittler,Kris Bubic,0
+20260820,9,Yankees,2026-05-26,Royals,Yankees,0,KCR,0.5289,,,2026-05-25,Carlos Rodón,Michael Wacha,0
 20260838,9,Yankees,2026-05-27,Royals,Yankees,0,KCR,,,,2026-05-25,,,0
 20260859,9,Yankees,2026-05-29,Athletics,Yankees,0,ATH,,,,2026-05-25,,,0
 20260874,9,Yankees,2026-05-30,Athletics,Yankees,0,ATH,,,,2026-05-25,,,0
@@ -1491,27 +1491,27 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260481,10,Athletics,2026-05-01,Athletics,Guardians,1,CLE,0.538,L,5-8,2026-04-27,J.T. Ginn,Joey Cantillo,0
 20260487,10,Athletics,2026-05-02,Athletics,Guardians,1,CLE,0.5919,L,6-14,2026-04-27,Jacob Lopez,Slade Cecconi,0
 20260509,10,Athletics,2026-05-03,Athletics,Guardians,1,CLE,0.5109,W,7-1,2026-04-27,Aaron Civale,Parker Messick,0
-20260527,10,Athletics,2026-05-05,Phillies,Athletics,0,PHI,0.3701,,,2026-05-04,Luis Severino,Cristopher Sánchez,0
-20260549,10,Athletics,2026-05-06,Phillies,Athletics,0,PHI,0.3603,,,2026-05-04,Jeffrey Springs,Zack Wheeler,0
-20260561,10,Athletics,2026-05-07,Phillies,Athletics,0,PHI,0.4729,,,2026-05-04,J.T. Ginn,Andrew Painter,0
-20260567,10,Athletics,2026-05-08,Orioles,Athletics,0,BAL,0.4094,,,2026-05-04,Jacob Lopez,Kyle Bradish,0
-20260581,10,Athletics,2026-05-09,Orioles,Athletics,0,BAL,0.4322,,,2026-05-04,Aaron Civale,Shane Baz,0
-20260596,10,Athletics,2026-05-10,Orioles,Athletics,0,BAL,0.4718,,,2026-05-04,Luis Severino,Chris Bassitt,0
-20260629,10,Athletics,2026-05-12,Athletics,Cardinals,1,STL,0.5743,,,2026-05-11,Jeffrey Springs,Matthew Liberatore,0
-20260644,10,Athletics,2026-05-13,Athletics,Cardinals,1,STL,0.5645,,,2026-05-11,J.T. Ginn,Michael McGreevy,0
-20260652,10,Athletics,2026-05-14,Athletics,Cardinals,1,STL,0.5392,,,2026-05-11,Jacob Lopez,Dustin May,0
-20260671,10,Athletics,2026-05-15,Athletics,Giants,1,SFG,0.542,,,2026-05-11,Aaron Civale,Tyler Mahle,0
-20260686,10,Athletics,2026-05-16,Athletics,Giants,1,SFG,0.498,,,2026-05-11,Luis Severino,Logan Webb,0
-20260699,10,Athletics,2026-05-17,Athletics,Giants,1,SFG,0.5747,,,2026-05-11,Jeffrey Springs,Adrian Houser,0
-20260712,10,Athletics,2026-05-18,Angels,Athletics,0,LAA,0.5579,,,2026-05-18,J.T. Ginn,Walbert Urena,0
-20260727,10,Athletics,2026-05-19,Angels,Athletics,0,LAA,0.4643,,,2026-05-18,Jacob Lopez,Reid Detmers,0
-20260745,10,Athletics,2026-05-20,Angels,Athletics,0,LAA,0.5246,,,2026-05-18,Aaron Civale,Jack Kochanowicz,0
-20260751,10,Athletics,2026-05-21,Angels,Athletics,0,LAA,0.4682,,,2026-05-18,Luis Severino,José Soriano,0
-20260766,10,Athletics,2026-05-22,Padres,Athletics,0,SDP,0.4638,,,2026-05-18,Jeffrey Springs,Walker Buehler,0
-20260780,10,Athletics,2026-05-23,Padres,Athletics,0,SDP,0.4174,,,2026-05-18,J.T. Ginn,Michael King,0
-20260795,10,Athletics,2026-05-24,Padres,Athletics,0,SDP,0.4617,,,2026-05-18,Jacob Lopez,Griffin Canning,0
-20260810,10,Athletics,2026-05-25,Athletics,Mariners,1,SEA,0.4999,,,2026-05-25,Aaron Civale,Luis Castillo,0
-20260823,10,Athletics,2026-05-26,Athletics,Mariners,1,SEA,,,,2026-05-25,,,0
+20260527,10,Athletics,2026-05-05,Phillies,Athletics,0,PHI,0.3482,L,1-9,2026-05-04,Luis Severino,Cristopher Sánchez,0
+20260549,10,Athletics,2026-05-06,Phillies,Athletics,0,PHI,0.3584,,,2026-05-04,Jeffrey Springs,Zack Wheeler,0
+20260561,10,Athletics,2026-05-07,Phillies,Athletics,0,PHI,0.4712,,,2026-05-04,J.T. Ginn,Andrew Painter,0
+20260567,10,Athletics,2026-05-08,Orioles,Athletics,0,BAL,0.4075,,,2026-05-04,Jacob Lopez,Kyle Bradish,0
+20260581,10,Athletics,2026-05-09,Orioles,Athletics,0,BAL,0.4297,,,2026-05-04,Aaron Civale,Shane Baz,0
+20260596,10,Athletics,2026-05-10,Orioles,Athletics,0,BAL,0.4677,,,2026-05-04,Luis Severino,Chris Bassitt,0
+20260629,10,Athletics,2026-05-12,Athletics,Cardinals,1,STL,0.5568,,,2026-05-11,Jeffrey Springs,Andre Pallante,0
+20260644,10,Athletics,2026-05-13,Athletics,Cardinals,1,STL,0.5796,,,2026-05-11,J.T. Ginn,Matthew Liberatore,0
+20260652,10,Athletics,2026-05-14,Athletics,Cardinals,1,STL,0.5502,,,2026-05-11,Jacob Lopez,Michael McGreevy,0
+20260671,10,Athletics,2026-05-15,Athletics,Giants,1,SFG,0.5407,,,2026-05-11,Aaron Civale,Tyler Mahle,0
+20260686,10,Athletics,2026-05-16,Athletics,Giants,1,SFG,0.4956,,,2026-05-11,Luis Severino,Logan Webb,0
+20260699,10,Athletics,2026-05-17,Athletics,Giants,1,SFG,0.5734,,,2026-05-11,Jeffrey Springs,Adrian Houser,0
+20260712,10,Athletics,2026-05-18,Angels,Athletics,0,LAA,0.5571,,,2026-05-18,J.T. Ginn,Walbert Urena,0
+20260727,10,Athletics,2026-05-19,Angels,Athletics,0,LAA,0.4621,,,2026-05-18,Jacob Lopez,Reid Detmers,0
+20260745,10,Athletics,2026-05-20,Angels,Athletics,0,LAA,0.5222,,,2026-05-18,Aaron Civale,Jack Kochanowicz,0
+20260751,10,Athletics,2026-05-21,Angels,Athletics,0,LAA,0.4635,,,2026-05-18,Luis Severino,José Soriano,0
+20260766,10,Athletics,2026-05-22,Padres,Athletics,0,SDP,0.4604,,,2026-05-18,Jeffrey Springs,Walker Buehler,0
+20260780,10,Athletics,2026-05-23,Padres,Athletics,0,SDP,0.4162,,,2026-05-18,J.T. Ginn,Michael King,0
+20260795,10,Athletics,2026-05-24,Padres,Athletics,0,SDP,0.4604,,,2026-05-18,Jacob Lopez,Griffin Canning,0
+20260810,10,Athletics,2026-05-25,Athletics,Mariners,1,SEA,0.4995,,,2026-05-25,Aaron Civale,Luis Castillo,0
+20260823,10,Athletics,2026-05-26,Athletics,Mariners,1,SEA,0.4811,,,2026-05-25,Luis Severino,Logan Gilbert,0
 20260829,10,Athletics,2026-05-27,Athletics,Mariners,1,SEA,,,,2026-05-25,,,0
 20260859,10,Athletics,2026-05-29,Athletics,Yankees,1,NYY,,,,2026-05-25,,,0
 20260874,10,Athletics,2026-05-30,Athletics,Yankees,1,NYY,,,,2026-05-25,,,0
@@ -1655,26 +1655,26 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260498,11,Mariners,2026-05-02,Mariners,Royals,1,KCR,0.5515,L,2-3,2026-04-27,Emerson Hancock,Seth Lugo,0
 20260511,11,Mariners,2026-05-03,Mariners,Royals,1,KCR,0.5253,L,1-4,2026-04-27,Luis Castillo,Kris Bubic,0
 20260524,11,Mariners,2026-05-04,Mariners,Braves,1,ATL,0.6138,W,5-4,2026-05-04,Logan Gilbert,JR Ritchie,0
-20260539,11,Mariners,2026-05-05,Mariners,Braves,1,ATL,0.5751,,,2026-05-04,George Kirby,Bryce Elder,0
-20260547,11,Mariners,2026-05-06,Mariners,Braves,1,ATL,0.594,,,2026-05-04,Bryan Woo,Grant Holmes,0
-20260574,11,Mariners,2026-05-08,White Sox,Mariners,0,CHW,0.5276,,,2026-05-04,Emerson Hancock,Sean Burke,0
-20260590,11,Mariners,2026-05-09,White Sox,Mariners,0,CHW,0.5558,,,2026-05-04,Luis Castillo,Anthony Kay,0
-20260603,11,Mariners,2026-05-10,White Sox,Mariners,0,CHW,0.5516,,,2026-05-04,Logan Gilbert,Davis Martin,0
-20260614,11,Mariners,2026-05-11,Astros,Mariners,0,HOU,0.5557,,,2026-05-11,George Kirby,Peter Lambert,0
-20260628,11,Mariners,2026-05-12,Astros,Mariners,0,HOU,0.5347,,,2026-05-11,Bryan Woo,Lance McCullers Jr.,0
-20260643,11,Mariners,2026-05-13,Astros,Mariners,0,HOU,0.4752,,,2026-05-11,Emerson Hancock,Mike Burrows,0
-20260651,11,Mariners,2026-05-14,Astros,Mariners,0,HOU,0.4953,,,2026-05-11,Luis Castillo,Spencer Arrighetti,0
-20260670,11,Mariners,2026-05-15,Mariners,Padres,1,SDP,0.6166,,,2026-05-11,Logan Gilbert,Lucas Giolito,0
-20260682,11,Mariners,2026-05-16,Mariners,Padres,1,SDP,0.6114,,,2026-05-11,George Kirby,Walker Buehler,0
-20260701,11,Mariners,2026-05-17,Mariners,Padres,1,SDP,0.5589,,,2026-05-11,Bryan Woo,Michael King,0
-20260714,11,Mariners,2026-05-18,Mariners,White Sox,1,CHW,0.5881,,,2026-05-18,Bryce Miller,Noah Schultz,0
-20260729,11,Mariners,2026-05-19,Mariners,White Sox,1,CHW,0.624,,,2026-05-18,Luis Castillo,Sean Burke,0
-20260736,11,Mariners,2026-05-20,Mariners,White Sox,1,CHW,0.672,,,2026-05-18,Logan Gilbert,Anthony Kay,0
-20260762,11,Mariners,2026-05-22,Royals,Mariners,0,KCR,0.5402,,,2026-05-18,George Kirby,Noah Cameron,0
-20260774,11,Mariners,2026-05-23,Royals,Mariners,0,KCR,0.495,,,2026-05-18,Bryan Woo,Cole Ragans,0
-20260790,11,Mariners,2026-05-24,Royals,Mariners,0,KCR,0.4764,,,2026-05-18,Bryce Miller,Seth Lugo,0
-20260810,11,Mariners,2026-05-25,Athletics,Mariners,0,ATH,0.5001,,,2026-05-25,Luis Castillo,Aaron Civale,0
-20260823,11,Mariners,2026-05-26,Athletics,Mariners,0,ATH,,,,2026-05-25,,,0
+20260539,11,Mariners,2026-05-05,Mariners,Braves,1,ATL,0.5792,L,2-3,2026-05-04,George Kirby,Bryce Elder,0
+20260547,11,Mariners,2026-05-06,Mariners,Braves,1,ATL,0.5932,,,2026-05-04,Bryan Woo,Martín Pérez,0
+20260574,11,Mariners,2026-05-08,White Sox,Mariners,0,CHW,0.5267,,,2026-05-04,Emerson Hancock,Sean Burke,0
+20260590,11,Mariners,2026-05-09,White Sox,Mariners,0,CHW,0.555,,,2026-05-04,Luis Castillo,Anthony Kay,0
+20260603,11,Mariners,2026-05-10,White Sox,Mariners,0,CHW,0.551,,,2026-05-04,Logan Gilbert,Davis Martin,0
+20260614,11,Mariners,2026-05-11,Astros,Mariners,0,HOU,0.5635,,,2026-05-11,George Kirby,Peter Lambert,0
+20260628,11,Mariners,2026-05-12,Astros,Mariners,0,HOU,0.5368,,,2026-05-11,Bryan Woo,Lance McCullers Jr.,0
+20260643,11,Mariners,2026-05-13,Astros,Mariners,0,HOU,0.4772,,,2026-05-11,Emerson Hancock,Mike Burrows,0
+20260651,11,Mariners,2026-05-14,Astros,Mariners,0,HOU,0.4971,,,2026-05-11,Luis Castillo,Spencer Arrighetti,0
+20260670,11,Mariners,2026-05-15,Mariners,Padres,1,SDP,0.6158,,,2026-05-11,Logan Gilbert,Lucas Giolito,0
+20260682,11,Mariners,2026-05-16,Mariners,Padres,1,SDP,0.61,,,2026-05-11,George Kirby,Walker Buehler,0
+20260701,11,Mariners,2026-05-17,Mariners,Padres,1,SDP,0.5582,,,2026-05-11,Bryan Woo,Michael King,0
+20260714,11,Mariners,2026-05-18,Mariners,White Sox,1,CHW,0.5873,,,2026-05-18,Bryce Miller,Noah Schultz,0
+20260729,11,Mariners,2026-05-19,Mariners,White Sox,1,CHW,0.623,,,2026-05-18,Luis Castillo,Sean Burke,0
+20260736,11,Mariners,2026-05-20,Mariners,White Sox,1,CHW,0.6716,,,2026-05-18,Logan Gilbert,Anthony Kay,0
+20260762,11,Mariners,2026-05-22,Royals,Mariners,0,KCR,0.5414,,,2026-05-18,George Kirby,Noah Cameron,0
+20260774,11,Mariners,2026-05-23,Royals,Mariners,0,KCR,0.4948,,,2026-05-18,Bryan Woo,Cole Ragans,0
+20260790,11,Mariners,2026-05-24,Royals,Mariners,0,KCR,0.4762,,,2026-05-18,Bryce Miller,Seth Lugo,0
+20260810,11,Mariners,2026-05-25,Athletics,Mariners,0,ATH,0.5005,,,2026-05-25,Luis Castillo,Aaron Civale,0
+20260823,11,Mariners,2026-05-26,Athletics,Mariners,0,ATH,0.5189,,,2026-05-25,Logan Gilbert,Luis Severino,0
 20260829,11,Mariners,2026-05-27,Athletics,Mariners,0,ATH,,,,2026-05-25,,,0
 20260860,11,Mariners,2026-05-29,Mariners,Diamondbacks,1,ARI,,,,2026-05-25,,,0
 20260875,11,Mariners,2026-05-30,Mariners,Diamondbacks,1,ARI,,,,2026-05-25,,,0
@@ -1815,26 +1815,26 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260492,12,Rays,2026-05-02,Rays,Giants,1,SFG,0.5746,W,5-1,2026-04-27,Griffin Jax,Landen Roupp,0
 20260504,12,Rays,2026-05-03,Rays,Giants,1,SFG,0.5284,W,2-1,2026-04-27,Steven Matz,Tyler Mahle,0
 20260516,12,Rays,2026-05-04,Rays,Blue Jays,1,TOR,0.5663,W,5-1,2026-05-04,Nick Martinez,Eric Lauer,0
-20260528,12,Rays,2026-05-05,Rays,Blue Jays,1,TOR,0.5456,,,2026-05-04,Drew Rasmussen,Kevin Gausman,0
-20260541,12,Rays,2026-05-06,Rays,Blue Jays,1,TOR,0.6342,,,2026-05-04,Shane McClanahan,Patrick Corbin,0
-20260563,12,Rays,2026-05-07,Red Sox,Rays,0,BOS,0.4166,,,2026-05-04,Jesse Scholtens,Connelly Early,0
-20260570,12,Rays,2026-05-08,Red Sox,Rays,0,BOS,0.4103,,,2026-05-04,Steven Matz,Ranger Suarez,0
-20260583,12,Rays,2026-05-09,Red Sox,Rays,0,BOS,0.433,,,2026-05-04,Nick Martinez,Payton Tolle,0
-20260598,12,Rays,2026-05-10,Red Sox,Rays,0,BOS,0.5119,,,2026-05-04,Drew Rasmussen,Brayan Bello,0
-20260612,12,Rays,2026-05-11,Blue Jays,Rays,0,TOR,0.482,,,2026-05-11,Shane McClanahan,Kevin Gausman,0
-20260621,12,Rays,2026-05-12,Blue Jays,Rays,0,TOR,0.4737,,,2026-05-11,Jesse Scholtens,Patrick Corbin,0
-20260636,12,Rays,2026-05-13,Blue Jays,Rays,0,TOR,0.3699,,,2026-05-11,Steven Matz,Dylan Cease,0
-20260661,12,Rays,2026-05-15,Rays,Marlins,1,MIA,0.5647,,,2026-05-11,Nick Martinez,Janson Junk,0
-20260677,12,Rays,2026-05-16,Rays,Marlins,1,MIA,0.5795,,,2026-05-11,Drew Rasmussen,Sandy Alcantara,0
-20260687,12,Rays,2026-05-17,Rays,Marlins,1,MIA,0.5973,,,2026-05-11,Shane McClanahan,Eury Pérez,0
-20260704,12,Rays,2026-05-18,Rays,Orioles,1,BAL,0.5768,,,2026-05-18,Joe Boyle,Brandon Young,0
-20260719,12,Rays,2026-05-19,Rays,Orioles,1,BAL,0.4758,,,2026-05-18,Steven Matz,Kyle Bradish,0
-20260732,12,Rays,2026-05-20,Rays,Orioles,1,BAL,0.5188,,,2026-05-18,Nick Martinez,Shane Baz,0
-20260756,12,Rays,2026-05-22,Yankees,Rays,0,NYY,0.4434,,,2026-05-18,Drew Rasmussen,Gerrit Cole,0
-20260768,12,Rays,2026-05-23,Yankees,Rays,0,NYY,0.4517,,,2026-05-18,Shane McClanahan,Ryan Weathers,0
-20260787,12,Rays,2026-05-24,Yankees,Rays,0,NYY,0.3644,,,2026-05-18,Joe Boyle,Max Fried,0
-20260798,12,Rays,2026-05-25,Orioles,Rays,0,BAL,0.3958,,,2026-05-25,Steven Matz,Kyle Bradish,0
-20260812,12,Rays,2026-05-26,Orioles,Rays,0,BAL,,,,2026-05-25,,,0
+20260528,12,Rays,2026-05-05,Rays,Blue Jays,1,TOR,0.5568,W,4-3,2026-05-04,Drew Rasmussen,Kevin Gausman,0
+20260541,12,Rays,2026-05-06,Rays,Blue Jays,1,TOR,0.6256,,,2026-05-04,Shane McClanahan,Patrick Corbin,0
+20260563,12,Rays,2026-05-07,Red Sox,Rays,0,BOS,0.4084,,,2026-05-04,Jesse Scholtens,Connelly Early,0
+20260570,12,Rays,2026-05-08,Red Sox,Rays,0,BOS,0.482,,,2026-05-04,Griffin Jax,Ranger Suarez,0
+20260583,12,Rays,2026-05-09,Red Sox,Rays,0,BOS,0.4229,,,2026-05-04,Nick Martinez,Payton Tolle,0
+20260598,12,Rays,2026-05-10,Red Sox,Rays,0,BOS,0.4976,,,2026-05-04,Drew Rasmussen,Brayan Bello,0
+20260612,12,Rays,2026-05-11,Blue Jays,Rays,0,TOR,0.4718,,,2026-05-11,Shane McClanahan,Kevin Gausman,0
+20260621,12,Rays,2026-05-12,Blue Jays,Rays,0,TOR,0.467,,,2026-05-11,Jesse Scholtens,Patrick Corbin,0
+20260636,12,Rays,2026-05-13,Blue Jays,Rays,0,TOR,0.3939,,,2026-05-11,Joe Boyle,Dylan Cease,0
+20260661,12,Rays,2026-05-15,Rays,Marlins,1,MIA,0.5567,,,2026-05-11,Nick Martinez,Janson Junk,0
+20260677,12,Rays,2026-05-16,Rays,Marlins,1,MIA,0.5672,,,2026-05-11,Drew Rasmussen,Sandy Alcantara,0
+20260687,12,Rays,2026-05-17,Rays,Marlins,1,MIA,0.5868,,,2026-05-11,Shane McClanahan,Eury Pérez,0
+20260704,12,Rays,2026-05-18,Rays,Orioles,1,BAL,0.5204,,,2026-05-18,Jesse Scholtens,Brandon Young,0
+20260719,12,Rays,2026-05-19,Rays,Orioles,1,BAL,0.4993,,,2026-05-18,Joe Boyle,Kyle Bradish,0
+20260732,12,Rays,2026-05-20,Rays,Orioles,1,BAL,0.5079,,,2026-05-18,Nick Martinez,Shane Baz,0
+20260756,12,Rays,2026-05-22,Yankees,Rays,0,NYY,0.4318,,,2026-05-18,Drew Rasmussen,Gerrit Cole,0
+20260768,12,Rays,2026-05-23,Yankees,Rays,0,NYY,0.4391,,,2026-05-18,Shane McClanahan,Ryan Weathers,0
+20260787,12,Rays,2026-05-24,Yankees,Rays,0,NYY,0.3216,,,2026-05-18,Steven Matz,Max Fried,0
+20260798,12,Rays,2026-05-25,Orioles,Rays,0,BAL,0.4193,,,2026-05-25,Joe Boyle,Kyle Bradish,0
+20260812,12,Rays,2026-05-26,Orioles,Rays,0,BAL,0.4279,,,2026-05-25,Nick Martinez,Shane Baz,0
 20260832,12,Rays,2026-05-27,Orioles,Rays,0,BAL,,,,2026-05-25,,,0
 20260853,12,Rays,2026-05-29,Rays,Angels,1,LAA,,,,2026-05-25,,,0
 20260870,12,Rays,2026-05-30,Rays,Angels,1,LAA,,,,2026-05-25,,,0
@@ -1977,26 +1977,26 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260470,13,Rangers,2026-05-01,Tigers,Rangers,0,DET,0.476,W,5-4,2026-04-27,MacKenzie Gore,Jack Flaherty,0
 20260493,13,Rangers,2026-05-02,Tigers,Rangers,0,DET,0.4579,L,1-5,2026-04-27,Kumar Rocker,Keider Montero,0
 20260513,13,Rangers,2026-05-03,Tigers,Rangers,0,DET,0.4188,L,1-7,2026-04-27,Jack Leiter,Tyler Holton,0
-20260531,13,Rangers,2026-05-05,Yankees,Rangers,0,NYY,0.4738,,,2026-05-04,Jacob deGrom,Elmer Rodríguez,0
-20260552,13,Rangers,2026-05-06,Yankees,Rangers,0,NYY,0.4058,,,2026-05-04,Nathan Eovaldi,Will Warren,0
-20260556,13,Rangers,2026-05-07,Yankees,Rangers,0,NYY,0.4168,,,2026-05-04,MacKenzie Gore,Ryan Weathers,0
-20260575,13,Rangers,2026-05-08,Rangers,Cubs,1,CHC,0.4844,,,2026-05-04,Kumar Rocker,Matthew Boyd,0
-20260587,13,Rangers,2026-05-09,Rangers,Cubs,1,CHC,0.4939,,,2026-05-04,Jack Leiter,Edward Cabrera,0
-20260604,13,Rangers,2026-05-10,Rangers,Cubs,1,CHC,0.6075,,,2026-05-04,Jacob deGrom,Jameson Taillon,0
-20260613,13,Rangers,2026-05-11,Rangers,Diamondbacks,1,ARI,0.5217,,,2026-05-11,Nathan Eovaldi,Michael Soroka,0
-20260627,13,Rangers,2026-05-12,Rangers,Diamondbacks,1,ARI,0.548,,,2026-05-11,MacKenzie Gore,Zac Gallen,0
-20260642,13,Rangers,2026-05-13,Rangers,Diamondbacks,1,ARI,0.5377,,,2026-05-11,Kumar Rocker,Ryne Nelson,0
-20260665,13,Rangers,2026-05-15,Astros,Rangers,0,HOU,0.4757,,,2026-05-11,Jack Leiter,Cody Bolton,0
-20260679,13,Rangers,2026-05-16,Astros,Rangers,0,HOU,0.541,,,2026-05-11,Jacob deGrom,Peter Lambert,0
-20260694,13,Rangers,2026-05-17,Astros,Rangers,0,HOU,0.4763,,,2026-05-11,Nathan Eovaldi,Lance McCullers Jr.,0
-20260711,13,Rangers,2026-05-18,Rockies,Rangers,0,COL,0.576,,,2026-05-18,MacKenzie Gore,Ryan Feltner,0
-20260726,13,Rangers,2026-05-19,Rockies,Rangers,0,COL,0.5674,,,2026-05-18,Kumar Rocker,Jose Quintana,0
-20260734,13,Rangers,2026-05-20,Rockies,Rangers,0,COL,0.5506,,,2026-05-18,Jack Leiter,Kyle Freeland,0
-20260764,13,Rangers,2026-05-22,Angels,Rangers,0,LAA,0.6042,,,2026-05-18,Jacob deGrom,Sam Aldegheri,0
-20260781,13,Rangers,2026-05-23,Angels,Rangers,0,LAA,0.5605,,,2026-05-18,Nathan Eovaldi,Walbert Urena,0
-20260797,13,Rangers,2026-05-24,Angels,Rangers,0,LAA,0.4848,,,2026-05-18,MacKenzie Gore,Reid Detmers,0
-20260807,13,Rangers,2026-05-25,Rangers,Astros,1,HOU,0.5246,,,2026-05-25,Kumar Rocker,Tatsuya Imai,0
-20260821,13,Rangers,2026-05-26,Rangers,Astros,1,HOU,,,,2026-05-25,,,0
+20260531,13,Rangers,2026-05-05,Yankees,Rangers,0,NYY,0.4657,L,4-7,2026-05-04,Jacob deGrom,Elmer Rodríguez,0
+20260552,13,Rangers,2026-05-06,Yankees,Rangers,0,NYY,0.406,,,2026-05-04,Nathan Eovaldi,Will Warren,0
+20260556,13,Rangers,2026-05-07,Yankees,Rangers,0,NYY,0.4136,,,2026-05-04,MacKenzie Gore,Ryan Weathers,0
+20260575,13,Rangers,2026-05-08,Rangers,Cubs,1,CHC,0.4837,,,2026-05-04,Kumar Rocker,Matthew Boyd,0
+20260587,13,Rangers,2026-05-09,Rangers,Cubs,1,CHC,0.4931,,,2026-05-04,Jack Leiter,Edward Cabrera,0
+20260604,13,Rangers,2026-05-10,Rangers,Cubs,1,CHC,0.6051,,,2026-05-04,Jacob deGrom,Jameson Taillon,0
+20260613,13,Rangers,2026-05-11,Rangers,Diamondbacks,1,ARI,0.5201,,,2026-05-11,Nathan Eovaldi,Michael Soroka,0
+20260627,13,Rangers,2026-05-12,Rangers,Diamondbacks,1,ARI,0.5464,,,2026-05-11,MacKenzie Gore,Zac Gallen,0
+20260642,13,Rangers,2026-05-13,Rangers,Diamondbacks,1,ARI,0.5363,,,2026-05-11,Kumar Rocker,Ryne Nelson,0
+20260665,13,Rangers,2026-05-15,Astros,Rangers,0,HOU,0.4845,,,2026-05-11,Jack Leiter,Cody Bolton,0
+20260679,13,Rangers,2026-05-16,Astros,Rangers,0,HOU,0.5445,,,2026-05-11,Jacob deGrom,Peter Lambert,0
+20260694,13,Rangers,2026-05-17,Astros,Rangers,0,HOU,0.4787,,,2026-05-11,Nathan Eovaldi,Lance McCullers Jr.,0
+20260711,13,Rangers,2026-05-18,Rockies,Rangers,0,COL,0.5717,,,2026-05-18,MacKenzie Gore,Ryan Feltner,0
+20260726,13,Rangers,2026-05-19,Rockies,Rangers,0,COL,0.5631,,,2026-05-18,Kumar Rocker,Jose Quintana,0
+20260734,13,Rangers,2026-05-20,Rockies,Rangers,0,COL,0.5463,,,2026-05-18,Jack Leiter,Kyle Freeland,0
+20260764,13,Rangers,2026-05-22,Angels,Rangers,0,LAA,0.6,,,2026-05-18,Jacob deGrom,Sam Aldegheri,0
+20260781,13,Rangers,2026-05-23,Angels,Rangers,0,LAA,0.5604,,,2026-05-18,Nathan Eovaldi,Walbert Urena,0
+20260797,13,Rangers,2026-05-24,Angels,Rangers,0,LAA,0.4831,,,2026-05-18,MacKenzie Gore,Reid Detmers,0
+20260807,13,Rangers,2026-05-25,Rangers,Astros,1,HOU,0.527,,,2026-05-25,Kumar Rocker,Tatsuya Imai,0
+20260821,13,Rangers,2026-05-26,Rangers,Astros,1,HOU,0.5459,,,2026-05-25,Jack Leiter,Spencer Arrighetti,0
 20260839,13,Rangers,2026-05-27,Rangers,Astros,1,HOU,,,,2026-05-25,,,0
 20260846,13,Rangers,2026-05-28,Rangers,Astros,1,HOU,,,,2026-05-25,,,0
 20260856,13,Rangers,2026-05-29,Rangers,Royals,1,KCR,,,,2026-05-25,,,0
@@ -2140,26 +2140,26 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260485,14,Blue Jays,2026-05-02,Twins,Blue Jays,0,MIN,0.5184,W,11-4,2026-04-27,Dylan Cease,Connor Prielipp,0
 20260499,14,Blue Jays,2026-05-03,Twins,Blue Jays,0,MIN,0.4519,L,3-4,2026-04-27,Trey Yesavage,Joe Ryan,0
 20260516,14,Blue Jays,2026-05-04,Rays,Blue Jays,0,TBR,0.4337,L,1-5,2026-05-04,Eric Lauer,Nick Martinez,0
-20260528,14,Blue Jays,2026-05-05,Rays,Blue Jays,0,TBR,0.4544,,,2026-05-04,Kevin Gausman,Drew Rasmussen,0
-20260541,14,Blue Jays,2026-05-06,Rays,Blue Jays,0,TBR,0.3658,,,2026-05-04,Patrick Corbin,Shane McClanahan,0
-20260568,14,Blue Jays,2026-05-08,Blue Jays,Angels,1,LAA,0.621,,,2026-05-04,Dylan Cease,Reid Detmers,0
-20260580,14,Blue Jays,2026-05-09,Blue Jays,Angels,1,LAA,0.6598,,,2026-05-04,Trey Yesavage,Jack Kochanowicz,0
-20260599,14,Blue Jays,2026-05-10,Blue Jays,Angels,1,LAA,0.518,,,2026-05-04,Eric Lauer,José Soriano,0
-20260612,14,Blue Jays,2026-05-11,Blue Jays,Rays,1,TBR,0.518,,,2026-05-11,Kevin Gausman,Shane McClanahan,0
-20260621,14,Blue Jays,2026-05-12,Blue Jays,Rays,1,TBR,0.5263,,,2026-05-11,Patrick Corbin,Jesse Scholtens,0
-20260636,14,Blue Jays,2026-05-13,Blue Jays,Rays,1,TBR,0.6301,,,2026-05-11,Dylan Cease,Steven Matz,0
-20260658,14,Blue Jays,2026-05-15,Tigers,Blue Jays,0,DET,0.4629,,,2026-05-11,Trey Yesavage,Framber Valdez,0
-20260672,14,Blue Jays,2026-05-16,Tigers,Blue Jays,0,DET,0.4364,,,2026-05-11,Eric Lauer,Casey Mize,0
-20260691,14,Blue Jays,2026-05-17,Tigers,Blue Jays,0,DET,0.5003,,,2026-05-11,Kevin Gausman,Jack Flaherty,0
-20260707,14,Blue Jays,2026-05-18,Yankees,Blue Jays,0,NYY,0.3578,,,2026-05-18,Patrick Corbin,Ryan Weathers,0
-20260721,14,Blue Jays,2026-05-19,Yankees,Blue Jays,0,NYY,0.4187,,,2026-05-18,Dylan Cease,Max Fried,0
-20260740,14,Blue Jays,2026-05-20,Yankees,Blue Jays,0,NYY,0.3512,,,2026-05-18,Max Scherzer,Cam Schlittler,0
-20260750,14,Blue Jays,2026-05-21,Yankees,Blue Jays,0,NYY,0.4461,,,2026-05-18,Trey Yesavage,Carlos Rodón,0
-20260757,14,Blue Jays,2026-05-22,Blue Jays,Pirates,1,PIT,0.5759,,,2026-05-18,Kevin Gausman,Bubba Chandler,0
-20260770,14,Blue Jays,2026-05-23,Blue Jays,Pirates,1,PIT,0.3984,,,2026-05-18,Patrick Corbin,Paul Skenes,0
-20260783,14,Blue Jays,2026-05-24,Blue Jays,Pirates,1,PIT,0.6076,,,2026-05-18,Dylan Cease,Mitch Keller,0
-20260808,14,Blue Jays,2026-05-25,Blue Jays,Marlins,1,MIA,0.5499,,,2026-05-25,Max Scherzer,Janson Junk,0
-20260816,14,Blue Jays,2026-05-26,Blue Jays,Marlins,1,MIA,,,,2026-05-25,,,0
+20260528,14,Blue Jays,2026-05-05,Rays,Blue Jays,0,TBR,0.4432,L,3-4,2026-05-04,Kevin Gausman,Drew Rasmussen,0
+20260541,14,Blue Jays,2026-05-06,Rays,Blue Jays,0,TBR,0.3744,,,2026-05-04,Patrick Corbin,Shane McClanahan,0
+20260568,14,Blue Jays,2026-05-08,Blue Jays,Angels,1,LAA,0.6198,,,2026-05-04,Dylan Cease,Reid Detmers,0
+20260580,14,Blue Jays,2026-05-09,Blue Jays,Angels,1,LAA,0.6588,,,2026-05-04,Trey Yesavage,Jack Kochanowicz,0
+20260599,14,Blue Jays,2026-05-10,Blue Jays,Angels,1,LAA,0.5161,,,2026-05-04,Eric Lauer,José Soriano,0
+20260612,14,Blue Jays,2026-05-11,Blue Jays,Rays,1,TBR,0.5282,,,2026-05-11,Kevin Gausman,Shane McClanahan,0
+20260621,14,Blue Jays,2026-05-12,Blue Jays,Rays,1,TBR,0.533,,,2026-05-11,Patrick Corbin,Jesse Scholtens,0
+20260636,14,Blue Jays,2026-05-13,Blue Jays,Rays,1,TBR,0.6061,,,2026-05-11,Dylan Cease,Joe Boyle,0
+20260658,14,Blue Jays,2026-05-15,Tigers,Blue Jays,0,DET,0.468,,,2026-05-11,Trey Yesavage,Framber Valdez,0
+20260672,14,Blue Jays,2026-05-16,Tigers,Blue Jays,0,DET,0.4344,,,2026-05-11,Eric Lauer,Casey Mize,0
+20260691,14,Blue Jays,2026-05-17,Tigers,Blue Jays,0,DET,0.4992,,,2026-05-11,Kevin Gausman,Jack Flaherty,0
+20260707,14,Blue Jays,2026-05-18,Yankees,Blue Jays,0,NYY,0.3542,,,2026-05-18,Patrick Corbin,Ryan Weathers,0
+20260721,14,Blue Jays,2026-05-19,Yankees,Blue Jays,0,NYY,0.4177,,,2026-05-18,Dylan Cease,Max Fried,0
+20260740,14,Blue Jays,2026-05-20,Yankees,Blue Jays,0,NYY,0.3499,,,2026-05-18,Max Scherzer,Cam Schlittler,0
+20260750,14,Blue Jays,2026-05-21,Yankees,Blue Jays,0,NYY,0.4449,,,2026-05-18,Trey Yesavage,Carlos Rodón,0
+20260757,14,Blue Jays,2026-05-22,Blue Jays,Pirates,1,PIT,0.5791,,,2026-05-18,Kevin Gausman,Bubba Chandler,0
+20260770,14,Blue Jays,2026-05-23,Blue Jays,Pirates,1,PIT,0.3985,,,2026-05-18,Patrick Corbin,Paul Skenes,0
+20260783,14,Blue Jays,2026-05-24,Blue Jays,Pirates,1,PIT,0.6084,,,2026-05-18,Dylan Cease,Mitch Keller,0
+20260808,14,Blue Jays,2026-05-25,Blue Jays,Marlins,1,MIA,0.5511,,,2026-05-25,Max Scherzer,Janson Junk,0
+20260816,14,Blue Jays,2026-05-26,Blue Jays,Marlins,1,MIA,0.5865,,,2026-05-25,Trey Yesavage,Sandy Alcantara,0
 20260826,14,Blue Jays,2026-05-27,Blue Jays,Marlins,1,MIA,,,,2026-05-25,,,0
 20260844,14,Blue Jays,2026-05-28,Orioles,Blue Jays,0,BAL,,,,2026-05-25,,,0
 20260850,14,Blue Jays,2026-05-29,Orioles,Blue Jays,0,BAL,,,,2026-05-25,,,0
@@ -2300,27 +2300,27 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260469,15,Diamondbacks,2026-05-01,Cubs,Diamondbacks,0,CHC,0.4532,L,5-6,2026-04-27,Zac Gallen,Colin Rea,0
 20260486,15,Diamondbacks,2026-05-02,Cubs,Diamondbacks,0,CHC,0.4089,L,0-2,2026-04-27,Ryne Nelson,Shota Imanaga,0
 20260507,15,Diamondbacks,2026-05-03,Cubs,Diamondbacks,0,CHC,0.3953,L,4-8,2026-04-27,Merrill Kelly,Matthew Boyd,0
-20260538,15,Diamondbacks,2026-05-05,Diamondbacks,Pirates,1,PIT,0.52,,,2026-05-04,Eduardo Rodriguez,Bubba Chandler,0
-20260555,15,Diamondbacks,2026-05-06,Diamondbacks,Pirates,1,PIT,0.4655,,,2026-05-04,Michael Soroka,Paul Skenes,0
-20260560,15,Diamondbacks,2026-05-07,Diamondbacks,Pirates,1,PIT,0.5431,,,2026-05-04,Zac Gallen,Mitch Keller,0
-20260576,15,Diamondbacks,2026-05-08,Diamondbacks,Mets,1,NYM,0.4586,,,2026-05-04,Ryne Nelson,Nolan McLean,0
-20260591,15,Diamondbacks,2026-05-09,Diamondbacks,Mets,1,NYM,0.484,,,2026-05-04,Merrill Kelly,Clay Holmes,0
-20260606,15,Diamondbacks,2026-05-10,Diamondbacks,Mets,1,NYM,0.4668,,,2026-05-04,Eduardo Rodriguez,David Peterson,0
-20260613,15,Diamondbacks,2026-05-11,Rangers,Diamondbacks,0,TEX,0.4783,,,2026-05-11,Michael Soroka,Nathan Eovaldi,0
-20260627,15,Diamondbacks,2026-05-12,Rangers,Diamondbacks,0,TEX,0.452,,,2026-05-11,Zac Gallen,MacKenzie Gore,0
-20260642,15,Diamondbacks,2026-05-13,Rangers,Diamondbacks,0,TEX,0.4623,,,2026-05-11,Ryne Nelson,Kumar Rocker,0
-20260668,15,Diamondbacks,2026-05-15,Rockies,Diamondbacks,0,COL,0.5413,,,2026-05-11,Merrill Kelly,Kyle Freeland,0
-20260674,15,Diamondbacks,2026-05-16,Rockies,Diamondbacks,0,COL,0.5581,,,2026-05-11,Eduardo Rodriguez,Tomoyuki Sugano,0
-20260698,15,Diamondbacks,2026-05-17,Rockies,Diamondbacks,0,COL,0.5865,,,2026-05-11,Michael Soroka,Michael Lorenzen,0
-20260715,15,Diamondbacks,2026-05-18,Diamondbacks,Giants,1,SFG,0.5709,,,2026-05-18,Zac Gallen,Robbie Ray,0
-20260730,15,Diamondbacks,2026-05-19,Diamondbacks,Giants,1,SFG,0.5197,,,2026-05-18,Ryne Nelson,Landen Roupp,0
-20260735,15,Diamondbacks,2026-05-20,Diamondbacks,Giants,1,SFG,0.5405,,,2026-05-18,Merrill Kelly,Tyler Mahle,0
-20260752,15,Diamondbacks,2026-05-21,Diamondbacks,Rockies,1,COL,0.6381,,,2026-05-18,Eduardo Rodriguez,Tomoyuki Sugano,0
-20260765,15,Diamondbacks,2026-05-22,Diamondbacks,Rockies,1,COL,0.6665,,,2026-05-18,Michael Soroka,Michael Lorenzen,0
-20260782,15,Diamondbacks,2026-05-23,Diamondbacks,Rockies,1,COL,0.6484,,,2026-05-18,Zac Gallen,Ryan Feltner,0
-20260794,15,Diamondbacks,2026-05-24,Diamondbacks,Rockies,1,COL,0.6495,,,2026-05-18,Ryne Nelson,Jose Quintana,0
-20260803,15,Diamondbacks,2026-05-25,Giants,Diamondbacks,0,SFG,0.4339,,,2026-05-25,Merrill Kelly,Landen Roupp,0
-20260824,15,Diamondbacks,2026-05-26,Giants,Diamondbacks,0,SFG,,,,2026-05-25,,,0
+20260538,15,Diamondbacks,2026-05-05,Diamondbacks,Pirates,1,PIT,0.517,W,9-0,2026-05-04,Eduardo Rodriguez,Bubba Chandler,0
+20260555,15,Diamondbacks,2026-05-06,Diamondbacks,Pirates,1,PIT,0.4677,,,2026-05-04,Michael Soroka,Paul Skenes,0
+20260560,15,Diamondbacks,2026-05-07,Diamondbacks,Pirates,1,PIT,0.5451,,,2026-05-04,Zac Gallen,Mitch Keller,0
+20260576,15,Diamondbacks,2026-05-08,Diamondbacks,Mets,1,NYM,0.4557,,,2026-05-04,Ryne Nelson,Nolan McLean,0
+20260591,15,Diamondbacks,2026-05-09,Diamondbacks,Mets,1,NYM,0.4812,,,2026-05-04,Merrill Kelly,Clay Holmes,0
+20260606,15,Diamondbacks,2026-05-10,Diamondbacks,Mets,1,NYM,0.4675,,,2026-05-04,Eduardo Rodriguez,David Peterson,0
+20260613,15,Diamondbacks,2026-05-11,Rangers,Diamondbacks,0,TEX,0.4799,,,2026-05-11,Michael Soroka,Nathan Eovaldi,0
+20260627,15,Diamondbacks,2026-05-12,Rangers,Diamondbacks,0,TEX,0.4536,,,2026-05-11,Zac Gallen,MacKenzie Gore,0
+20260642,15,Diamondbacks,2026-05-13,Rangers,Diamondbacks,0,TEX,0.4637,,,2026-05-11,Ryne Nelson,Kumar Rocker,0
+20260668,15,Diamondbacks,2026-05-15,Rockies,Diamondbacks,0,COL,0.5383,,,2026-05-11,Merrill Kelly,Kyle Freeland,0
+20260674,15,Diamondbacks,2026-05-16,Rockies,Diamondbacks,0,COL,0.5588,,,2026-05-11,Eduardo Rodriguez,Tomoyuki Sugano,0
+20260698,15,Diamondbacks,2026-05-17,Rockies,Diamondbacks,0,COL,0.5839,,,2026-05-11,Michael Soroka,Michael Lorenzen,0
+20260715,15,Diamondbacks,2026-05-18,Diamondbacks,Giants,1,SFG,0.5725,,,2026-05-18,Zac Gallen,Robbie Ray,0
+20260730,15,Diamondbacks,2026-05-19,Diamondbacks,Giants,1,SFG,0.5208,,,2026-05-18,Ryne Nelson,Landen Roupp,0
+20260735,15,Diamondbacks,2026-05-20,Diamondbacks,Giants,1,SFG,0.5418,,,2026-05-18,Merrill Kelly,Tyler Mahle,0
+20260752,15,Diamondbacks,2026-05-21,Diamondbacks,Rockies,1,COL,0.6388,,,2026-05-18,Eduardo Rodriguez,Tomoyuki Sugano,0
+20260765,15,Diamondbacks,2026-05-22,Diamondbacks,Rockies,1,COL,0.6639,,,2026-05-18,Michael Soroka,Michael Lorenzen,0
+20260782,15,Diamondbacks,2026-05-23,Diamondbacks,Rockies,1,COL,0.6456,,,2026-05-18,Zac Gallen,Ryan Feltner,0
+20260794,15,Diamondbacks,2026-05-24,Diamondbacks,Rockies,1,COL,0.6466,,,2026-05-18,Ryne Nelson,Jose Quintana,0
+20260803,15,Diamondbacks,2026-05-25,Giants,Diamondbacks,0,SFG,0.435,,,2026-05-25,Merrill Kelly,Landen Roupp,0
+20260824,15,Diamondbacks,2026-05-26,Giants,Diamondbacks,0,SFG,0.4533,,,2026-05-25,Eduardo Rodriguez,Tyler Mahle,0
 20260830,15,Diamondbacks,2026-05-27,Giants,Diamondbacks,0,SFG,,,,2026-05-25,,,0
 20260860,15,Diamondbacks,2026-05-29,Mariners,Diamondbacks,0,SEA,,,,2026-05-25,,,0
 20260875,15,Diamondbacks,2026-05-30,Mariners,Diamondbacks,0,SEA,,,,2026-05-25,,,0
@@ -2465,25 +2465,25 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260495,16,Braves,2026-05-02,Rockies,Braves,0,COL,0.6112,W,9-1,2026-04-27,Chris Sale,Brennan Bernardino,0
 20260508,16,Braves,2026-05-03,Rockies,Braves,0,COL,0.5771,W,11-6,2026-04-27,Spencer Strider,Kyle Freeland,0
 20260524,16,Braves,2026-05-04,Mariners,Braves,0,SEA,0.3862,L,4-5,2026-05-04,JR Ritchie,Logan Gilbert,0
-20260539,16,Braves,2026-05-05,Mariners,Braves,0,SEA,0.4249,,,2026-05-04,Bryce Elder,George Kirby,0
-20260547,16,Braves,2026-05-06,Mariners,Braves,0,SEA,0.406,,,2026-05-04,Grant Holmes,Bryan Woo,0
-20260578,16,Braves,2026-05-08,Dodgers,Braves,0,LAD,0.4782,,,2026-05-04,Chris Sale,Emmet Sheehan,0
-20260594,16,Braves,2026-05-09,Dodgers,Braves,0,LAD,0.4909,,,2026-05-04,Spencer Strider,Roki Sasaki,0
-20260608,16,Braves,2026-05-10,Dodgers,Braves,0,LAD,0.4163,,,2026-05-04,JR Ritchie,Justin Wrobleski,0
-20260623,16,Braves,2026-05-12,Braves,Cubs,1,CHC,0.5699,,,2026-05-11,Bryce Elder,Colin Rea,0
-20260638,16,Braves,2026-05-13,Braves,Cubs,1,CHC,0.5215,,,2026-05-11,Grant Holmes,Shota Imanaga,0
-20260654,16,Braves,2026-05-14,Braves,Cubs,1,CHC,0.6019,,,2026-05-11,Chris Sale,Matthew Boyd,0
-20260662,16,Braves,2026-05-15,Braves,Red Sox,1,BOS,0.5732,,,2026-05-11,Spencer Strider,Ranger Suarez,0
-20260683,16,Braves,2026-05-16,Braves,Red Sox,1,BOS,0.5237,,,2026-05-11,JR Ritchie,Payton Tolle,0
-20260690,16,Braves,2026-05-17,Braves,Red Sox,1,BOS,0.5856,,,2026-05-11,Bryce Elder,Brayan Bello,0
-20260705,16,Braves,2026-05-18,Marlins,Braves,0,MIA,0.4821,,,2026-05-18,Grant Holmes,Max Meyer,0
-20260716,16,Braves,2026-05-19,Marlins,Braves,0,MIA,0.5846,,,2026-05-18,Chris Sale,,0
-20260737,16,Braves,2026-05-20,Marlins,Braves,0,MIA,0.5555,,,2026-05-18,Spencer Strider,Janson Junk,0
-20260749,16,Braves,2026-05-21,Marlins,Braves,0,MIA,0.4685,,,2026-05-18,JR Ritchie,Sandy Alcantara,0
-20260761,16,Braves,2026-05-22,Braves,Nationals,1,WSN,0.6828,,,2026-05-18,Bryce Elder,Miles Mikolas,0
-20260775,16,Braves,2026-05-23,Braves,Nationals,1,WSN,0.6358,,,2026-05-18,Grant Holmes,Jake Irvin,0
-20260796,16,Braves,2026-05-24,Braves,Nationals,1,WSN,0.6935,,,2026-05-18,Chris Sale,Foster Griffin,0
-20260815,16,Braves,2026-05-26,Red Sox,Braves,0,BOS,,,,2026-05-25,,,0
+20260539,16,Braves,2026-05-05,Mariners,Braves,0,SEA,0.4208,W,3-2,2026-05-04,Bryce Elder,George Kirby,0
+20260547,16,Braves,2026-05-06,Mariners,Braves,0,SEA,0.4068,,,2026-05-04,Martín Pérez,Bryan Woo,0
+20260578,16,Braves,2026-05-08,Dodgers,Braves,0,LAD,0.4798,,,2026-05-04,Chris Sale,Emmet Sheehan,0
+20260594,16,Braves,2026-05-09,Dodgers,Braves,0,LAD,0.4925,,,2026-05-04,Spencer Strider,Roki Sasaki,0
+20260608,16,Braves,2026-05-10,Dodgers,Braves,0,LAD,0.4177,,,2026-05-04,JR Ritchie,Justin Wrobleski,0
+20260623,16,Braves,2026-05-12,Braves,Cubs,1,CHC,0.5723,,,2026-05-11,Bryce Elder,Colin Rea,0
+20260638,16,Braves,2026-05-13,Braves,Cubs,1,CHC,0.5229,,,2026-05-11,Grant Holmes,Shota Imanaga,0
+20260654,16,Braves,2026-05-14,Braves,Cubs,1,CHC,0.6029,,,2026-05-11,Chris Sale,Matthew Boyd,0
+20260662,16,Braves,2026-05-15,Braves,Red Sox,1,BOS,0.5741,,,2026-05-11,Spencer Strider,Ranger Suarez,0
+20260683,16,Braves,2026-05-16,Braves,Red Sox,1,BOS,0.5245,,,2026-05-11,JR Ritchie,Payton Tolle,0
+20260690,16,Braves,2026-05-17,Braves,Red Sox,1,BOS,0.5845,,,2026-05-11,Bryce Elder,Brayan Bello,0
+20260705,16,Braves,2026-05-18,Marlins,Braves,0,MIA,0.4831,,,2026-05-18,Grant Holmes,Max Meyer,0
+20260716,16,Braves,2026-05-19,Marlins,Braves,0,MIA,0.5852,,,2026-05-18,Chris Sale,,0
+20260737,16,Braves,2026-05-20,Marlins,Braves,0,MIA,0.5585,,,2026-05-18,Spencer Strider,Janson Junk,0
+20260749,16,Braves,2026-05-21,Marlins,Braves,0,MIA,0.4679,,,2026-05-18,JR Ritchie,Sandy Alcantara,0
+20260761,16,Braves,2026-05-22,Braves,Nationals,1,WSN,0.6858,,,2026-05-18,Bryce Elder,Miles Mikolas,0
+20260775,16,Braves,2026-05-23,Braves,Nationals,1,WSN,0.6376,,,2026-05-18,Grant Holmes,Jake Irvin,0
+20260796,16,Braves,2026-05-24,Braves,Nationals,1,WSN,0.6952,,,2026-05-18,Chris Sale,Foster Griffin,0
+20260815,16,Braves,2026-05-26,Red Sox,Braves,0,BOS,0.5042,,,2026-05-25,Spencer Strider,Sonny Gray,0
 20260835,16,Braves,2026-05-27,Red Sox,Braves,0,BOS,,,,2026-05-25,,,0
 20260843,16,Braves,2026-05-28,Red Sox,Braves,0,BOS,,,,2026-05-25,,,0
 20260847,16,Braves,2026-05-29,Reds,Braves,0,CIN,,,,2026-05-25,,,0
@@ -2626,26 +2626,26 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260486,17,Cubs,2026-05-02,Cubs,Diamondbacks,1,ARI,0.5911,W,2-0,2026-04-27,Shota Imanaga,Ryne Nelson,0
 20260507,17,Cubs,2026-05-03,Cubs,Diamondbacks,1,ARI,0.6047,W,8-4,2026-04-27,Matthew Boyd,Merrill Kelly,0
 20260518,17,Cubs,2026-05-04,Cubs,Reds,1,CIN,0.6334,W,5-4,2026-05-04,Edward Cabrera,Chase Petty,0
-20260532,17,Cubs,2026-05-05,Cubs,Reds,1,CIN,0.5511,,,2026-05-04,Jameson Taillon,Andrew Abbott,0
-20260553,17,Cubs,2026-05-06,Cubs,Reds,1,CIN,0.575,,,2026-05-04,Colin Rea,Brady Singer,0
-20260559,17,Cubs,2026-05-07,Cubs,Reds,1,CIN,0.601,,,2026-05-04,Shota Imanaga,Rhett Lowder,0
-20260575,17,Cubs,2026-05-08,Rangers,Cubs,0,TEX,0.5156,,,2026-05-04,Matthew Boyd,Kumar Rocker,0
-20260587,17,Cubs,2026-05-09,Rangers,Cubs,0,TEX,0.5061,,,2026-05-04,Edward Cabrera,Jack Leiter,0
-20260604,17,Cubs,2026-05-10,Rangers,Cubs,0,TEX,0.3925,,,2026-05-04,Jameson Taillon,Jacob deGrom,0
-20260623,17,Cubs,2026-05-12,Braves,Cubs,0,ATL,0.4301,,,2026-05-11,Colin Rea,Bryce Elder,0
-20260638,17,Cubs,2026-05-13,Braves,Cubs,0,ATL,0.4785,,,2026-05-11,Shota Imanaga,Grant Holmes,0
-20260654,17,Cubs,2026-05-14,Braves,Cubs,0,ATL,0.3981,,,2026-05-11,Matthew Boyd,Chris Sale,0
-20260664,17,Cubs,2026-05-15,White Sox,Cubs,0,CHW,0.5693,,,2026-05-11,Edward Cabrera,Anthony Kay,0
-20260680,17,Cubs,2026-05-16,White Sox,Cubs,0,CHW,0.4682,,,2026-05-11,Jameson Taillon,Davis Martin,0
-20260695,17,Cubs,2026-05-17,White Sox,Cubs,0,CHW,0.5551,,,2026-05-11,Colin Rea,Erick Fedde,0
-20260708,17,Cubs,2026-05-18,Cubs,Brewers,1,MIL,0.5168,,,2026-05-18,Shota Imanaga,Jacob Misiorowski,0
-20260722,17,Cubs,2026-05-19,Cubs,Brewers,1,MIL,0.5659,,,2026-05-18,Matthew Boyd,Kyle Harrison,0
-20260741,17,Cubs,2026-05-20,Cubs,Brewers,1,MIL,0.5576,,,2026-05-18,Edward Cabrera,Logan Henderson,0
-20260753,17,Cubs,2026-05-22,Cubs,Astros,1,HOU,0.5538,,,2026-05-18,Jameson Taillon,Peter Lambert,0
-20260769,17,Cubs,2026-05-23,Cubs,Astros,1,HOU,0.5467,,,2026-05-18,Colin Rea,Lance McCullers Jr.,0
-20260792,17,Cubs,2026-05-24,Cubs,Astros,1,HOU,0.5766,,,2026-05-18,Shota Imanaga,Mike Burrows,0
-20260805,17,Cubs,2026-05-25,Pirates,Cubs,0,PIT,0.4717,,,2026-05-25,Matthew Boyd,Carmen Mlodzinski,0
-20260813,17,Cubs,2026-05-26,Pirates,Cubs,0,PIT,,,,2026-05-25,,,0
+20260532,17,Cubs,2026-05-05,Cubs,Reds,1,CIN,0.5415,W,3-2,2026-05-04,Jameson Taillon,Andrew Abbott,0
+20260553,17,Cubs,2026-05-06,Cubs,Reds,1,CIN,0.5766,,,2026-05-04,Colin Rea,Brady Singer,0
+20260559,17,Cubs,2026-05-07,Cubs,Reds,1,CIN,0.6028,,,2026-05-04,Shota Imanaga,Rhett Lowder,0
+20260575,17,Cubs,2026-05-08,Rangers,Cubs,0,TEX,0.5163,,,2026-05-04,Matthew Boyd,Kumar Rocker,0
+20260587,17,Cubs,2026-05-09,Rangers,Cubs,0,TEX,0.5069,,,2026-05-04,Edward Cabrera,Jack Leiter,0
+20260604,17,Cubs,2026-05-10,Rangers,Cubs,0,TEX,0.3949,,,2026-05-04,Jameson Taillon,Jacob deGrom,0
+20260623,17,Cubs,2026-05-12,Braves,Cubs,0,ATL,0.4277,,,2026-05-11,Colin Rea,Bryce Elder,0
+20260638,17,Cubs,2026-05-13,Braves,Cubs,0,ATL,0.4771,,,2026-05-11,Shota Imanaga,Grant Holmes,0
+20260654,17,Cubs,2026-05-14,Braves,Cubs,0,ATL,0.3971,,,2026-05-11,Matthew Boyd,Chris Sale,0
+20260664,17,Cubs,2026-05-15,White Sox,Cubs,0,CHW,0.57,,,2026-05-11,Edward Cabrera,Anthony Kay,0
+20260680,17,Cubs,2026-05-16,White Sox,Cubs,0,CHW,0.4668,,,2026-05-11,Jameson Taillon,Davis Martin,0
+20260695,17,Cubs,2026-05-17,White Sox,Cubs,0,CHW,0.5636,,,2026-05-11,Colin Rea,Erick Fedde,0
+20260708,17,Cubs,2026-05-18,Cubs,Brewers,1,MIL,0.5124,,,2026-05-18,Shota Imanaga,Jacob Misiorowski,0
+20260722,17,Cubs,2026-05-19,Cubs,Brewers,1,MIL,0.5618,,,2026-05-18,Matthew Boyd,Kyle Harrison,0
+20260741,17,Cubs,2026-05-20,Cubs,Brewers,1,MIL,0.5534,,,2026-05-18,Edward Cabrera,Logan Henderson,0
+20260753,17,Cubs,2026-05-22,Cubs,Astros,1,HOU,0.5598,,,2026-05-18,Jameson Taillon,Peter Lambert,0
+20260769,17,Cubs,2026-05-23,Cubs,Astros,1,HOU,0.5501,,,2026-05-18,Colin Rea,Lance McCullers Jr.,0
+20260792,17,Cubs,2026-05-24,Cubs,Astros,1,HOU,0.5799,,,2026-05-18,Shota Imanaga,Mike Burrows,0
+20260805,17,Cubs,2026-05-25,Pirates,Cubs,0,PIT,0.473,,,2026-05-25,Matthew Boyd,Carmen Mlodzinski,0
+20260813,17,Cubs,2026-05-26,Pirates,Cubs,0,PIT,0.4716,,,2026-05-25,Edward Cabrera,Braxton Ashcraft,0
 20260833,17,Cubs,2026-05-27,Pirates,Cubs,0,PIT,,,,2026-05-25,,,0
 20260845,17,Cubs,2026-05-28,Pirates,Cubs,0,PIT,,,,2026-05-25,,,0
 20260854,17,Cubs,2026-05-29,Cardinals,Cubs,0,STL,,,,2026-05-25,,,0
@@ -2788,26 +2788,26 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260488,18,Reds,2026-05-02,Pirates,Reds,0,PIT,0.4067,L,7-17,2026-04-27,Rhett Lowder,Carmen Mlodzinski,0
 20260500,18,Reds,2026-05-03,Pirates,Reds,0,PIT,0.4511,L,0-1,2026-04-27,Chase Burns,Braxton Ashcraft,0
 20260518,18,Reds,2026-05-04,Cubs,Reds,0,CHC,0.3666,L,4-5,2026-05-04,Chase Petty,Edward Cabrera,0
-20260532,18,Reds,2026-05-05,Cubs,Reds,0,CHC,0.4489,,,2026-05-04,Andrew Abbott,Jameson Taillon,0
-20260553,18,Reds,2026-05-06,Cubs,Reds,0,CHC,0.425,,,2026-05-04,Brady Singer,Colin Rea,0
-20260559,18,Reds,2026-05-07,Cubs,Reds,0,CHC,0.399,,,2026-05-04,Rhett Lowder,Shota Imanaga,0
-20260565,18,Reds,2026-05-08,Reds,Astros,1,HOU,0.5452,,,2026-05-04,Nick Lodolo,Mike Burrows,0
-20260582,18,Reds,2026-05-09,Reds,Astros,1,HOU,0.5737,,,2026-05-04,Chase Burns,Spencer Arrighetti,0
-20260600,18,Reds,2026-05-10,Reds,Astros,1,HOU,0.5304,,,2026-05-04,Andrew Abbott,Cody Bolton,0
-20260618,18,Reds,2026-05-12,Reds,Nationals,1,WSN,0.6212,,,2026-05-11,Brady Singer,Miles Mikolas,0
-20260633,18,Reds,2026-05-13,Reds,Nationals,1,WSN,0.594,,,2026-05-11,Rhett Lowder,Jake Irvin,0
-20260647,18,Reds,2026-05-14,Reds,Nationals,1,WSN,0.5917,,,2026-05-11,Nick Lodolo,Foster Griffin,0
-20260660,18,Reds,2026-05-15,Guardians,Reds,0,CLE,0.4862,,,2026-05-11,Chase Burns,Tanner Bibee,0
-20260678,18,Reds,2026-05-16,Guardians,Reds,0,CLE,0.4208,,,2026-05-11,Andrew Abbott,Gavin Williams,0
-20260692,18,Reds,2026-05-17,Guardians,Reds,0,CLE,0.4233,,,2026-05-11,Brady Singer,Joey Cantillo,0
-20260703,18,Reds,2026-05-18,Phillies,Reds,0,PHI,0.4376,,,2026-05-18,Rhett Lowder,Andrew Painter,0
-20260718,18,Reds,2026-05-19,Phillies,Reds,0,PHI,0.3924,,,2026-05-18,Nick Lodolo,Jesús Luzardo,0
-20260731,18,Reds,2026-05-20,Phillies,Reds,0,PHI,0.4543,,,2026-05-18,Chase Burns,Aaron Nola,0
-20260754,18,Reds,2026-05-22,Reds,Cardinals,1,STL,0.5354,,,2026-05-18,Andrew Abbott,Andre Pallante,0
-20260778,18,Reds,2026-05-23,Reds,Cardinals,1,STL,0.5423,,,2026-05-18,Brady Singer,Matthew Liberatore,0
-20260788,18,Reds,2026-05-24,Reds,Cardinals,1,STL,0.5292,,,2026-05-18,Rhett Lowder,Michael McGreevy,0
-20260802,18,Reds,2026-05-25,Mets,Reds,0,NYM,0.4187,,,2026-05-25,Nick Lodolo,Clay Holmes,0
-20260817,18,Reds,2026-05-26,Mets,Reds,0,NYM,,,,2026-05-25,,,0
+20260532,18,Reds,2026-05-05,Cubs,Reds,0,CHC,0.4585,L,2-3,2026-05-04,Andrew Abbott,Jameson Taillon,0
+20260553,18,Reds,2026-05-06,Cubs,Reds,0,CHC,0.4234,,,2026-05-04,Brady Singer,Colin Rea,0
+20260559,18,Reds,2026-05-07,Cubs,Reds,0,CHC,0.3972,,,2026-05-04,Rhett Lowder,Shota Imanaga,0
+20260565,18,Reds,2026-05-08,Reds,Astros,1,HOU,0.547,,,2026-05-04,Nick Lodolo,Mike Burrows,0
+20260582,18,Reds,2026-05-09,Reds,Astros,1,HOU,0.5755,,,2026-05-04,Chase Burns,Spencer Arrighetti,0
+20260600,18,Reds,2026-05-10,Reds,Astros,1,HOU,0.5376,,,2026-05-04,Andrew Abbott,Cody Bolton,0
+20260618,18,Reds,2026-05-12,Reds,Nationals,1,WSN,0.6205,,,2026-05-11,Brady Singer,Miles Mikolas,0
+20260633,18,Reds,2026-05-13,Reds,Nationals,1,WSN,0.5927,,,2026-05-11,Rhett Lowder,Jake Irvin,0
+20260647,18,Reds,2026-05-14,Reds,Nationals,1,WSN,0.591,,,2026-05-11,Nick Lodolo,Foster Griffin,0
+20260660,18,Reds,2026-05-15,Guardians,Reds,0,CLE,0.4864,,,2026-05-11,Chase Burns,Tanner Bibee,0
+20260678,18,Reds,2026-05-16,Guardians,Reds,0,CLE,0.4228,,,2026-05-11,Andrew Abbott,Gavin Williams,0
+20260692,18,Reds,2026-05-17,Guardians,Reds,0,CLE,0.4235,,,2026-05-11,Brady Singer,Joey Cantillo,0
+20260703,18,Reds,2026-05-18,Phillies,Reds,0,PHI,0.4357,,,2026-05-18,Rhett Lowder,Andrew Painter,0
+20260718,18,Reds,2026-05-19,Phillies,Reds,0,PHI,0.3908,,,2026-05-18,Nick Lodolo,Jesús Luzardo,0
+20260731,18,Reds,2026-05-20,Phillies,Reds,0,PHI,0.4529,,,2026-05-18,Chase Burns,Aaron Nola,0
+20260754,18,Reds,2026-05-22,Reds,Cardinals,1,STL,0.5311,,,2026-05-18,Andrew Abbott,Kyle Leahy,0
+20260778,18,Reds,2026-05-23,Reds,Cardinals,1,STL,0.5249,,,2026-05-18,Brady Singer,Andre Pallante,0
+20260788,18,Reds,2026-05-24,Reds,Cardinals,1,STL,0.5442,,,2026-05-18,Rhett Lowder,Matthew Liberatore,0
+20260802,18,Reds,2026-05-25,Mets,Reds,0,NYM,0.4137,,,2026-05-25,Nick Lodolo,Clay Holmes,0
+20260817,18,Reds,2026-05-26,Mets,Reds,0,NYM,0.4333,,,2026-05-25,Chase Burns,David Peterson,0
 20260836,18,Reds,2026-05-27,Mets,Reds,0,NYM,,,,2026-05-25,,,0
 20260847,18,Reds,2026-05-29,Reds,Braves,1,ATL,,,,2026-05-25,,,0
 20260872,18,Reds,2026-05-30,Reds,Braves,1,ATL,,,,2026-05-25,,,0
@@ -2951,26 +2951,26 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260495,19,Rockies,2026-05-02,Rockies,Braves,1,ATL,0.3888,L,1-9,2026-04-27,Brennan Bernardino,Chris Sale,0
 20260508,19,Rockies,2026-05-03,Rockies,Braves,1,ATL,0.4229,L,6-11,2026-04-27,Kyle Freeland,Spencer Strider,0
 20260522,19,Rockies,2026-05-04,Rockies,Mets,1,NYM,0.3834,L,2-4,2026-05-04,Tomoyuki Sugano,Huascar Brazobán,0
-20260536,19,Rockies,2026-05-05,Rockies,Mets,1,NYM,0.3853,,,2026-05-04,Michael Lorenzen,Freddy Peralta,0
-20260544,19,Rockies,2026-05-06,Rockies,Mets,1,NYM,0.3697,,,2026-05-04,Jose Quintana,Freddy Peralta,0
-20260566,19,Rockies,2026-05-08,Phillies,Rockies,0,PHI,0.3195,,,2026-05-04,Chase Dollander,Jesús Luzardo,0
-20260585,19,Rockies,2026-05-09,Phillies,Rockies,0,PHI,0.3349,,,2026-05-04,Kyle Freeland,Aaron Nola,0
-20260597,19,Rockies,2026-05-10,Phillies,Rockies,0,PHI,0.2487,,,2026-05-04,Tomoyuki Sugano,Cristopher Sánchez,0
-20260619,19,Rockies,2026-05-12,Pirates,Rockies,0,PIT,0.2663,,,2026-05-11,Michael Lorenzen,Paul Skenes,0
-20260634,19,Rockies,2026-05-13,Pirates,Rockies,0,PIT,0.3791,,,2026-05-11,Chase Dollander,Mitch Keller,0
-20260646,19,Rockies,2026-05-14,Pirates,Rockies,0,PIT,0.3114,,,2026-05-11,Jose Quintana,Carmen Mlodzinski,0
-20260668,19,Rockies,2026-05-15,Rockies,Diamondbacks,1,ARI,0.4587,,,2026-05-11,Kyle Freeland,Merrill Kelly,0
-20260674,19,Rockies,2026-05-16,Rockies,Diamondbacks,1,ARI,0.4419,,,2026-05-11,Tomoyuki Sugano,Eduardo Rodriguez,0
-20260698,19,Rockies,2026-05-17,Rockies,Diamondbacks,1,ARI,0.4135,,,2026-05-11,Michael Lorenzen,Michael Soroka,0
-20260711,19,Rockies,2026-05-18,Rockies,Rangers,1,TEX,0.424,,,2026-05-18,Ryan Feltner,MacKenzie Gore,0
-20260726,19,Rockies,2026-05-19,Rockies,Rangers,1,TEX,0.4326,,,2026-05-18,Jose Quintana,Kumar Rocker,0
-20260734,19,Rockies,2026-05-20,Rockies,Rangers,1,TEX,0.4494,,,2026-05-18,Kyle Freeland,Jack Leiter,0
-20260752,19,Rockies,2026-05-21,Diamondbacks,Rockies,0,ARI,0.3619,,,2026-05-18,Tomoyuki Sugano,Eduardo Rodriguez,0
-20260765,19,Rockies,2026-05-22,Diamondbacks,Rockies,0,ARI,0.3335,,,2026-05-18,Michael Lorenzen,Michael Soroka,0
-20260782,19,Rockies,2026-05-23,Diamondbacks,Rockies,0,ARI,0.3516,,,2026-05-18,Ryan Feltner,Zac Gallen,0
-20260794,19,Rockies,2026-05-24,Diamondbacks,Rockies,0,ARI,0.3505,,,2026-05-18,Jose Quintana,Ryne Nelson,0
-20260809,19,Rockies,2026-05-25,Dodgers,Rockies,0,LAD,0.2419,,,2026-05-25,Kyle Freeland,Shohei Ohtani,0
-20260825,19,Rockies,2026-05-26,Dodgers,Rockies,0,LAD,,,,2026-05-25,,,0
+20260544,19,Rockies,2026-05-06,Rockies,Mets,1,NYM,0.3854,,,2026-05-04,Michael Lorenzen,Freddy Peralta,0
+20260536,19,Rockies,2026-05-07,Rockies,Mets,1,NYM,0.3905,,,2026-05-04,Jose Quintana,Christian Scott,0
+20260566,19,Rockies,2026-05-08,Phillies,Rockies,0,PHI,0.3221,,,2026-05-04,Chase Dollander,Jesús Luzardo,0
+20260585,19,Rockies,2026-05-09,Phillies,Rockies,0,PHI,0.3385,,,2026-05-04,Kyle Freeland,Aaron Nola,0
+20260597,19,Rockies,2026-05-10,Phillies,Rockies,0,PHI,0.2479,,,2026-05-04,Tomoyuki Sugano,Cristopher Sánchez,0
+20260619,19,Rockies,2026-05-12,Pirates,Rockies,0,PIT,0.2706,,,2026-05-11,Michael Lorenzen,Paul Skenes,0
+20260634,19,Rockies,2026-05-13,Pirates,Rockies,0,PIT,0.3419,,,2026-05-11,Jose Quintana,Mitch Keller,0
+20260646,19,Rockies,2026-05-14,Pirates,Rockies,0,PIT,0.3565,,,2026-05-11,Chase Dollander,Carmen Mlodzinski,0
+20260668,19,Rockies,2026-05-15,Rockies,Diamondbacks,1,ARI,0.4617,,,2026-05-11,Kyle Freeland,Merrill Kelly,0
+20260674,19,Rockies,2026-05-16,Rockies,Diamondbacks,1,ARI,0.4412,,,2026-05-11,Tomoyuki Sugano,Eduardo Rodriguez,0
+20260698,19,Rockies,2026-05-17,Rockies,Diamondbacks,1,ARI,0.4161,,,2026-05-11,Michael Lorenzen,Michael Soroka,0
+20260711,19,Rockies,2026-05-18,Rockies,Rangers,1,TEX,0.4283,,,2026-05-18,Ryan Feltner,MacKenzie Gore,0
+20260726,19,Rockies,2026-05-19,Rockies,Rangers,1,TEX,0.4369,,,2026-05-18,Jose Quintana,Kumar Rocker,0
+20260734,19,Rockies,2026-05-20,Rockies,Rangers,1,TEX,0.4537,,,2026-05-18,Kyle Freeland,Jack Leiter,0
+20260752,19,Rockies,2026-05-21,Diamondbacks,Rockies,0,ARI,0.3612,,,2026-05-18,Tomoyuki Sugano,Eduardo Rodriguez,0
+20260765,19,Rockies,2026-05-22,Diamondbacks,Rockies,0,ARI,0.3361,,,2026-05-18,Michael Lorenzen,Michael Soroka,0
+20260782,19,Rockies,2026-05-23,Diamondbacks,Rockies,0,ARI,0.3544,,,2026-05-18,Ryan Feltner,Zac Gallen,0
+20260794,19,Rockies,2026-05-24,Diamondbacks,Rockies,0,ARI,0.3534,,,2026-05-18,Jose Quintana,Ryne Nelson,0
+20260809,19,Rockies,2026-05-25,Dodgers,Rockies,0,LAD,0.2477,,,2026-05-25,Kyle Freeland,Shohei Ohtani,0
+20260825,19,Rockies,2026-05-26,Dodgers,Rockies,0,LAD,0.2417,,,2026-05-25,Tomoyuki Sugano,Tyler Glasnow,0
 20260840,19,Rockies,2026-05-27,Dodgers,Rockies,0,LAD,,,,2026-05-25,,,0
 20260858,19,Rockies,2026-05-29,Rockies,Giants,1,SFG,,,,2026-05-25,,,0
 20260873,19,Rockies,2026-05-30,Rockies,Giants,1,SFG,,,,2026-05-25,,,0
@@ -3112,27 +3112,27 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260491,20,Marlins,2026-05-02,Marlins,Phillies,1,PHI,0.5464,W,4-0,2026-04-27,Max Meyer,Andrew Painter,0
 20260505,20,Marlins,2026-05-03,Marlins,Phillies,1,PHI,0.4254,L,2-7,2026-04-27,Chris Paddack,Jesús Luzardo,0
 20260514,20,Marlins,2026-05-04,Marlins,Phillies,1,PHI,0.4866,L,0-1,2026-05-04,Janson Junk,Aaron Nola,0
-20260529,20,Marlins,2026-05-05,Marlins,Orioles,1,BAL,0.5386,,,2026-05-04,Sandy Alcantara,Chris Bassitt,0
-20260550,20,Marlins,2026-05-06,Marlins,Orioles,1,BAL,0.5528,,,2026-05-04,Eury Pérez,Brandon Young,0
-20260562,20,Marlins,2026-05-07,Marlins,Orioles,1,BAL,0.5265,,,2026-05-04,Max Meyer,Cade Povich,0
-20260569,20,Marlins,2026-05-08,Marlins,Nationals,1,WSN,0.5713,,,2026-05-04,,Foster Griffin,0
-20260584,20,Marlins,2026-05-09,Marlins,Nationals,1,WSN,0.6124,,,2026-05-04,Janson Junk,Zack Littell,0
-20260595,20,Marlins,2026-05-10,Marlins,Nationals,1,WSN,0.5609,,,2026-05-04,Sandy Alcantara,Cade Cavalli,0
-20260625,20,Marlins,2026-05-12,Twins,Marlins,0,MIN,0.475,,,2026-05-11,Eury Pérez,Bailey Ober,0
-20260640,20,Marlins,2026-05-13,Twins,Marlins,0,MIN,0.5018,,,2026-05-11,Max Meyer,Simeon Woods Richardson,0
-20260649,20,Marlins,2026-05-14,Twins,Marlins,0,MIN,0.4604,,,2026-05-11,,Mick Abel,0
-20260661,20,Marlins,2026-05-15,Rays,Marlins,0,TBR,0.4353,,,2026-05-11,Janson Junk,Nick Martinez,0
-20260677,20,Marlins,2026-05-16,Rays,Marlins,0,TBR,0.4205,,,2026-05-11,Sandy Alcantara,Drew Rasmussen,0
-20260687,20,Marlins,2026-05-17,Rays,Marlins,0,TBR,0.4027,,,2026-05-11,Eury Pérez,Shane McClanahan,0
-20260705,20,Marlins,2026-05-18,Marlins,Braves,1,ATL,0.5179,,,2026-05-18,Max Meyer,Grant Holmes,0
-20260716,20,Marlins,2026-05-19,Marlins,Braves,1,ATL,0.4154,,,2026-05-18,,Chris Sale,0
-20260737,20,Marlins,2026-05-20,Marlins,Braves,1,ATL,0.4445,,,2026-05-18,Janson Junk,Spencer Strider,0
-20260749,20,Marlins,2026-05-21,Marlins,Braves,1,ATL,0.5315,,,2026-05-18,Sandy Alcantara,JR Ritchie,0
-20260759,20,Marlins,2026-05-22,Marlins,Mets,1,NYM,0.4769,,,2026-05-18,Eury Pérez,Freddy Peralta,0
-20260777,20,Marlins,2026-05-23,Marlins,Mets,1,NYM,0.4966,,,2026-05-18,Max Meyer,Christian Scott,0
-20260789,20,Marlins,2026-05-24,Marlins,Mets,1,NYM,0.4474,,,2026-05-18,,Nolan McLean,0
-20260808,20,Marlins,2026-05-25,Blue Jays,Marlins,0,TOR,0.4501,,,2026-05-25,Janson Junk,Max Scherzer,0
-20260816,20,Marlins,2026-05-26,Blue Jays,Marlins,0,TOR,,,,2026-05-25,,,0
+20260529,20,Marlins,2026-05-05,Marlins,Orioles,1,BAL,0.5442,L,7-9,2026-05-04,Sandy Alcantara,Chris Bassitt,0
+20260550,20,Marlins,2026-05-06,Marlins,Orioles,1,BAL,0.553,,,2026-05-04,Eury Pérez,Brandon Young,0
+20260562,20,Marlins,2026-05-07,Marlins,Orioles,1,BAL,0.5266,,,2026-05-04,Max Meyer,Cade Povich,0
+20260569,20,Marlins,2026-05-08,Marlins,Nationals,1,WSN,0.5726,,,2026-05-04,,Foster Griffin,0
+20260584,20,Marlins,2026-05-09,Marlins,Nationals,1,WSN,0.6111,,,2026-05-04,Janson Junk,Zack Littell,0
+20260595,20,Marlins,2026-05-10,Marlins,Nationals,1,WSN,0.5657,,,2026-05-04,Sandy Alcantara,Cade Cavalli,0
+20260625,20,Marlins,2026-05-12,Twins,Marlins,0,MIN,0.4755,,,2026-05-11,Eury Pérez,Bailey Ober,0
+20260640,20,Marlins,2026-05-13,Twins,Marlins,0,MIN,0.5022,,,2026-05-11,Max Meyer,Simeon Woods Richardson,0
+20260649,20,Marlins,2026-05-14,Twins,Marlins,0,MIN,0.4608,,,2026-05-11,,Mick Abel,0
+20260661,20,Marlins,2026-05-15,Rays,Marlins,0,TBR,0.4433,,,2026-05-11,Janson Junk,Nick Martinez,0
+20260677,20,Marlins,2026-05-16,Rays,Marlins,0,TBR,0.4328,,,2026-05-11,Sandy Alcantara,Drew Rasmussen,0
+20260687,20,Marlins,2026-05-17,Rays,Marlins,0,TBR,0.4132,,,2026-05-11,Eury Pérez,Shane McClanahan,0
+20260705,20,Marlins,2026-05-18,Marlins,Braves,1,ATL,0.5169,,,2026-05-18,Max Meyer,Grant Holmes,0
+20260716,20,Marlins,2026-05-19,Marlins,Braves,1,ATL,0.4148,,,2026-05-18,,Chris Sale,0
+20260737,20,Marlins,2026-05-20,Marlins,Braves,1,ATL,0.4415,,,2026-05-18,Janson Junk,Spencer Strider,0
+20260749,20,Marlins,2026-05-21,Marlins,Braves,1,ATL,0.5321,,,2026-05-18,Sandy Alcantara,JR Ritchie,0
+20260759,20,Marlins,2026-05-22,Marlins,Mets,1,NYM,0.474,,,2026-05-18,Eury Pérez,Freddy Peralta,0
+20260777,20,Marlins,2026-05-23,Marlins,Mets,1,NYM,0.4938,,,2026-05-18,Max Meyer,Christian Scott,0
+20260789,20,Marlins,2026-05-24,Marlins,Mets,1,NYM,0.4443,,,2026-05-18,,Nolan McLean,0
+20260808,20,Marlins,2026-05-25,Blue Jays,Marlins,0,TOR,0.4489,,,2026-05-25,Janson Junk,Max Scherzer,0
+20260816,20,Marlins,2026-05-26,Blue Jays,Marlins,0,TOR,0.4135,,,2026-05-25,Sandy Alcantara,Trey Yesavage,0
 20260826,20,Marlins,2026-05-27,Blue Jays,Marlins,0,TOR,,,,2026-05-25,,,0
 20260851,20,Marlins,2026-05-29,Mets,Marlins,0,NYM,,,,2026-05-25,,,0
 20260867,20,Marlins,2026-05-30,Mets,Marlins,0,NYM,,,,2026-05-25,,,0
@@ -3275,26 +3275,26 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260490,21,Astros,2026-05-02,Red Sox,Astros,0,BOS,0.4421,W,6-3,2026-04-27,Spencer Arrighetti,Connelly Early,0
 20260501,21,Astros,2026-05-03,Red Sox,Astros,0,BOS,0.4054,W,3-1,2026-04-27,Cody Bolton,Ranger Suarez,0
 20260521,21,Astros,2026-05-04,Astros,Dodgers,1,LAD,0.4399,L,3-8,2026-05-04,Steven Okert,Yoshinobu Yamamoto,0
-20260535,21,Astros,2026-05-05,Astros,Dodgers,1,LAD,0.3761,,,2026-05-04,Peter Lambert,Shohei Ohtani,0
-20260543,21,Astros,2026-05-06,Astros,Dodgers,1,LAD,0.4223,,,2026-05-04,Lance McCullers Jr.,Tyler Glasnow,0
-20260565,21,Astros,2026-05-08,Reds,Astros,0,CIN,0.4548,,,2026-05-04,Mike Burrows,Nick Lodolo,0
-20260582,21,Astros,2026-05-09,Reds,Astros,0,CIN,0.4263,,,2026-05-04,Spencer Arrighetti,Chase Burns,0
-20260600,21,Astros,2026-05-10,Reds,Astros,0,CIN,0.4696,,,2026-05-04,Cody Bolton,Andrew Abbott,0
-20260614,21,Astros,2026-05-11,Astros,Mariners,1,SEA,0.4443,,,2026-05-11,Peter Lambert,George Kirby,0
-20260628,21,Astros,2026-05-12,Astros,Mariners,1,SEA,0.4653,,,2026-05-11,Lance McCullers Jr.,Bryan Woo,0
-20260643,21,Astros,2026-05-13,Astros,Mariners,1,SEA,0.5248,,,2026-05-11,Mike Burrows,Emerson Hancock,0
-20260651,21,Astros,2026-05-14,Astros,Mariners,1,SEA,0.5047,,,2026-05-11,Spencer Arrighetti,Luis Castillo,0
-20260665,21,Astros,2026-05-15,Astros,Rangers,1,TEX,0.5243,,,2026-05-11,Cody Bolton,Jack Leiter,0
-20260679,21,Astros,2026-05-16,Astros,Rangers,1,TEX,0.459,,,2026-05-11,Peter Lambert,Jacob deGrom,0
-20260694,21,Astros,2026-05-17,Astros,Rangers,1,TEX,0.5237,,,2026-05-11,Lance McCullers Jr.,Nathan Eovaldi,0
-20260710,21,Astros,2026-05-18,Twins,Astros,0,MIN,0.5057,,,2026-05-18,Mike Burrows,Simeon Woods Richardson,0
-20260724,21,Astros,2026-05-19,Twins,Astros,0,MIN,0.485,,,2026-05-18,Tatsuya Imai,Mick Abel,0
-20260733,21,Astros,2026-05-20,Twins,Astros,0,MIN,0.421,,,2026-05-18,Spencer Arrighetti,Joe Ryan,0
-20260753,21,Astros,2026-05-22,Cubs,Astros,0,CHC,0.4462,,,2026-05-18,Peter Lambert,Jameson Taillon,0
-20260769,21,Astros,2026-05-23,Cubs,Astros,0,CHC,0.4533,,,2026-05-18,Lance McCullers Jr.,Colin Rea,0
-20260792,21,Astros,2026-05-24,Cubs,Astros,0,CHC,0.4234,,,2026-05-18,Mike Burrows,Shota Imanaga,0
-20260807,21,Astros,2026-05-25,Rangers,Astros,0,TEX,0.4754,,,2026-05-25,Tatsuya Imai,Kumar Rocker,0
-20260821,21,Astros,2026-05-26,Rangers,Astros,0,TEX,,,,2026-05-25,,,0
+20260535,21,Astros,2026-05-05,Astros,Dodgers,1,LAD,0.3763,W,2-1,2026-05-04,Peter Lambert,Shohei Ohtani,0
+20260543,21,Astros,2026-05-06,Astros,Dodgers,1,LAD,0.4197,,,2026-05-04,Lance McCullers Jr.,Tyler Glasnow,0
+20260565,21,Astros,2026-05-08,Reds,Astros,0,CIN,0.453,,,2026-05-04,Mike Burrows,Nick Lodolo,0
+20260582,21,Astros,2026-05-09,Reds,Astros,0,CIN,0.4245,,,2026-05-04,Spencer Arrighetti,Chase Burns,0
+20260600,21,Astros,2026-05-10,Reds,Astros,0,CIN,0.4624,,,2026-05-04,Cody Bolton,Andrew Abbott,0
+20260614,21,Astros,2026-05-11,Astros,Mariners,1,SEA,0.4365,,,2026-05-11,Peter Lambert,George Kirby,0
+20260628,21,Astros,2026-05-12,Astros,Mariners,1,SEA,0.4632,,,2026-05-11,Lance McCullers Jr.,Bryan Woo,0
+20260643,21,Astros,2026-05-13,Astros,Mariners,1,SEA,0.5228,,,2026-05-11,Mike Burrows,Emerson Hancock,0
+20260651,21,Astros,2026-05-14,Astros,Mariners,1,SEA,0.5029,,,2026-05-11,Spencer Arrighetti,Luis Castillo,0
+20260665,21,Astros,2026-05-15,Astros,Rangers,1,TEX,0.5155,,,2026-05-11,Cody Bolton,Jack Leiter,0
+20260679,21,Astros,2026-05-16,Astros,Rangers,1,TEX,0.4555,,,2026-05-11,Peter Lambert,Jacob deGrom,0
+20260694,21,Astros,2026-05-17,Astros,Rangers,1,TEX,0.5213,,,2026-05-11,Lance McCullers Jr.,Nathan Eovaldi,0
+20260710,21,Astros,2026-05-18,Twins,Astros,0,MIN,0.5024,,,2026-05-18,Mike Burrows,Simeon Woods Richardson,0
+20260724,21,Astros,2026-05-19,Twins,Astros,0,MIN,0.4819,,,2026-05-18,Tatsuya Imai,Mick Abel,0
+20260733,21,Astros,2026-05-20,Twins,Astros,0,MIN,0.4178,,,2026-05-18,Spencer Arrighetti,Joe Ryan,0
+20260753,21,Astros,2026-05-22,Cubs,Astros,0,CHC,0.4402,,,2026-05-18,Peter Lambert,Jameson Taillon,0
+20260769,21,Astros,2026-05-23,Cubs,Astros,0,CHC,0.4499,,,2026-05-18,Lance McCullers Jr.,Colin Rea,0
+20260792,21,Astros,2026-05-24,Cubs,Astros,0,CHC,0.4201,,,2026-05-18,Mike Burrows,Shota Imanaga,0
+20260807,21,Astros,2026-05-25,Rangers,Astros,0,TEX,0.473,,,2026-05-25,Tatsuya Imai,Kumar Rocker,0
+20260821,21,Astros,2026-05-26,Rangers,Astros,0,TEX,0.4541,,,2026-05-25,Spencer Arrighetti,Jack Leiter,0
 20260839,21,Astros,2026-05-27,Rangers,Astros,0,TEX,,,,2026-05-25,,,0
 20260846,21,Astros,2026-05-28,Rangers,Astros,0,TEX,,,,2026-05-25,,,0
 20260857,21,Astros,2026-05-29,Astros,Brewers,1,MIL,,,,2026-05-25,,,0
@@ -3436,26 +3436,26 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260494,22,Dodgers,2026-05-02,Cardinals,Dodgers,0,STL,0.5135,L,2-3,2026-04-27,Roki Sasaki,Michael McGreevy,0
 20260506,22,Dodgers,2026-05-03,Cardinals,Dodgers,0,STL,0.5083,W,4-1,2026-04-27,Justin Wrobleski,Dustin May,0
 20260521,22,Dodgers,2026-05-04,Astros,Dodgers,0,HOU,0.5601,W,8-3,2026-05-04,Yoshinobu Yamamoto,Steven Okert,0
-20260535,22,Dodgers,2026-05-05,Astros,Dodgers,0,HOU,0.6239,,,2026-05-04,Shohei Ohtani,Peter Lambert,0
-20260543,22,Dodgers,2026-05-06,Astros,Dodgers,0,HOU,0.5777,,,2026-05-04,Tyler Glasnow,Lance McCullers Jr.,0
-20260578,22,Dodgers,2026-05-08,Dodgers,Braves,1,ATL,0.5218,,,2026-05-04,Emmet Sheehan,Chris Sale,0
-20260594,22,Dodgers,2026-05-09,Dodgers,Braves,1,ATL,0.5091,,,2026-05-04,Roki Sasaki,Spencer Strider,0
-20260608,22,Dodgers,2026-05-10,Dodgers,Braves,1,ATL,0.5837,,,2026-05-04,Justin Wrobleski,JR Ritchie,0
-20260615,22,Dodgers,2026-05-11,Dodgers,Giants,1,SFG,0.6182,,,2026-05-11,Yoshinobu Yamamoto,Logan Webb,0
-20260630,22,Dodgers,2026-05-12,Dodgers,Giants,1,SFG,0.7091,,,2026-05-11,Shohei Ohtani,Adrian Houser,0
-20260645,22,Dodgers,2026-05-13,Dodgers,Giants,1,SFG,0.6714,,,2026-05-11,Tyler Glasnow,Robbie Ray,0
-20260656,22,Dodgers,2026-05-14,Dodgers,Giants,1,SFG,0.6166,,,2026-05-11,Emmet Sheehan,Landen Roupp,0
-20260669,22,Dodgers,2026-05-15,Angels,Dodgers,0,LAA,0.6305,,,2026-05-11,Blake Snell,Jack Kochanowicz,0
-20260685,22,Dodgers,2026-05-16,Angels,Dodgers,0,LAA,0.5073,,,2026-05-11,Justin Wrobleski,José Soriano,0
-20260700,22,Dodgers,2026-05-17,Angels,Dodgers,0,LAA,0.6745,,,2026-05-11,Yoshinobu Yamamoto,Sam Aldegheri,0
-20260713,22,Dodgers,2026-05-18,Padres,Dodgers,0,SDP,0.5991,,,2026-05-18,Shohei Ohtani,Griffin Canning,0
-20260728,22,Dodgers,2026-05-19,Padres,Dodgers,0,SDP,0.572,,,2026-05-18,Tyler Glasnow,Randy Vásquez,0
-20260744,22,Dodgers,2026-05-20,Padres,Dodgers,0,SDP,0.5593,,,2026-05-18,Emmet Sheehan,Lucas Giolito,0
-20260763,22,Dodgers,2026-05-22,Brewers,Dodgers,0,MIL,0.5745,,,2026-05-18,Blake Snell,Chad Patrick,0
-20260779,22,Dodgers,2026-05-23,Brewers,Dodgers,0,MIL,0.5169,,,2026-05-18,Justin Wrobleski,Brandon Sproat,0
-20260791,22,Dodgers,2026-05-24,Brewers,Dodgers,0,MIL,0.5342,,,2026-05-18,Yoshinobu Yamamoto,Jacob Misiorowski,0
-20260809,22,Dodgers,2026-05-25,Dodgers,Rockies,1,COL,0.7581,,,2026-05-25,Shohei Ohtani,Kyle Freeland,0
-20260825,22,Dodgers,2026-05-26,Dodgers,Rockies,1,COL,,,,2026-05-25,,,0
+20260535,22,Dodgers,2026-05-05,Astros,Dodgers,0,HOU,0.6237,L,1-2,2026-05-04,Shohei Ohtani,Peter Lambert,0
+20260543,22,Dodgers,2026-05-06,Astros,Dodgers,0,HOU,0.5803,,,2026-05-04,Tyler Glasnow,Lance McCullers Jr.,0
+20260578,22,Dodgers,2026-05-08,Dodgers,Braves,1,ATL,0.5202,,,2026-05-04,Emmet Sheehan,Chris Sale,0
+20260594,22,Dodgers,2026-05-09,Dodgers,Braves,1,ATL,0.5075,,,2026-05-04,Roki Sasaki,Spencer Strider,0
+20260608,22,Dodgers,2026-05-10,Dodgers,Braves,1,ATL,0.5823,,,2026-05-04,Justin Wrobleski,JR Ritchie,0
+20260615,22,Dodgers,2026-05-11,Dodgers,Giants,1,SFG,0.619,,,2026-05-11,Yoshinobu Yamamoto,Logan Webb,0
+20260630,22,Dodgers,2026-05-12,Dodgers,Giants,1,SFG,0.7066,,,2026-05-11,Shohei Ohtani,Adrian Houser,0
+20260645,22,Dodgers,2026-05-13,Dodgers,Giants,1,SFG,0.6717,,,2026-05-11,Tyler Glasnow,Robbie Ray,0
+20260656,22,Dodgers,2026-05-14,Dodgers,Giants,1,SFG,0.6165,,,2026-05-11,Emmet Sheehan,Landen Roupp,0
+20260669,22,Dodgers,2026-05-15,Angels,Dodgers,0,LAA,0.6294,,,2026-05-11,Blake Snell,Jack Kochanowicz,0
+20260685,22,Dodgers,2026-05-16,Angels,Dodgers,0,LAA,0.5056,,,2026-05-11,Justin Wrobleski,José Soriano,0
+20260700,22,Dodgers,2026-05-17,Angels,Dodgers,0,LAA,0.6738,,,2026-05-11,Yoshinobu Yamamoto,Sam Aldegheri,0
+20260713,22,Dodgers,2026-05-18,Padres,Dodgers,0,SDP,0.5962,,,2026-05-18,Shohei Ohtani,Griffin Canning,0
+20260728,22,Dodgers,2026-05-19,Padres,Dodgers,0,SDP,0.5718,,,2026-05-18,Tyler Glasnow,Randy Vásquez,0
+20260744,22,Dodgers,2026-05-20,Padres,Dodgers,0,SDP,0.559,,,2026-05-18,Emmet Sheehan,Lucas Giolito,0
+20260763,22,Dodgers,2026-05-22,Brewers,Dodgers,0,MIL,0.5699,,,2026-05-18,Blake Snell,Chad Patrick,0
+20260779,22,Dodgers,2026-05-23,Brewers,Dodgers,0,MIL,0.5122,,,2026-05-18,Justin Wrobleski,Brandon Sproat,0
+20260791,22,Dodgers,2026-05-24,Brewers,Dodgers,0,MIL,0.5294,,,2026-05-18,Yoshinobu Yamamoto,Jacob Misiorowski,0
+20260809,22,Dodgers,2026-05-25,Dodgers,Rockies,1,COL,0.7523,,,2026-05-25,Shohei Ohtani,Kyle Freeland,0
+20260825,22,Dodgers,2026-05-26,Dodgers,Rockies,1,COL,0.7583,,,2026-05-25,Tyler Glasnow,Tomoyuki Sugano,0
 20260840,22,Dodgers,2026-05-27,Dodgers,Rockies,1,COL,,,,2026-05-25,,,0
 20260861,22,Dodgers,2026-05-29,Dodgers,Phillies,1,PHI,,,,2026-05-25,,,0
 20260876,22,Dodgers,2026-05-30,Dodgers,Phillies,1,PHI,,,,2026-05-25,,,0
@@ -3569,8 +3569,8 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260056,23,Brewers,2026-03-30,Brewers,Rays,1,TBR,0.5674,L,2-3,2026-03-30,Kyle Harrison,Nick Martinez,0
 20260070,23,Brewers,2026-03-31,Brewers,Rays,1,TBR,0.5173,W,6-2,2026-03-30,Brandon Woodruff,Shane McClanahan,0
 20260084,23,Brewers,2026-04-01,Brewers,Rays,1,TBR,0.5444,W,8-2,2026-03-30,Jacob Misiorowski,Drew Rasmussen,0
-20260116,23,Brewers,2026-04-04,Royals,Brewers,0,KCR,0.4452,W,5-2,2026-03-30,Chad Patrick,Luinder Avila,1
 20260105,23,Brewers,2026-04-04,Royals,Brewers,0,KCR,0.4791,L,2-8,2026-03-30,Brandon Sproat,Seth Lugo,2
+20260116,23,Brewers,2026-04-04,Royals,Brewers,0,KCR,0.4452,W,5-2,2026-03-30,Chad Patrick,Luinder Avila,1
 20260130,23,Brewers,2026-04-05,Royals,Brewers,0,KCR,0.4235,W,8-5,2026-03-30,Kyle Harrison,Kris Bubic,0
 20260145,23,Brewers,2026-04-06,Red Sox,Brewers,0,BOS,0.4905,W,8-6,2026-04-06,Brandon Woodruff,Brayan Bello,0
 20260158,23,Brewers,2026-04-07,Red Sox,Brewers,0,BOS,0.3784,L,2-3,2026-04-06,Jacob Misiorowski,Garrett Crochet,0
@@ -3597,25 +3597,24 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260489,23,Brewers,2026-05-02,Nationals,Brewers,0,WSN,0.5146,W,4-1,2026-04-27,Kyle Harrison,Foster Griffin,0
 20260502,23,Brewers,2026-05-03,Nationals,Brewers,0,WSN,0.5177,L,2-3,2026-04-27,Logan Henderson,PJ Poulin,0
 20260520,23,Brewers,2026-05-04,Cardinals,Brewers,0,STL,0.4707,L,3-6,2026-05-04,Chad Patrick,Kyle Leahy,0
-20260534,23,Brewers,2026-05-05,Cardinals,Brewers,0,STL,0.4764,,,2026-05-04,Brandon Sproat,Andre Pallante,0
-20260542,23,Brewers,2026-05-06,Cardinals,Brewers,0,STL,0.5524,,,2026-05-04,Jacob Misiorowski,Matthew Liberatore,0
-20260572,23,Brewers,2026-05-08,Brewers,Yankees,1,NYY,0.4452,,,2026-05-04,Kyle Harrison,Max Fried,0
-20260589,23,Brewers,2026-05-09,Brewers,Yankees,1,NYY,0.4748,,,2026-05-04,Logan Henderson,Cam Schlittler,0
-20260602,23,Brewers,2026-05-10,Brewers,Yankees,1,NYY,0.4655,,,2026-05-04,Chad Patrick,Carlos Rodón,0
-20260626,23,Brewers,2026-05-12,Brewers,Padres,1,SDP,0.4825,,,2026-05-11,Brandon Sproat,Michael King,0
-20260641,23,Brewers,2026-05-13,Brewers,Padres,1,SDP,0.6003,,,2026-05-11,Jacob Misiorowski,Griffin Canning,0
-20260650,23,Brewers,2026-05-14,Brewers,Padres,1,SDP,0.5608,,,2026-05-11,Kyle Harrison,Randy Vásquez,0
-20260666,23,Brewers,2026-05-15,Twins,Brewers,0,MIN,0.4528,,,2026-05-11,Logan Henderson,Joe Ryan,0
-20260681,23,Brewers,2026-05-16,Twins,Brewers,0,MIN,0.4553,,,2026-05-11,Chad Patrick,Taj Bradley,0
-20260696,23,Brewers,2026-05-17,Twins,Brewers,0,MIN,0.4718,,,2026-05-11,Brandon Sproat,Bailey Ober,0
-20260708,23,Brewers,2026-05-18,Cubs,Brewers,0,CHC,0.4832,,,2026-05-18,Jacob Misiorowski,Shota Imanaga,0
-20260722,23,Brewers,2026-05-19,Cubs,Brewers,0,CHC,0.4341,,,2026-05-18,Kyle Harrison,Matthew Boyd,0
-20260741,23,Brewers,2026-05-20,Cubs,Brewers,0,CHC,0.4424,,,2026-05-18,Logan Henderson,Edward Cabrera,0
-20260763,23,Brewers,2026-05-22,Brewers,Dodgers,1,LAD,0.4255,,,2026-05-18,Chad Patrick,Blake Snell,0
-20260779,23,Brewers,2026-05-23,Brewers,Dodgers,1,LAD,0.4831,,,2026-05-18,Brandon Sproat,Justin Wrobleski,0
-20260791,23,Brewers,2026-05-24,Brewers,Dodgers,1,LAD,0.4658,,,2026-05-18,Jacob Misiorowski,Yoshinobu Yamamoto,0
-20260799,23,Brewers,2026-05-25,Brewers,Cardinals,1,STL,0.5621,,,2026-05-25,Kyle Harrison,Dustin May,0
-20260819,23,Brewers,2026-05-26,Brewers,Cardinals,1,STL,,,,2026-05-25,,,0
+20260542,23,Brewers,2026-05-06,Cardinals,Brewers,0,STL,0.4776,,,2026-05-04,Brandon Sproat,Andre Pallante,0
+20260572,23,Brewers,2026-05-08,Brewers,Yankees,1,NYY,0.4843,,,2026-05-04,Jacob Misiorowski,Max Fried,0
+20260589,23,Brewers,2026-05-09,Brewers,Yankees,1,NYY,0.4738,,,2026-05-04,Kyle Harrison,Cam Schlittler,0
+20260602,23,Brewers,2026-05-10,Brewers,Yankees,1,NYY,0.5093,,,2026-05-04,Logan Henderson,Carlos Rodón,0
+20260626,23,Brewers,2026-05-12,Brewers,Padres,1,SDP,0.4871,,,2026-05-11,Brandon Sproat,Michael King,0
+20260641,23,Brewers,2026-05-13,Brewers,Padres,1,SDP,0.6048,,,2026-05-11,Jacob Misiorowski,Griffin Canning,0
+20260650,23,Brewers,2026-05-14,Brewers,Padres,1,SDP,0.5651,,,2026-05-11,Kyle Harrison,Randy Vásquez,0
+20260666,23,Brewers,2026-05-15,Twins,Brewers,0,MIN,0.4572,,,2026-05-11,Logan Henderson,Joe Ryan,0
+20260681,23,Brewers,2026-05-16,Twins,Brewers,0,MIN,0.4555,,,2026-05-11,Chad Patrick,Taj Bradley,0
+20260696,23,Brewers,2026-05-17,Twins,Brewers,0,MIN,0.476,,,2026-05-11,Brandon Sproat,Bailey Ober,0
+20260708,23,Brewers,2026-05-18,Cubs,Brewers,0,CHC,0.4876,,,2026-05-18,Jacob Misiorowski,Shota Imanaga,0
+20260722,23,Brewers,2026-05-19,Cubs,Brewers,0,CHC,0.4382,,,2026-05-18,Kyle Harrison,Matthew Boyd,0
+20260741,23,Brewers,2026-05-20,Cubs,Brewers,0,CHC,0.4466,,,2026-05-18,Logan Henderson,Edward Cabrera,0
+20260763,23,Brewers,2026-05-22,Brewers,Dodgers,1,LAD,0.4301,,,2026-05-18,Chad Patrick,Blake Snell,0
+20260779,23,Brewers,2026-05-23,Brewers,Dodgers,1,LAD,0.4878,,,2026-05-18,Brandon Sproat,Justin Wrobleski,0
+20260791,23,Brewers,2026-05-24,Brewers,Dodgers,1,LAD,0.4706,,,2026-05-18,Jacob Misiorowski,Yoshinobu Yamamoto,0
+20260799,23,Brewers,2026-05-25,Brewers,Cardinals,1,STL,0.5787,,,2026-05-25,Kyle Harrison,Michael McGreevy,0
+20260819,23,Brewers,2026-05-26,Brewers,Cardinals,1,STL,0.568,,,2026-05-25,Logan Henderson,Dustin May,0
 20260828,23,Brewers,2026-05-27,Brewers,Cardinals,1,STL,,,,2026-05-25,,,0
 20260857,23,Brewers,2026-05-29,Astros,Brewers,0,HOU,,,,2026-05-25,,,0
 20260869,23,Brewers,2026-05-30,Astros,Brewers,0,HOU,,,,2026-05-25,,,0
@@ -3653,7 +3652,8 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20261341,23,Brewers,2026-07-04,Diamondbacks,Brewers,0,ARI,,,,2026-06-29,,,0
 20261353,23,Brewers,2026-07-05,Diamondbacks,Brewers,0,ARI,,,,2026-06-29,,,0
 20261362,23,Brewers,2026-07-06,Cardinals,Brewers,0,STL,,,,2026-07-06,,,0
-20261376,23,Brewers,2026-07-07,Cardinals,Brewers,0,STL,,,,2026-07-06,,,0
+20261376,23,Brewers,2026-07-07,Cardinals,Brewers,0,STL,,,,2026-07-06,,,2
+20260534,23,Brewers,2026-07-07,Cardinals,Brewers,0,STL,,,,2026-07-06,,,1
 20261392,23,Brewers,2026-07-08,Cardinals,Brewers,0,STL,,,,2026-07-06,,,0
 20261405,23,Brewers,2026-07-09,Cardinals,Brewers,0,STL,,,,2026-07-06,,,0
 20261410,23,Brewers,2026-07-10,Pirates,Brewers,0,PIT,,,,2026-07-06,,,0
@@ -3760,27 +3760,27 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260472,24,Nationals,2026-05-01,Nationals,Brewers,1,MIL,0.4281,L,1-6,2026-04-27,Jake Irvin,Jacob Misiorowski,0
 20260489,24,Nationals,2026-05-02,Nationals,Brewers,1,MIL,0.4854,L,1-4,2026-04-27,Foster Griffin,Kyle Harrison,0
 20260502,24,Nationals,2026-05-03,Nationals,Brewers,1,MIL,0.4823,W,3-2,2026-04-27,PJ Poulin,Logan Henderson,0
-20260530,24,Nationals,2026-05-05,Nationals,Twins,1,MIN,0.527,,,2026-05-04,Cade Cavalli,Taj Bradley,0
-20260551,24,Nationals,2026-05-06,Nationals,Twins,1,MIN,0.4442,,,2026-05-04,Miles Mikolas,Bailey Ober,0
-20260557,24,Nationals,2026-05-07,Nationals,Twins,1,MIN,0.5071,,,2026-05-04,Jake Irvin,Simeon Woods Richardson,0
-20260569,24,Nationals,2026-05-08,Marlins,Nationals,0,MIA,0.4287,,,2026-05-04,Foster Griffin,,0
-20260584,24,Nationals,2026-05-09,Marlins,Nationals,0,MIA,0.3876,,,2026-05-04,Zack Littell,Janson Junk,0
-20260595,24,Nationals,2026-05-10,Marlins,Nationals,0,MIA,0.4391,,,2026-05-04,Cade Cavalli,Sandy Alcantara,0
-20260618,24,Nationals,2026-05-12,Reds,Nationals,0,CIN,0.3788,,,2026-05-11,Miles Mikolas,Brady Singer,0
-20260633,24,Nationals,2026-05-13,Reds,Nationals,0,CIN,0.406,,,2026-05-11,Jake Irvin,Rhett Lowder,0
-20260647,24,Nationals,2026-05-14,Reds,Nationals,0,CIN,0.4083,,,2026-05-11,Foster Griffin,Nick Lodolo,0
-20260659,24,Nationals,2026-05-15,Nationals,Orioles,1,BAL,0.4233,,,2026-05-11,Zack Littell,Shane Baz,0
-20260675,24,Nationals,2026-05-16,Nationals,Orioles,1,BAL,0.5177,,,2026-05-11,Cade Cavalli,Chris Bassitt,0
-20260688,24,Nationals,2026-05-17,Nationals,Orioles,1,BAL,0.4006,,,2026-05-11,Miles Mikolas,Trevor Rogers,0
-20260706,24,Nationals,2026-05-18,Nationals,Mets,1,NYM,0.4238,,,2026-05-18,Jake Irvin,Christian Scott,0
-20260720,24,Nationals,2026-05-19,Nationals,Mets,1,NYM,0.4175,,,2026-05-18,Foster Griffin,Nolan McLean,0
-20260739,24,Nationals,2026-05-20,Nationals,Mets,1,NYM,0.3982,,,2026-05-18,Zack Littell,Clay Holmes,0
-20260748,24,Nationals,2026-05-21,Nationals,Mets,1,NYM,0.4679,,,2026-05-18,Cade Cavalli,David Peterson,0
-20260761,24,Nationals,2026-05-22,Braves,Nationals,0,ATL,0.3172,,,2026-05-18,Miles Mikolas,Bryce Elder,0
-20260775,24,Nationals,2026-05-23,Braves,Nationals,0,ATL,0.3642,,,2026-05-18,Jake Irvin,Grant Holmes,0
-20260796,24,Nationals,2026-05-24,Braves,Nationals,0,ATL,0.3065,,,2026-05-18,Foster Griffin,Chris Sale,0
-20260804,24,Nationals,2026-05-25,Guardians,Nationals,0,CLE,0.358,,,2026-05-25,Zack Littell,Tanner Bibee,0
-20260811,24,Nationals,2026-05-26,Guardians,Nationals,0,CLE,,,,2026-05-25,,,0
+20260530,24,Nationals,2026-05-05,Nationals,Twins,1,MIN,0.521,L,3-11,2026-05-04,Cade Cavalli,Taj Bradley,0
+20260551,24,Nationals,2026-05-06,Nationals,Twins,1,MIN,0.4434,,,2026-05-04,Miles Mikolas,Bailey Ober,0
+20260557,24,Nationals,2026-05-07,Nationals,Twins,1,MIN,0.5066,,,2026-05-04,Jake Irvin,Simeon Woods Richardson,0
+20260569,24,Nationals,2026-05-08,Marlins,Nationals,0,MIA,0.4274,,,2026-05-04,Foster Griffin,,0
+20260584,24,Nationals,2026-05-09,Marlins,Nationals,0,MIA,0.3889,,,2026-05-04,Zack Littell,Janson Junk,0
+20260595,24,Nationals,2026-05-10,Marlins,Nationals,0,MIA,0.4343,,,2026-05-04,Cade Cavalli,Sandy Alcantara,0
+20260618,24,Nationals,2026-05-12,Reds,Nationals,0,CIN,0.3795,,,2026-05-11,Miles Mikolas,Brady Singer,0
+20260633,24,Nationals,2026-05-13,Reds,Nationals,0,CIN,0.4073,,,2026-05-11,Jake Irvin,Rhett Lowder,0
+20260647,24,Nationals,2026-05-14,Reds,Nationals,0,CIN,0.409,,,2026-05-11,Foster Griffin,Nick Lodolo,0
+20260659,24,Nationals,2026-05-15,Nationals,Orioles,1,BAL,0.4219,,,2026-05-11,Zack Littell,Shane Baz,0
+20260675,24,Nationals,2026-05-16,Nationals,Orioles,1,BAL,0.5139,,,2026-05-11,Cade Cavalli,Chris Bassitt,0
+20260688,24,Nationals,2026-05-17,Nationals,Orioles,1,BAL,0.3997,,,2026-05-11,Miles Mikolas,Trevor Rogers,0
+20260706,24,Nationals,2026-05-18,Nationals,Mets,1,NYM,0.4202,,,2026-05-18,Jake Irvin,Christian Scott,0
+20260720,24,Nationals,2026-05-19,Nationals,Mets,1,NYM,0.4133,,,2026-05-18,Foster Griffin,Nolan McLean,0
+20260739,24,Nationals,2026-05-20,Nationals,Mets,1,NYM,0.3941,,,2026-05-18,Zack Littell,Clay Holmes,0
+20260748,24,Nationals,2026-05-21,Nationals,Mets,1,NYM,0.4612,,,2026-05-18,Cade Cavalli,David Peterson,0
+20260761,24,Nationals,2026-05-22,Braves,Nationals,0,ATL,0.3142,,,2026-05-18,Miles Mikolas,Bryce Elder,0
+20260775,24,Nationals,2026-05-23,Braves,Nationals,0,ATL,0.3624,,,2026-05-18,Jake Irvin,Grant Holmes,0
+20260796,24,Nationals,2026-05-24,Braves,Nationals,0,ATL,0.3048,,,2026-05-18,Foster Griffin,Chris Sale,0
+20260804,24,Nationals,2026-05-25,Guardians,Nationals,0,CLE,0.3588,,,2026-05-25,Zack Littell,Tanner Bibee,0
+20260811,24,Nationals,2026-05-26,Guardians,Nationals,0,CLE,0.4266,,,2026-05-25,Cade Cavalli,Gavin Williams,0
 20260827,24,Nationals,2026-05-27,Guardians,Nationals,0,CLE,,,,2026-05-25,,,0
 20260848,24,Nationals,2026-05-29,Nationals,Padres,1,SDP,,,,2026-05-25,,,0
 20260863,24,Nationals,2026-05-30,Nationals,Padres,1,SDP,,,,2026-05-25,,,0
@@ -3922,26 +3922,26 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260497,25,Mets,2026-05-02,Angels,Mets,0,LAA,0.5174,L,3-4,2026-04-27,Nolan McLean,Reid Detmers,0
 20260510,25,Mets,2026-05-03,Angels,Mets,0,LAA,0.5561,W,5-1,2026-04-27,Clay Holmes,Jack Kochanowicz,0
 20260522,25,Mets,2026-05-04,Rockies,Mets,0,COL,0.6166,W,4-2,2026-05-04,Huascar Brazobán,Tomoyuki Sugano,0
-20260536,25,Mets,2026-05-05,Rockies,Mets,0,COL,0.6147,,,2026-05-04,Freddy Peralta,Michael Lorenzen,0
-20260544,25,Mets,2026-05-06,Rockies,Mets,0,COL,0.6303,,,2026-05-04,Freddy Peralta,Jose Quintana,0
-20260576,25,Mets,2026-05-08,Diamondbacks,Mets,0,ARI,0.5414,,,2026-05-04,Nolan McLean,Ryne Nelson,0
-20260591,25,Mets,2026-05-09,Diamondbacks,Mets,0,ARI,0.516,,,2026-05-04,Clay Holmes,Merrill Kelly,0
-20260606,25,Mets,2026-05-10,Diamondbacks,Mets,0,ARI,0.5332,,,2026-05-04,David Peterson,Eduardo Rodriguez,0
-20260622,25,Mets,2026-05-12,Mets,Tigers,1,DET,0.6079,,,2026-05-11,Freddy Peralta,Jack Flaherty,0
-20260637,25,Mets,2026-05-13,Mets,Tigers,1,DET,0.6082,,,2026-05-11,Christian Scott,Keider Montero,0
-20260648,25,Mets,2026-05-14,Mets,Tigers,1,DET,0.6438,,,2026-05-11,Nolan McLean,Ty Madden,0
-20260663,25,Mets,2026-05-15,Mets,Yankees,1,NYY,0.4926,,,2026-05-11,Clay Holmes,Cam Schlittler,0
-20260684,25,Mets,2026-05-16,Mets,Yankees,1,NYY,0.5293,,,2026-05-11,David Peterson,Carlos Rodón,0
-20260693,25,Mets,2026-05-17,Mets,Yankees,1,NYY,0.5456,,,2026-05-11,Freddy Peralta,Gerrit Cole,0
-20260706,25,Mets,2026-05-18,Nationals,Mets,0,WSN,0.5762,,,2026-05-18,Christian Scott,Jake Irvin,0
-20260720,25,Mets,2026-05-19,Nationals,Mets,0,WSN,0.5825,,,2026-05-18,Nolan McLean,Foster Griffin,0
-20260739,25,Mets,2026-05-20,Nationals,Mets,0,WSN,0.6018,,,2026-05-18,Clay Holmes,Zack Littell,0
-20260748,25,Mets,2026-05-21,Nationals,Mets,0,WSN,0.5321,,,2026-05-18,David Peterson,Cade Cavalli,0
-20260759,25,Mets,2026-05-22,Marlins,Mets,0,MIA,0.5231,,,2026-05-18,Freddy Peralta,Eury Pérez,0
-20260777,25,Mets,2026-05-23,Marlins,Mets,0,MIA,0.5034,,,2026-05-18,Christian Scott,Max Meyer,0
-20260789,25,Mets,2026-05-24,Marlins,Mets,0,MIA,0.5526,,,2026-05-18,Nolan McLean,,0
-20260802,25,Mets,2026-05-25,Mets,Reds,1,CIN,0.5813,,,2026-05-25,Clay Holmes,Nick Lodolo,0
-20260817,25,Mets,2026-05-26,Mets,Reds,1,CIN,,,,2026-05-25,,,0
+20260544,25,Mets,2026-05-06,Rockies,Mets,0,COL,0.6146,,,2026-05-04,Freddy Peralta,Michael Lorenzen,0
+20260536,25,Mets,2026-05-07,Rockies,Mets,0,COL,0.6095,,,2026-05-04,Christian Scott,Jose Quintana,0
+20260576,25,Mets,2026-05-08,Diamondbacks,Mets,0,ARI,0.5443,,,2026-05-04,Nolan McLean,Ryne Nelson,0
+20260591,25,Mets,2026-05-09,Diamondbacks,Mets,0,ARI,0.5188,,,2026-05-04,Clay Holmes,Merrill Kelly,0
+20260606,25,Mets,2026-05-10,Diamondbacks,Mets,0,ARI,0.5325,,,2026-05-04,David Peterson,Eduardo Rodriguez,0
+20260622,25,Mets,2026-05-12,Mets,Tigers,1,DET,0.61,,,2026-05-11,Freddy Peralta,Jack Flaherty,0
+20260637,25,Mets,2026-05-13,Mets,Tigers,1,DET,0.6107,,,2026-05-11,Christian Scott,Keider Montero,0
+20260648,25,Mets,2026-05-14,Mets,Tigers,1,DET,0.6472,,,2026-05-11,Nolan McLean,Ty Madden,0
+20260663,25,Mets,2026-05-15,Mets,Yankees,1,NYY,0.4957,,,2026-05-11,Clay Holmes,Cam Schlittler,0
+20260684,25,Mets,2026-05-16,Mets,Yankees,1,NYY,0.532,,,2026-05-11,David Peterson,Carlos Rodón,0
+20260693,25,Mets,2026-05-17,Mets,Yankees,1,NYY,0.5482,,,2026-05-11,Freddy Peralta,Gerrit Cole,0
+20260706,25,Mets,2026-05-18,Nationals,Mets,0,WSN,0.5798,,,2026-05-18,Christian Scott,Jake Irvin,0
+20260720,25,Mets,2026-05-19,Nationals,Mets,0,WSN,0.5867,,,2026-05-18,Nolan McLean,Foster Griffin,0
+20260739,25,Mets,2026-05-20,Nationals,Mets,0,WSN,0.6059,,,2026-05-18,Clay Holmes,Zack Littell,0
+20260748,25,Mets,2026-05-21,Nationals,Mets,0,WSN,0.5388,,,2026-05-18,David Peterson,Cade Cavalli,0
+20260759,25,Mets,2026-05-22,Marlins,Mets,0,MIA,0.526,,,2026-05-18,Freddy Peralta,Eury Pérez,0
+20260777,25,Mets,2026-05-23,Marlins,Mets,0,MIA,0.5062,,,2026-05-18,Christian Scott,Max Meyer,0
+20260789,25,Mets,2026-05-24,Marlins,Mets,0,MIA,0.5557,,,2026-05-18,Nolan McLean,,0
+20260802,25,Mets,2026-05-25,Mets,Reds,1,CIN,0.5863,,,2026-05-25,Clay Holmes,Nick Lodolo,0
+20260817,25,Mets,2026-05-26,Mets,Reds,1,CIN,0.5667,,,2026-05-25,David Peterson,Chase Burns,0
 20260836,25,Mets,2026-05-27,Mets,Reds,1,CIN,,,,2026-05-25,,,0
 20260851,25,Mets,2026-05-29,Mets,Marlins,1,MIA,,,,2026-05-25,,,0
 20260867,25,Mets,2026-05-30,Mets,Marlins,1,MIA,,,,2026-05-25,,,0
@@ -4078,32 +4078,32 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260406,26,Phillies,2026-04-25,Braves,Phillies,0,ATL,0.5222,W,8-5,2026-04-20,Zack Wheeler,Bryce Elder,0
 20260407,26,Phillies,2026-04-26,Braves,Phillies,0,ATL,0.384,L,2-6,2026-04-20,Aaron Nola,Chris Sale,0
 20260434,26,Phillies,2026-04-28,Phillies,Giants,1,SFG,0.6085,W,7-0,2026-04-27,Jesús Luzardo,Tyler Mahle,0
-20260455,26,Phillies,2026-04-30,Phillies,Giants,1,SFG,0.5811,W,6-5,2026-04-27,Andrew Painter,Adrian Houser,2
 20260464,26,Phillies,2026-04-30,Phillies,Giants,1,SFG,0.5778,W,3-2,2026-04-27,Cristopher Sánchez,Logan Webb,1
+20260455,26,Phillies,2026-04-30,Phillies,Giants,1,SFG,0.5811,W,6-5,2026-04-27,Andrew Painter,Adrian Houser,2
 20260476,26,Phillies,2026-05-01,Marlins,Phillies,0,MIA,0.5515,W,6-5,2026-04-27,Zack Wheeler,Eury Pérez,0
 20260491,26,Phillies,2026-05-02,Marlins,Phillies,0,MIA,0.4536,L,0-4,2026-04-27,Andrew Painter,Max Meyer,0
 20260505,26,Phillies,2026-05-03,Marlins,Phillies,0,MIA,0.5746,W,7-2,2026-04-27,Jesús Luzardo,Chris Paddack,0
 20260514,26,Phillies,2026-05-04,Marlins,Phillies,0,MIA,0.5134,W,1-0,2026-05-04,Aaron Nola,Janson Junk,0
-20260527,26,Phillies,2026-05-05,Phillies,Athletics,1,ATH,0.6299,,,2026-05-04,Cristopher Sánchez,Luis Severino,0
-20260549,26,Phillies,2026-05-06,Phillies,Athletics,1,ATH,0.6397,,,2026-05-04,Zack Wheeler,Jeffrey Springs,0
-20260561,26,Phillies,2026-05-07,Phillies,Athletics,1,ATH,0.5271,,,2026-05-04,Andrew Painter,J.T. Ginn,0
-20260566,26,Phillies,2026-05-08,Phillies,Rockies,1,COL,0.6805,,,2026-05-04,Jesús Luzardo,Chase Dollander,0
-20260585,26,Phillies,2026-05-09,Phillies,Rockies,1,COL,0.6651,,,2026-05-04,Aaron Nola,Kyle Freeland,0
-20260597,26,Phillies,2026-05-10,Phillies,Rockies,1,COL,0.7513,,,2026-05-04,Cristopher Sánchez,Tomoyuki Sugano,0
-20260620,26,Phillies,2026-05-12,Red Sox,Phillies,0,BOS,0.4745,,,2026-05-11,Zack Wheeler,Garrett Crochet,0
+20260527,26,Phillies,2026-05-05,Phillies,Athletics,1,ATH,0.6518,W,9-1,2026-05-04,Cristopher Sánchez,Luis Severino,0
+20260549,26,Phillies,2026-05-06,Phillies,Athletics,1,ATH,0.6416,,,2026-05-04,Zack Wheeler,Jeffrey Springs,0
+20260561,26,Phillies,2026-05-07,Phillies,Athletics,1,ATH,0.5288,,,2026-05-04,Andrew Painter,J.T. Ginn,0
+20260566,26,Phillies,2026-05-08,Phillies,Rockies,1,COL,0.6779,,,2026-05-04,Jesús Luzardo,Chase Dollander,0
+20260585,26,Phillies,2026-05-09,Phillies,Rockies,1,COL,0.6615,,,2026-05-04,Aaron Nola,Kyle Freeland,0
+20260597,26,Phillies,2026-05-10,Phillies,Rockies,1,COL,0.7521,,,2026-05-04,Cristopher Sánchez,Tomoyuki Sugano,0
+20260620,26,Phillies,2026-05-12,Red Sox,Phillies,0,BOS,0.4748,,,2026-05-11,Zack Wheeler,Garrett Crochet,0
 20260635,26,Phillies,2026-05-13,Red Sox,Phillies,0,BOS,0.4311,,,2026-05-11,Andrew Painter,Sonny Gray,0
 20260653,26,Phillies,2026-05-14,Red Sox,Phillies,0,BOS,0.5146,,,2026-05-11,Jesús Luzardo,Connelly Early,0
-20260657,26,Phillies,2026-05-15,Pirates,Phillies,0,PIT,0.46,,,2026-05-11,Aaron Nola,Braxton Ashcraft,0
-20260676,26,Phillies,2026-05-16,Pirates,Phillies,0,PIT,0.5646,,,2026-05-11,Cristopher Sánchez,Bubba Chandler,0
-20260689,26,Phillies,2026-05-17,Pirates,Phillies,0,PIT,0.4552,,,2026-05-11,Zack Wheeler,Paul Skenes,0
-20260703,26,Phillies,2026-05-18,Phillies,Reds,1,CIN,0.5624,,,2026-05-18,Andrew Painter,Rhett Lowder,0
-20260718,26,Phillies,2026-05-19,Phillies,Reds,1,CIN,0.6076,,,2026-05-18,Jesús Luzardo,Nick Lodolo,0
-20260731,26,Phillies,2026-05-20,Phillies,Reds,1,CIN,0.5457,,,2026-05-18,Aaron Nola,Chase Burns,0
-20260755,26,Phillies,2026-05-22,Phillies,Guardians,1,CLE,0.6379,,,2026-05-18,Cristopher Sánchez,Joey Cantillo,0
-20260772,26,Phillies,2026-05-23,Phillies,Guardians,1,CLE,0.6783,,,2026-05-18,Zack Wheeler,Slade Cecconi,0
-20260785,26,Phillies,2026-05-24,Phillies,Guardians,1,CLE,0.5298,,,2026-05-18,Andrew Painter,Parker Messick,0
-20260806,26,Phillies,2026-05-25,Padres,Phillies,0,SDP,0.5297,,,2026-05-25,Jesús Luzardo,Randy Vásquez,0
-20260822,26,Phillies,2026-05-26,Padres,Phillies,0,SDP,,,,2026-05-25,,,0
+20260657,26,Phillies,2026-05-15,Pirates,Phillies,0,PIT,0.4615,,,2026-05-11,Aaron Nola,Braxton Ashcraft,0
+20260676,26,Phillies,2026-05-16,Pirates,Phillies,0,PIT,0.5718,,,2026-05-11,Cristopher Sánchez,Bubba Chandler,0
+20260689,26,Phillies,2026-05-17,Pirates,Phillies,0,PIT,0.4569,,,2026-05-11,Zack Wheeler,Paul Skenes,0
+20260703,26,Phillies,2026-05-18,Phillies,Reds,1,CIN,0.5643,,,2026-05-18,Andrew Painter,Rhett Lowder,0
+20260718,26,Phillies,2026-05-19,Phillies,Reds,1,CIN,0.6092,,,2026-05-18,Jesús Luzardo,Nick Lodolo,0
+20260731,26,Phillies,2026-05-20,Phillies,Reds,1,CIN,0.5471,,,2026-05-18,Aaron Nola,Chase Burns,0
+20260755,26,Phillies,2026-05-22,Phillies,Guardians,1,CLE,0.6436,,,2026-05-18,Cristopher Sánchez,Joey Cantillo,0
+20260772,26,Phillies,2026-05-23,Phillies,Guardians,1,CLE,0.68,,,2026-05-18,Zack Wheeler,Slade Cecconi,0
+20260785,26,Phillies,2026-05-24,Phillies,Guardians,1,CLE,0.5315,,,2026-05-18,Andrew Painter,Parker Messick,0
+20260806,26,Phillies,2026-05-25,Padres,Phillies,0,SDP,0.53,,,2026-05-25,Jesús Luzardo,Randy Vásquez,0
+20260822,26,Phillies,2026-05-26,Padres,Phillies,0,SDP,0.5032,,,2026-05-25,Aaron Nola,Lucas Giolito,0
 20260831,26,Phillies,2026-05-27,Padres,Phillies,0,SDP,,,,2026-05-25,,,0
 20260861,26,Phillies,2026-05-29,Dodgers,Phillies,0,LAD,,,,2026-05-25,,,0
 20260876,26,Phillies,2026-05-30,Dodgers,Phillies,0,LAD,,,,2026-05-25,,,0
@@ -4246,26 +4246,26 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260471,27,Pirates,2026-05-01,Pirates,Reds,1,CIN,0.5674,W,9-1,2026-04-27,Mitch Keller,Brady Singer,0
 20260488,27,Pirates,2026-05-02,Pirates,Reds,1,CIN,0.5933,W,17-7,2026-04-27,Carmen Mlodzinski,Rhett Lowder,0
 20260500,27,Pirates,2026-05-03,Pirates,Reds,1,CIN,0.5489,W,1-0,2026-04-27,Braxton Ashcraft,Chase Burns,0
-20260538,27,Pirates,2026-05-05,Diamondbacks,Pirates,0,ARI,0.48,,,2026-05-04,Bubba Chandler,Eduardo Rodriguez,0
-20260555,27,Pirates,2026-05-06,Diamondbacks,Pirates,0,ARI,0.5345,,,2026-05-04,Paul Skenes,Michael Soroka,0
-20260560,27,Pirates,2026-05-07,Diamondbacks,Pirates,0,ARI,0.4569,,,2026-05-04,Mitch Keller,Zac Gallen,0
-20260579,27,Pirates,2026-05-08,Giants,Pirates,0,SFG,0.5154,,,2026-05-04,Carmen Mlodzinski,Robbie Ray,0
-20260593,27,Pirates,2026-05-09,Giants,Pirates,0,SFG,0.4796,,,2026-05-04,Braxton Ashcraft,Landen Roupp,0
-20260605,27,Pirates,2026-05-10,Giants,Pirates,0,SFG,0.4686,,,2026-05-04,Bubba Chandler,Tyler Mahle,0
-20260619,27,Pirates,2026-05-12,Pirates,Rockies,1,COL,0.7337,,,2026-05-11,Paul Skenes,Michael Lorenzen,0
-20260634,27,Pirates,2026-05-13,Pirates,Rockies,1,COL,0.6209,,,2026-05-11,Mitch Keller,Chase Dollander,0
-20260646,27,Pirates,2026-05-14,Pirates,Rockies,1,COL,0.6886,,,2026-05-11,Carmen Mlodzinski,Jose Quintana,0
-20260657,27,Pirates,2026-05-15,Pirates,Phillies,1,PHI,0.54,,,2026-05-11,Braxton Ashcraft,Aaron Nola,0
-20260676,27,Pirates,2026-05-16,Pirates,Phillies,1,PHI,0.4354,,,2026-05-11,Bubba Chandler,Cristopher Sánchez,0
-20260689,27,Pirates,2026-05-17,Pirates,Phillies,1,PHI,0.5448,,,2026-05-11,Paul Skenes,Zack Wheeler,0
-20260725,27,Pirates,2026-05-19,Cardinals,Pirates,0,STL,0.4841,,,2026-05-18,Mitch Keller,Michael McGreevy,0
-20260743,27,Pirates,2026-05-20,Cardinals,Pirates,0,STL,0.4962,,,2026-05-18,Carmen Mlodzinski,Dustin May,0
-20260747,27,Pirates,2026-05-21,Cardinals,Pirates,0,STL,0.5175,,,2026-05-18,Braxton Ashcraft,Kyle Leahy,0
-20260757,27,Pirates,2026-05-22,Blue Jays,Pirates,0,TOR,0.4241,,,2026-05-18,Bubba Chandler,Kevin Gausman,0
-20260770,27,Pirates,2026-05-23,Blue Jays,Pirates,0,TOR,0.6016,,,2026-05-18,Paul Skenes,Patrick Corbin,0
-20260783,27,Pirates,2026-05-24,Blue Jays,Pirates,0,TOR,0.3924,,,2026-05-18,Mitch Keller,Dylan Cease,0
-20260805,27,Pirates,2026-05-25,Pirates,Cubs,1,CHC,0.5283,,,2026-05-25,Carmen Mlodzinski,Matthew Boyd,0
-20260813,27,Pirates,2026-05-26,Pirates,Cubs,1,CHC,,,,2026-05-25,,,0
+20260538,27,Pirates,2026-05-05,Diamondbacks,Pirates,0,ARI,0.483,L,0-9,2026-05-04,Bubba Chandler,Eduardo Rodriguez,0
+20260555,27,Pirates,2026-05-06,Diamondbacks,Pirates,0,ARI,0.5323,,,2026-05-04,Paul Skenes,Michael Soroka,0
+20260560,27,Pirates,2026-05-07,Diamondbacks,Pirates,0,ARI,0.4549,,,2026-05-04,Mitch Keller,Zac Gallen,0
+20260579,27,Pirates,2026-05-08,Giants,Pirates,0,SFG,0.5149,,,2026-05-04,Carmen Mlodzinski,Robbie Ray,0
+20260593,27,Pirates,2026-05-09,Giants,Pirates,0,SFG,0.4785,,,2026-05-04,Braxton Ashcraft,Landen Roupp,0
+20260605,27,Pirates,2026-05-10,Giants,Pirates,0,SFG,0.466,,,2026-05-04,Bubba Chandler,Tyler Mahle,0
+20260619,27,Pirates,2026-05-12,Pirates,Rockies,1,COL,0.7294,,,2026-05-11,Paul Skenes,Michael Lorenzen,0
+20260634,27,Pirates,2026-05-13,Pirates,Rockies,1,COL,0.6581,,,2026-05-11,Mitch Keller,Jose Quintana,0
+20260646,27,Pirates,2026-05-14,Pirates,Rockies,1,COL,0.6435,,,2026-05-11,Carmen Mlodzinski,Chase Dollander,0
+20260657,27,Pirates,2026-05-15,Pirates,Phillies,1,PHI,0.5385,,,2026-05-11,Braxton Ashcraft,Aaron Nola,0
+20260676,27,Pirates,2026-05-16,Pirates,Phillies,1,PHI,0.4282,,,2026-05-11,Bubba Chandler,Cristopher Sánchez,0
+20260689,27,Pirates,2026-05-17,Pirates,Phillies,1,PHI,0.5431,,,2026-05-11,Paul Skenes,Zack Wheeler,0
+20260725,27,Pirates,2026-05-19,Cardinals,Pirates,0,STL,0.4996,,,2026-05-18,Mitch Keller,Matthew Liberatore,0
+20260743,27,Pirates,2026-05-20,Cardinals,Pirates,0,STL,0.5074,,,2026-05-18,Carmen Mlodzinski,Michael McGreevy,0
+20260747,27,Pirates,2026-05-21,Cardinals,Pirates,0,STL,0.4897,,,2026-05-18,Braxton Ashcraft,Dustin May,0
+20260757,27,Pirates,2026-05-22,Blue Jays,Pirates,0,TOR,0.4209,,,2026-05-18,Bubba Chandler,Kevin Gausman,0
+20260770,27,Pirates,2026-05-23,Blue Jays,Pirates,0,TOR,0.6015,,,2026-05-18,Paul Skenes,Patrick Corbin,0
+20260783,27,Pirates,2026-05-24,Blue Jays,Pirates,0,TOR,0.3916,,,2026-05-18,Mitch Keller,Dylan Cease,0
+20260805,27,Pirates,2026-05-25,Pirates,Cubs,1,CHC,0.527,,,2026-05-25,Carmen Mlodzinski,Matthew Boyd,0
+20260813,27,Pirates,2026-05-26,Pirates,Cubs,1,CHC,0.5284,,,2026-05-25,Braxton Ashcraft,Edward Cabrera,0
 20260833,27,Pirates,2026-05-27,Pirates,Cubs,1,CHC,,,,2026-05-25,,,0
 20260845,27,Pirates,2026-05-28,Pirates,Cubs,1,CHC,,,,2026-05-25,,,0
 20260849,27,Pirates,2026-05-29,Pirates,Twins,1,MIN,,,,2026-05-25,,,0
@@ -4408,26 +4408,25 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260494,28,Cardinals,2026-05-02,Cardinals,Dodgers,1,LAD,0.4865,W,3-2,2026-04-27,Michael McGreevy,Roki Sasaki,0
 20260506,28,Cardinals,2026-05-03,Cardinals,Dodgers,1,LAD,0.4917,L,1-4,2026-04-27,Dustin May,Justin Wrobleski,0
 20260520,28,Cardinals,2026-05-04,Cardinals,Brewers,1,MIL,0.5293,W,6-3,2026-05-04,Kyle Leahy,Chad Patrick,0
-20260534,28,Cardinals,2026-05-05,Cardinals,Brewers,1,MIL,0.5236,,,2026-05-04,Andre Pallante,Brandon Sproat,0
-20260542,28,Cardinals,2026-05-06,Cardinals,Brewers,1,MIL,0.4476,,,2026-05-04,Matthew Liberatore,Jacob Misiorowski,0
-20260564,28,Cardinals,2026-05-07,Padres,Cardinals,0,SDP,0.3932,,,2026-05-04,Michael McGreevy,Michael King,0
-20260577,28,Cardinals,2026-05-08,Padres,Cardinals,0,SDP,0.4625,,,2026-05-04,Dustin May,Griffin Canning,0
-20260592,28,Cardinals,2026-05-09,Padres,Cardinals,0,SDP,0.4353,,,2026-05-04,Kyle Leahy,Randy Vásquez,0
-20260607,28,Cardinals,2026-05-10,Padres,Cardinals,0,SDP,0.4423,,,2026-05-04,Andre Pallante,Walker Buehler,0
-20260629,28,Cardinals,2026-05-12,Athletics,Cardinals,0,ATH,0.4257,,,2026-05-11,Matthew Liberatore,Jeffrey Springs,0
-20260644,28,Cardinals,2026-05-13,Athletics,Cardinals,0,ATH,0.4355,,,2026-05-11,Michael McGreevy,J.T. Ginn,0
-20260652,28,Cardinals,2026-05-14,Athletics,Cardinals,0,ATH,0.4608,,,2026-05-11,Dustin May,Jacob Lopez,0
-20260667,28,Cardinals,2026-05-15,Cardinals,Royals,1,KCR,0.5234,,,2026-05-11,Kyle Leahy,Michael Wacha,0
-20260673,28,Cardinals,2026-05-16,Cardinals,Royals,1,KCR,0.5313,,,2026-05-11,Andre Pallante,Noah Cameron,0
-20260697,28,Cardinals,2026-05-17,Cardinals,Royals,1,KCR,0.4696,,,2026-05-11,Matthew Liberatore,Cole Ragans,0
-20260725,28,Cardinals,2026-05-19,Cardinals,Pirates,1,PIT,0.5159,,,2026-05-18,Michael McGreevy,Mitch Keller,0
-20260743,28,Cardinals,2026-05-20,Cardinals,Pirates,1,PIT,0.5038,,,2026-05-18,Dustin May,Carmen Mlodzinski,0
-20260747,28,Cardinals,2026-05-21,Cardinals,Pirates,1,PIT,0.4825,,,2026-05-18,Kyle Leahy,Braxton Ashcraft,0
-20260754,28,Cardinals,2026-05-22,Reds,Cardinals,0,CIN,0.4646,,,2026-05-18,Andre Pallante,Andrew Abbott,0
-20260778,28,Cardinals,2026-05-23,Reds,Cardinals,0,CIN,0.4577,,,2026-05-18,Matthew Liberatore,Brady Singer,0
-20260788,28,Cardinals,2026-05-24,Reds,Cardinals,0,CIN,0.4708,,,2026-05-18,Michael McGreevy,Rhett Lowder,0
-20260799,28,Cardinals,2026-05-25,Brewers,Cardinals,0,MIL,0.4379,,,2026-05-25,Dustin May,Kyle Harrison,0
-20260819,28,Cardinals,2026-05-26,Brewers,Cardinals,0,MIL,,,,2026-05-25,,,0
+20260542,28,Cardinals,2026-05-06,Cardinals,Brewers,1,MIL,0.5224,,,2026-05-04,Andre Pallante,Brandon Sproat,0
+20260564,28,Cardinals,2026-05-07,Padres,Cardinals,0,SDP,0.3772,,,2026-05-04,Matthew Liberatore,Michael King,0
+20260577,28,Cardinals,2026-05-08,Padres,Cardinals,0,SDP,0.4502,,,2026-05-04,Michael McGreevy,Griffin Canning,0
+20260592,28,Cardinals,2026-05-09,Padres,Cardinals,0,SDP,0.4621,,,2026-05-04,Dustin May,Randy Vásquez,0
+20260607,28,Cardinals,2026-05-10,Padres,Cardinals,0,SDP,0.4426,,,2026-05-04,Kyle Leahy,Walker Buehler,0
+20260629,28,Cardinals,2026-05-12,Athletics,Cardinals,0,ATH,0.4432,,,2026-05-11,Andre Pallante,Jeffrey Springs,0
+20260644,28,Cardinals,2026-05-13,Athletics,Cardinals,0,ATH,0.4204,,,2026-05-11,Matthew Liberatore,J.T. Ginn,0
+20260652,28,Cardinals,2026-05-14,Athletics,Cardinals,0,ATH,0.4498,,,2026-05-11,Michael McGreevy,Jacob Lopez,0
+20260667,28,Cardinals,2026-05-15,Cardinals,Royals,1,KCR,0.5506,,,2026-05-11,Dustin May,Michael Wacha,0
+20260673,28,Cardinals,2026-05-16,Cardinals,Royals,1,KCR,0.5342,,,2026-05-11,Kyle Leahy,Noah Cameron,0
+20260697,28,Cardinals,2026-05-17,Cardinals,Royals,1,KCR,0.4861,,,2026-05-11,Andre Pallante,Cole Ragans,0
+20260725,28,Cardinals,2026-05-19,Cardinals,Pirates,1,PIT,0.5004,,,2026-05-18,Matthew Liberatore,Mitch Keller,0
+20260743,28,Cardinals,2026-05-20,Cardinals,Pirates,1,PIT,0.4926,,,2026-05-18,Michael McGreevy,Carmen Mlodzinski,0
+20260747,28,Cardinals,2026-05-21,Cardinals,Pirates,1,PIT,0.5103,,,2026-05-18,Dustin May,Braxton Ashcraft,0
+20260754,28,Cardinals,2026-05-22,Reds,Cardinals,0,CIN,0.4689,,,2026-05-18,Kyle Leahy,Andrew Abbott,0
+20260778,28,Cardinals,2026-05-23,Reds,Cardinals,0,CIN,0.4751,,,2026-05-18,Andre Pallante,Brady Singer,0
+20260788,28,Cardinals,2026-05-24,Reds,Cardinals,0,CIN,0.4558,,,2026-05-18,Matthew Liberatore,Rhett Lowder,0
+20260799,28,Cardinals,2026-05-25,Brewers,Cardinals,0,MIL,0.4213,,,2026-05-25,Michael McGreevy,Kyle Harrison,0
+20260819,28,Cardinals,2026-05-26,Brewers,Cardinals,0,MIL,0.432,,,2026-05-25,Dustin May,Logan Henderson,0
 20260828,28,Cardinals,2026-05-27,Brewers,Cardinals,0,MIL,,,,2026-05-25,,,0
 20260854,28,Cardinals,2026-05-29,Cardinals,Cubs,1,CHC,,,,2026-05-25,,,0
 20260871,28,Cardinals,2026-05-30,Cardinals,Cubs,1,CHC,,,,2026-05-25,,,0
@@ -4464,7 +4463,8 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20261335,28,Cardinals,2026-07-04,Cubs,Cardinals,0,CHC,,,,2026-06-29,,,0
 20261348,28,Cardinals,2026-07-05,Cubs,Cardinals,0,CHC,,,,2026-06-29,,,0
 20261362,28,Cardinals,2026-07-06,Cardinals,Brewers,1,MIL,,,,2026-07-06,,,0
-20261376,28,Cardinals,2026-07-07,Cardinals,Brewers,1,MIL,,,,2026-07-06,,,0
+20260534,28,Cardinals,2026-07-07,Cardinals,Brewers,1,MIL,,,,2026-07-06,,,1
+20261376,28,Cardinals,2026-07-07,Cardinals,Brewers,1,MIL,,,,2026-07-06,,,2
 20261392,28,Cardinals,2026-07-08,Cardinals,Brewers,1,MIL,,,,2026-07-06,,,0
 20261405,28,Cardinals,2026-07-09,Cardinals,Brewers,1,MIL,,,,2026-07-06,,,0
 20261420,28,Cardinals,2026-07-10,Cardinals,Braves,1,ATL,,,,2026-07-06,,,0
@@ -4569,26 +4569,26 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260496,29,Padres,2026-05-02,Padres,White Sox,1,CHW,0.6525,L,0-4,2026-04-27,Michael King,Sean Burke,0
 20260512,29,Padres,2026-05-03,Padres,White Sox,1,CHW,0.6065,W,4-3,2026-04-27,Griffin Canning,Anthony Kay,0
 20260525,29,Padres,2026-05-04,Giants,Padres,0,SFG,0.4772,L,2-3,2026-05-04,Randy Vásquez,Trevor McDonald,0
-20260540,29,Padres,2026-05-05,Giants,Padres,0,SFG,0.4015,,,2026-05-04,Walker Buehler,Logan Webb,0
-20260545,29,Padres,2026-05-06,Giants,Padres,0,SFG,0.4874,,,2026-05-04,Matt Waldron,Adrian Houser,0
-20260564,29,Padres,2026-05-07,Padres,Cardinals,1,STL,0.6068,,,2026-05-04,Michael King,Michael McGreevy,0
-20260577,29,Padres,2026-05-08,Padres,Cardinals,1,STL,0.5375,,,2026-05-04,Griffin Canning,Dustin May,0
-20260592,29,Padres,2026-05-09,Padres,Cardinals,1,STL,0.5647,,,2026-05-04,Randy Vásquez,Kyle Leahy,0
-20260607,29,Padres,2026-05-10,Padres,Cardinals,1,STL,0.5577,,,2026-05-04,Walker Buehler,Andre Pallante,0
-20260626,29,Padres,2026-05-12,Brewers,Padres,0,MIL,0.5175,,,2026-05-11,Michael King,Brandon Sproat,0
-20260641,29,Padres,2026-05-13,Brewers,Padres,0,MIL,0.3997,,,2026-05-11,Griffin Canning,Jacob Misiorowski,0
-20260650,29,Padres,2026-05-14,Brewers,Padres,0,MIL,0.4392,,,2026-05-11,Randy Vásquez,Kyle Harrison,0
-20260670,29,Padres,2026-05-15,Mariners,Padres,0,SEA,0.3834,,,2026-05-11,Lucas Giolito,Logan Gilbert,0
-20260682,29,Padres,2026-05-16,Mariners,Padres,0,SEA,0.3886,,,2026-05-11,Walker Buehler,George Kirby,0
-20260701,29,Padres,2026-05-17,Mariners,Padres,0,SEA,0.4411,,,2026-05-11,Michael King,Bryan Woo,0
-20260713,29,Padres,2026-05-18,Padres,Dodgers,1,LAD,0.4009,,,2026-05-18,Griffin Canning,Shohei Ohtani,0
-20260728,29,Padres,2026-05-19,Padres,Dodgers,1,LAD,0.428,,,2026-05-18,Randy Vásquez,Tyler Glasnow,0
-20260744,29,Padres,2026-05-20,Padres,Dodgers,1,LAD,0.4407,,,2026-05-18,Lucas Giolito,Emmet Sheehan,0
-20260766,29,Padres,2026-05-22,Padres,Athletics,1,ATH,0.5362,,,2026-05-18,Walker Buehler,Jeffrey Springs,0
-20260780,29,Padres,2026-05-23,Padres,Athletics,1,ATH,0.5826,,,2026-05-18,Michael King,J.T. Ginn,0
-20260795,29,Padres,2026-05-24,Padres,Athletics,1,ATH,0.5383,,,2026-05-18,Griffin Canning,Jacob Lopez,0
-20260806,29,Padres,2026-05-25,Padres,Phillies,1,PHI,0.4703,,,2026-05-25,Randy Vásquez,Jesús Luzardo,0
-20260822,29,Padres,2026-05-26,Padres,Phillies,1,PHI,,,,2026-05-25,,,0
+20260540,29,Padres,2026-05-05,Giants,Padres,0,SFG,0.3947,W,10-5,2026-05-04,Walker Buehler,Logan Webb,0
+20260545,29,Padres,2026-05-06,Giants,Padres,0,SFG,0.4872,,,2026-05-04,Matt Waldron,Adrian Houser,0
+20260564,29,Padres,2026-05-07,Padres,Cardinals,1,STL,0.6228,,,2026-05-04,Michael King,Matthew Liberatore,0
+20260577,29,Padres,2026-05-08,Padres,Cardinals,1,STL,0.5498,,,2026-05-04,Griffin Canning,Michael McGreevy,0
+20260592,29,Padres,2026-05-09,Padres,Cardinals,1,STL,0.5379,,,2026-05-04,Randy Vásquez,Dustin May,0
+20260607,29,Padres,2026-05-10,Padres,Cardinals,1,STL,0.5574,,,2026-05-04,Walker Buehler,Kyle Leahy,0
+20260626,29,Padres,2026-05-12,Brewers,Padres,0,MIL,0.5129,,,2026-05-11,Michael King,Brandon Sproat,0
+20260641,29,Padres,2026-05-13,Brewers,Padres,0,MIL,0.3952,,,2026-05-11,Griffin Canning,Jacob Misiorowski,0
+20260650,29,Padres,2026-05-14,Brewers,Padres,0,MIL,0.4349,,,2026-05-11,Randy Vásquez,Kyle Harrison,0
+20260670,29,Padres,2026-05-15,Mariners,Padres,0,SEA,0.3842,,,2026-05-11,Lucas Giolito,Logan Gilbert,0
+20260682,29,Padres,2026-05-16,Mariners,Padres,0,SEA,0.39,,,2026-05-11,Walker Buehler,George Kirby,0
+20260701,29,Padres,2026-05-17,Mariners,Padres,0,SEA,0.4418,,,2026-05-11,Michael King,Bryan Woo,0
+20260713,29,Padres,2026-05-18,Padres,Dodgers,1,LAD,0.4038,,,2026-05-18,Griffin Canning,Shohei Ohtani,0
+20260728,29,Padres,2026-05-19,Padres,Dodgers,1,LAD,0.4282,,,2026-05-18,Randy Vásquez,Tyler Glasnow,0
+20260744,29,Padres,2026-05-20,Padres,Dodgers,1,LAD,0.441,,,2026-05-18,Lucas Giolito,Emmet Sheehan,0
+20260766,29,Padres,2026-05-22,Padres,Athletics,1,ATH,0.5396,,,2026-05-18,Walker Buehler,Jeffrey Springs,0
+20260780,29,Padres,2026-05-23,Padres,Athletics,1,ATH,0.5838,,,2026-05-18,Michael King,J.T. Ginn,0
+20260795,29,Padres,2026-05-24,Padres,Athletics,1,ATH,0.5396,,,2026-05-18,Griffin Canning,Jacob Lopez,0
+20260806,29,Padres,2026-05-25,Padres,Phillies,1,PHI,0.47,,,2026-05-25,Randy Vásquez,Jesús Luzardo,0
+20260822,29,Padres,2026-05-26,Padres,Phillies,1,PHI,0.4968,,,2026-05-25,Lucas Giolito,Aaron Nola,0
 20260831,29,Padres,2026-05-27,Padres,Phillies,1,PHI,,,,2026-05-25,,,0
 20260848,29,Padres,2026-05-29,Nationals,Padres,0,WSN,,,,2026-05-25,,,0
 20260863,29,Padres,2026-05-30,Nationals,Padres,0,WSN,,,,2026-05-25,,,0
@@ -4726,32 +4726,32 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260395,30,Giants,2026-04-25,Giants,Marlins,1,MIA,0.5211,W,6-2,2026-04-20,Robbie Ray,Eury Pérez,0
 20260419,30,Giants,2026-04-26,Giants,Marlins,1,MIA,0.5628,W,6-3,2026-04-20,Landen Roupp,Max Meyer,0
 20260434,30,Giants,2026-04-28,Phillies,Giants,0,PHI,0.3915,L,0-7,2026-04-27,Tyler Mahle,Jesús Luzardo,0
-20260455,30,Giants,2026-04-30,Phillies,Giants,0,PHI,0.4189,L,5-6,2026-04-27,Adrian Houser,Andrew Painter,2
 20260464,30,Giants,2026-04-30,Phillies,Giants,0,PHI,0.4222,L,2-3,2026-04-27,Logan Webb,Cristopher Sánchez,1
+20260455,30,Giants,2026-04-30,Phillies,Giants,0,PHI,0.4189,L,5-6,2026-04-27,Adrian Houser,Andrew Painter,2
 20260474,30,Giants,2026-05-01,Rays,Giants,0,TBR,0.4039,L,0-3,2026-04-27,Robbie Ray,Shane McClanahan,0
 20260492,30,Giants,2026-05-02,Rays,Giants,0,TBR,0.4254,L,1-5,2026-04-27,Landen Roupp,Griffin Jax,0
 20260504,30,Giants,2026-05-03,Rays,Giants,0,TBR,0.4716,L,1-2,2026-04-27,Tyler Mahle,Steven Matz,0
 20260525,30,Giants,2026-05-04,Giants,Padres,1,SDP,0.5228,W,3-2,2026-05-04,Trevor McDonald,Randy Vásquez,0
-20260540,30,Giants,2026-05-05,Giants,Padres,1,SDP,0.5985,,,2026-05-04,Logan Webb,Walker Buehler,0
-20260545,30,Giants,2026-05-06,Giants,Padres,1,SDP,0.5126,,,2026-05-04,Adrian Houser,Matt Waldron,0
-20260579,30,Giants,2026-05-08,Giants,Pirates,1,PIT,0.4846,,,2026-05-04,Robbie Ray,Carmen Mlodzinski,0
-20260593,30,Giants,2026-05-09,Giants,Pirates,1,PIT,0.5204,,,2026-05-04,Landen Roupp,Braxton Ashcraft,0
-20260605,30,Giants,2026-05-10,Giants,Pirates,1,PIT,0.5314,,,2026-05-04,Tyler Mahle,Bubba Chandler,0
-20260615,30,Giants,2026-05-11,Dodgers,Giants,0,LAD,0.3818,,,2026-05-11,Logan Webb,Yoshinobu Yamamoto,0
-20260630,30,Giants,2026-05-12,Dodgers,Giants,0,LAD,0.2909,,,2026-05-11,Adrian Houser,Shohei Ohtani,0
-20260645,30,Giants,2026-05-13,Dodgers,Giants,0,LAD,0.3286,,,2026-05-11,Robbie Ray,Tyler Glasnow,0
-20260656,30,Giants,2026-05-14,Dodgers,Giants,0,LAD,0.3834,,,2026-05-11,Landen Roupp,Emmet Sheehan,0
-20260671,30,Giants,2026-05-15,Athletics,Giants,0,ATH,0.458,,,2026-05-11,Tyler Mahle,Aaron Civale,0
-20260686,30,Giants,2026-05-16,Athletics,Giants,0,ATH,0.502,,,2026-05-11,Logan Webb,Luis Severino,0
-20260699,30,Giants,2026-05-17,Athletics,Giants,0,ATH,0.4253,,,2026-05-11,Adrian Houser,Jeffrey Springs,0
-20260715,30,Giants,2026-05-18,Diamondbacks,Giants,0,ARI,0.4291,,,2026-05-18,Robbie Ray,Zac Gallen,0
-20260730,30,Giants,2026-05-19,Diamondbacks,Giants,0,ARI,0.4803,,,2026-05-18,Landen Roupp,Ryne Nelson,0
-20260735,30,Giants,2026-05-20,Diamondbacks,Giants,0,ARI,0.4595,,,2026-05-18,Tyler Mahle,Merrill Kelly,0
-20260767,30,Giants,2026-05-22,Giants,White Sox,1,CHW,0.6175,,,2026-05-18,Logan Webb,Davis Martin,0
-20260773,30,Giants,2026-05-23,Giants,White Sox,1,CHW,0.5983,,,2026-05-18,Adrian Houser,Erick Fedde,0
-20260793,30,Giants,2026-05-24,Giants,White Sox,1,CHW,0.5611,,,2026-05-18,Robbie Ray,Noah Schultz,0
-20260803,30,Giants,2026-05-25,Giants,Diamondbacks,1,ARI,0.5661,,,2026-05-25,Landen Roupp,Merrill Kelly,0
-20260824,30,Giants,2026-05-26,Giants,Diamondbacks,1,ARI,,,,2026-05-25,,,0
+20260540,30,Giants,2026-05-05,Giants,Padres,1,SDP,0.6053,L,5-10,2026-05-04,Logan Webb,Walker Buehler,0
+20260545,30,Giants,2026-05-06,Giants,Padres,1,SDP,0.5128,,,2026-05-04,Adrian Houser,Matt Waldron,0
+20260579,30,Giants,2026-05-08,Giants,Pirates,1,PIT,0.4851,,,2026-05-04,Robbie Ray,Carmen Mlodzinski,0
+20260593,30,Giants,2026-05-09,Giants,Pirates,1,PIT,0.5215,,,2026-05-04,Landen Roupp,Braxton Ashcraft,0
+20260605,30,Giants,2026-05-10,Giants,Pirates,1,PIT,0.534,,,2026-05-04,Tyler Mahle,Bubba Chandler,0
+20260615,30,Giants,2026-05-11,Dodgers,Giants,0,LAD,0.381,,,2026-05-11,Logan Webb,Yoshinobu Yamamoto,0
+20260630,30,Giants,2026-05-12,Dodgers,Giants,0,LAD,0.2934,,,2026-05-11,Adrian Houser,Shohei Ohtani,0
+20260645,30,Giants,2026-05-13,Dodgers,Giants,0,LAD,0.3283,,,2026-05-11,Robbie Ray,Tyler Glasnow,0
+20260656,30,Giants,2026-05-14,Dodgers,Giants,0,LAD,0.3835,,,2026-05-11,Landen Roupp,Emmet Sheehan,0
+20260671,30,Giants,2026-05-15,Athletics,Giants,0,ATH,0.4593,,,2026-05-11,Tyler Mahle,Aaron Civale,0
+20260686,30,Giants,2026-05-16,Athletics,Giants,0,ATH,0.5044,,,2026-05-11,Logan Webb,Luis Severino,0
+20260699,30,Giants,2026-05-17,Athletics,Giants,0,ATH,0.4266,,,2026-05-11,Adrian Houser,Jeffrey Springs,0
+20260715,30,Giants,2026-05-18,Diamondbacks,Giants,0,ARI,0.4275,,,2026-05-18,Robbie Ray,Zac Gallen,0
+20260730,30,Giants,2026-05-19,Diamondbacks,Giants,0,ARI,0.4792,,,2026-05-18,Landen Roupp,Ryne Nelson,0
+20260735,30,Giants,2026-05-20,Diamondbacks,Giants,0,ARI,0.4582,,,2026-05-18,Tyler Mahle,Merrill Kelly,0
+20260767,30,Giants,2026-05-22,Giants,White Sox,1,CHW,0.6167,,,2026-05-18,Logan Webb,Davis Martin,0
+20260773,30,Giants,2026-05-23,Giants,White Sox,1,CHW,0.6065,,,2026-05-18,Adrian Houser,Erick Fedde,0
+20260793,30,Giants,2026-05-24,Giants,White Sox,1,CHW,0.5605,,,2026-05-18,Robbie Ray,Noah Schultz,0
+20260803,30,Giants,2026-05-25,Giants,Diamondbacks,1,ARI,0.565,,,2026-05-25,Landen Roupp,Merrill Kelly,0
+20260824,30,Giants,2026-05-26,Giants,Diamondbacks,1,ARI,0.5467,,,2026-05-25,Tyler Mahle,Eduardo Rodriguez,0
 20260830,30,Giants,2026-05-27,Giants,Diamondbacks,1,ARI,,,,2026-05-25,,,0
 20260858,30,Giants,2026-05-29,Rockies,Giants,0,COL,,,,2026-05-25,,,0
 20260873,30,Giants,2026-05-30,Rockies,Giants,0,COL,,,,2026-05-25,,,0
