@@ -34,7 +34,7 @@ def render_leaderboard_tab(
     used_teams = st.session_state.get(USED_TEAMS_KEY, set())
     metrics = compute_biffle_metrics(week_games, excluded_game_ids=weather_flags)
     recent_form = compute_recent_form(all_games, start_date) if all_games is not None else {}
-    metrics["Form"] = metrics["Team"].map(lambda t: recent_form.get(t, "—"))
+    metrics["L10"] = metrics["Team"].map(lambda t: recent_form.get(t, "—"))
     available = metrics[~metrics["Team"].isin(used_teams)].copy()
     used_rows = metrics[metrics["Team"].isin(used_teams)].copy()
 
@@ -66,7 +66,7 @@ def _show_metrics_table(
     pitcher_fip: dict,
 ) -> None:
     cols_to_show = ["Team", "Biffle Score", "Games", "DH", "Home", "Away",
-                    "Expected Wins", "Avg Win%", "Confidence", "Form", "Actual W", "Games Played"]
+                    "Expected Wins", "Avg Win%", "Confidence", "L10", "Actual W", "Games Played"]
     available_cols = [c for c in cols_to_show if c in df.columns]
     display = df[available_cols].copy()
     counter = st.session_state.get(f"{TABLE_COUNTER_KEY}_{key}", 0)

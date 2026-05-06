@@ -24,7 +24,7 @@ def render_compare_tab(
 
     metrics = compute_biffle_metrics(week_games, excluded_game_ids=weather_flags)
     recent_form = compute_recent_form(all_games, start_date)
-    metrics["Form"] = metrics["Team"].map(lambda t: recent_form.get(t, "—"))
+    metrics["L10"] = metrics["Team"].map(lambda t: recent_form.get(t, "—"))
     top_teams = metrics["Team"].tolist()
 
     col_a, col_b = st.columns(2)
@@ -56,7 +56,7 @@ def _render_side_by_side_metrics(metrics: pd.DataFrame, team_a: str, team_b: str
     row_a = metrics[metrics["Team"] == team_a].iloc[0] if team_a in metrics["Team"].values else None
     row_b = metrics[metrics["Team"] == team_b].iloc[0] if team_b in metrics["Team"].values else None
 
-    stat_cols = ["Biffle Score", "Expected Wins", "Games", "Avg Win%", "Confidence", "Form"]
+    stat_cols = ["Biffle Score", "Expected Wins", "Games", "Avg Win%", "Confidence", "L10"]
     col_label, col_a, col_b = st.columns([2, 3, 3])
     col_a.markdown(f"**{team_a}**")
     col_b.markdown(f"**{team_b}**")
@@ -66,8 +66,8 @@ def _render_side_by_side_metrics(metrics: pd.DataFrame, team_a: str, team_b: str
         col_label.caption(stat)
         val_a = _format_metric(stat, row_a[stat] if row_a is not None else None)
         val_b = _format_metric(stat, row_b[stat] if row_b is not None else None)
-        col_a.metric(label="", value=val_a, delta=None, label_visibility="collapsed")
-        col_b.metric(label="", value=val_b, delta=None, label_visibility="collapsed")
+        col_a.metric(label=stat, value=val_a, label_visibility="collapsed")
+        col_b.metric(label=stat, value=val_b, label_visibility="collapsed")
 
 
 def _format_metric(stat: str, value) -> str:
@@ -78,7 +78,7 @@ def _format_metric(stat: str, value) -> str:
     if stat == "Expected Wins":
         return f"{float(value):.2f}"
     if stat == "Avg Win%":
-        return f"{float(value):.1%}" if value is not None else "—"
+        return f"{float(value):.1%}"
     return str(value)
 
 
