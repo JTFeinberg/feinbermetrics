@@ -13,23 +13,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
+      - name: Checkout
+        run: git clone "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" .
 
       - name: Install dependencies
-        run: pip install requests pandas
+        run: pip3 install requests pandas
 
       - name: Fetch schedule data
-        run: python fetch_schedules.py
+        run: python3 fetch_schedules.py
 
       - name: Export to CSV
-        run: python export_csv.py
+        run: python3 export_csv.py
 
-      - name: Commit and push updated data
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "Auto-refresh schedule data"
-          file_pattern: schedules.csv pitcher_fip.csv
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add schedules.csv pitcher_fip.csv
+          git diff --staged --quiet || git commit -m "Auto-refresh schedule data"
+          git push
