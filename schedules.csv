@@ -190,8 +190,8 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260394,2,Orioles,2026-04-25,Orioles,Red Sox,1,BOS,0.4926,L,1-17,2026-04-20,Trevor Rogers,Garrett Crochet,0,22286.0,27463.0
 20260408,2,Orioles,2026-04-26,Orioles,Red Sox,1,BOS,0.5766,L,3-5,2026-04-20,Kyle Bradish,Connelly Early,0,24586.0,33666.0
 20260431,2,Orioles,2026-04-28,Orioles,Astros,1,HOU,0.5476,W,5-3,2026-04-27,Shane Baz,Kai-Wei Teng,0,22264.0,24282.0
-20260461,2,Orioles,2026-04-30,Orioles,Astros,1,HOU,0.5501,W,10-3,2026-04-27,Chris Bassitt,Peter Lambert,1,12304.0,17969.0
 20260452,2,Orioles,2026-04-30,Orioles,Astros,1,HOU,0.5441,L,5-11,2026-04-27,Brandon Young,Lance McCullers Jr.,2,27819.0,14120.0
+20260461,2,Orioles,2026-04-30,Orioles,Astros,1,HOU,0.5501,W,10-3,2026-04-27,Chris Bassitt,Peter Lambert,1,12304.0,17969.0
 20260473,2,Orioles,2026-05-01,Yankees,Orioles,0,NYY,0.4155,L,2-7,2026-04-27,Cade Povich,Will Warren,0,30055.0,30182.0
 20260484,2,Orioles,2026-05-02,Yankees,Orioles,0,NYY,0.4546,L,4-9,2026-04-27,Kyle Bradish,Ryan Weathers,0,24586.0,23796.0
 20260503,2,Orioles,2026-05-03,Yankees,Orioles,0,NYY,0.3631,L,3-11,2026-04-27,Trey Gibson,Max Fried,0,33794.0,13743.0
@@ -977,8 +977,8 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260048,7,Royals,2026-03-30,Royals,Twins,1,MIN,0.5924,W,3-1,2026-03-30,Kris Bubic,Simeon Woods Richardson,0,21455.0,24494.0
 20260090,7,Royals,2026-04-01,Royals,Twins,1,MIN,0.4922,W,13-9,2026-03-30,Noah Cameron,Joe Ryan,0,30184.0,21390.0
 20260092,7,Royals,2026-04-02,Royals,Twins,1,MIN,0.604,L,1-5,2026-03-30,Cole Ragans,Taj Bradley,0,21846.0,22543.0
-20260116,7,Royals,2026-04-04,Royals,Brewers,1,MIL,0.5548,L,2-5,2026-03-30,Luinder Avila,Chad Patrick,1,24452.0,30113.0
 20260105,7,Royals,2026-04-04,Royals,Brewers,1,MIL,0.5209,W,8-2,2026-03-30,Seth Lugo,Brandon Sproat,2,12447.0,33850.0
+20260116,7,Royals,2026-04-04,Royals,Brewers,1,MIL,0.5548,L,2-5,2026-03-30,Luinder Avila,Chad Patrick,1,24452.0,30113.0
 20260130,7,Royals,2026-04-05,Royals,Brewers,1,MIL,0.5765,L,5-8,2026-03-30,Kris Bubic,Kyle Harrison,0,21455.0,27758.0
 20260141,7,Royals,2026-04-06,Guardians,Royals,0,CLE,0.4619,W,4-2,2026-04-06,Michael Wacha,Tanner Bibee,0,14078.0,30134.0
 20260153,7,Royals,2026-04-07,Guardians,Royals,0,CLE,0.4716,L,1-2,2026-04-06,Noah Cameron,Gavin Williams,0,30184.0,30122.0
@@ -2598,8 +2598,8 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260069,17,Cubs,2026-03-31,Cubs,Angels,1,LAA,0.518,L,0-2,2026-03-30,Jameson Taillon,José Soriano,0,11674.0,22100.0
 20260086,17,Cubs,2026-04-01,Cubs,Angels,1,LAA,0.63,W,6-2,2026-03-30,Matthew Boyd,Yusei Kikuchi,0,15440.0,20633.0
 20260101,17,Cubs,2026-04-03,Guardians,Cubs,0,CLE,0.4897,L,1-4,2026-03-30,Cade Horton,Joey Cantillo,0,31872.0,23335.0
-20260129,17,Cubs,2026-04-05,Guardians,Cubs,0,CLE,0.5377,W,1-0,2026-03-30,Edward Cabrera,Slade Cecconi,1,21690.0,27500.0
 20260120,17,Cubs,2026-04-05,Guardians,Cubs,0,CLE,0.4923,L,5-6,2026-03-30,Shota Imanaga,Parker Messick,2,33829.0,31986.0
+20260129,17,Cubs,2026-04-05,Guardians,Cubs,0,CLE,0.5377,W,1-0,2026-03-30,Edward Cabrera,Slade Cecconi,1,21690.0,27500.0
 20260140,17,Cubs,2026-04-06,Rays,Cubs,0,TBR,0.3894,L,4-6,2026-04-06,Jameson Taillon,Shane McClanahan,0,11674.0,21483.0
 20260155,17,Cubs,2026-04-07,Rays,Cubs,0,TBR,0.4426,W,9-2,2026-04-06,Javier Assad,Mason Englert,0,21741.0,22288.0
 20260178,17,Cubs,2026-04-08,Rays,Cubs,0,TBR,0.4166,W,6-2,2026-04-06,Colin Rea,Joe Boyle,0,12317.0,29608.0
@@ -3269,8 +3269,8 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260402,21,Astros,2026-04-25,Astros,Yankees,1,NYY,0.4969,L,3-8,2026-04-20,Mike Burrows,Ryan Weathers,0,24728.0,23796.0
 20260414,21,Astros,2026-04-26,Astros,Yankees,1,NYY,0.5134,W,7-4,2026-04-20,Spencer Arrighetti,Luis Gil,0,29921.0,21052.0
 20260431,21,Astros,2026-04-28,Orioles,Astros,0,BAL,0.4524,L,3-5,2026-04-27,Kai-Wei Teng,Shane Baz,0,24282.0,22264.0
-20260452,21,Astros,2026-04-30,Orioles,Astros,0,BAL,0.4559,W,11-5,2026-04-27,Lance McCullers Jr.,Brandon Young,2,14120.0,27819.0
 20260461,21,Astros,2026-04-30,Orioles,Astros,0,BAL,0.4499,L,3-10,2026-04-27,Peter Lambert,Chris Bassitt,1,17969.0,12304.0
+20260452,21,Astros,2026-04-30,Orioles,Astros,0,BAL,0.4559,W,11-5,2026-04-27,Lance McCullers Jr.,Brandon Young,2,14120.0,27819.0
 20260475,21,Astros,2026-05-01,Red Sox,Astros,0,BOS,0.4503,L,1-3,2026-04-27,Mike Burrows,Jake Bennett,0,24728.0,31959.0
 20260490,21,Astros,2026-05-02,Red Sox,Astros,0,BOS,0.4421,W,6-3,2026-04-27,Spencer Arrighetti,Connelly Early,0,29921.0,33666.0
 20260501,21,Astros,2026-05-03,Red Sox,Astros,0,BOS,0.4054,W,3-1,2026-04-27,Cody Bolton,Ranger Suarez,0,23265.0,17277.0
@@ -3569,8 +3569,8 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260056,23,Brewers,2026-03-30,Brewers,Rays,1,TBR,0.5674,L,2-3,2026-03-30,Kyle Harrison,Nick Martinez,0,27758.0,12730.0
 20260070,23,Brewers,2026-03-31,Brewers,Rays,1,TBR,0.5173,W,6-2,2026-03-30,Brandon Woodruff,Shane McClanahan,0,16162.0,21483.0
 20260084,23,Brewers,2026-04-01,Brewers,Rays,1,TBR,0.5444,W,8-2,2026-03-30,Jacob Misiorowski,Drew Rasmussen,0,31623.0,25385.0
-20260116,23,Brewers,2026-04-04,Royals,Brewers,0,KCR,0.4452,W,5-2,2026-03-30,Chad Patrick,Luinder Avila,1,30113.0,24452.0
 20260105,23,Brewers,2026-04-04,Royals,Brewers,0,KCR,0.4791,L,2-8,2026-03-30,Brandon Sproat,Seth Lugo,2,33850.0,12447.0
+20260116,23,Brewers,2026-04-04,Royals,Brewers,0,KCR,0.4452,W,5-2,2026-03-30,Chad Patrick,Luinder Avila,1,30113.0,24452.0
 20260130,23,Brewers,2026-04-05,Royals,Brewers,0,KCR,0.4235,W,8-5,2026-03-30,Kyle Harrison,Kris Bubic,0,27758.0,21455.0
 20260145,23,Brewers,2026-04-06,Red Sox,Brewers,0,BOS,0.4905,W,8-6,2026-04-06,Brandon Woodruff,Brayan Bello,0,16162.0,23920.0
 20260158,23,Brewers,2026-04-07,Red Sox,Brewers,0,BOS,0.3784,L,2-3,2026-04-06,Jacob Misiorowski,Garrett Crochet,0,31623.0,27463.0
@@ -3652,8 +3652,8 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20261341,23,Brewers,2026-07-04,Diamondbacks,Brewers,0,ARI,,,,2026-06-29,,,0,,
 20261353,23,Brewers,2026-07-05,Diamondbacks,Brewers,0,ARI,,,,2026-06-29,,,0,,
 20261362,23,Brewers,2026-07-06,Cardinals,Brewers,0,STL,,,,2026-07-06,,,0,,
-20260534,23,Brewers,2026-07-07,Cardinals,Brewers,0,STL,,,,2026-07-06,,,1,,
 20261376,23,Brewers,2026-07-07,Cardinals,Brewers,0,STL,,,,2026-07-06,,,2,,
+20260534,23,Brewers,2026-07-07,Cardinals,Brewers,0,STL,,,,2026-07-06,,,1,,
 20261392,23,Brewers,2026-07-08,Cardinals,Brewers,0,STL,,,,2026-07-06,,,0,,
 20261405,23,Brewers,2026-07-09,Cardinals,Brewers,0,STL,,,,2026-07-06,,,0,,
 20261410,23,Brewers,2026-07-10,Pirates,Brewers,0,PIT,,,,2026-07-06,,,0,,
@@ -4726,8 +4726,8 @@ game_id,team_id,team_name,game_date,home_team,away_team,is_home,opponent,win_pro
 20260395,30,Giants,2026-04-25,Giants,Marlins,1,MIA,0.5211,W,6-2,2026-04-20,Robbie Ray,Eury Pérez,0,11486.0,27768.0
 20260419,30,Giants,2026-04-26,Giants,Marlins,1,MIA,0.5628,W,6-3,2026-04-20,Landen Roupp,Max Meyer,0,30076.0,27474.0
 20260434,30,Giants,2026-04-28,Phillies,Giants,0,PHI,0.3915,L,0-7,2026-04-27,Tyler Mahle,Jesús Luzardo,0,16358.0,19959.0
-20260455,30,Giants,2026-04-30,Phillies,Giants,0,PHI,0.4189,L,5-6,2026-04-27,Adrian Houser,Andrew Painter,2,12718.0,30091.0
 20260464,30,Giants,2026-04-30,Phillies,Giants,0,PHI,0.4222,L,2-3,2026-04-27,Logan Webb,Cristopher Sánchez,1,17995.0,20778.0
+20260455,30,Giants,2026-04-30,Phillies,Giants,0,PHI,0.4189,L,5-6,2026-04-27,Adrian Houser,Andrew Painter,2,12718.0,30091.0
 20260474,30,Giants,2026-05-01,Rays,Giants,0,TBR,0.4039,L,0-3,2026-04-27,Robbie Ray,Shane McClanahan,0,11486.0,21483.0
 20260492,30,Giants,2026-05-02,Rays,Giants,0,TBR,0.4254,L,1-5,2026-04-27,Landen Roupp,Griffin Jax,0,30076.0,20253.0
 20260504,30,Giants,2026-05-03,Rays,Giants,0,TBR,0.4716,L,1-2,2026-04-27,Tyler Mahle,Steven Matz,0,16358.0,13361.0

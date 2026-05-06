@@ -8,13 +8,8 @@ import requests
 from db_migrations import migrate
 
 FANGRAPHS_SCHEDULE_URL = "https://www.fangraphs.com/api/scores/season-schedule"
-FANGRAPHS_PITCHER_URL = "https://www.fangraphs.com/api/leaders/major-league/data"
 FANGRAPHS_BASE_URL = "https://www.fangraphs.com/scores/season-schedule-and-results"
-FANGRAPHS_LEADERBOARD_PAGE = "https://www.fangraphs.com/leaders/major-league"
-HTML_ACCEPT = (
-    "text/html,application/xhtml+xml,application/xml;q=0.9,"
-    "image/avif,image/webp,image/apng,*/*;q=0.8"
-)
+MLB_STATS_API_URL = "https://statsapi.mlb.com/api/v1/stats"
 SEASON = 2026
 TEAM_ID_MIN = 1
 TEAM_ID_MAX = 30
@@ -22,12 +17,10 @@ DATABASE_PATH = "schedules.db"
 PITCHER_FIP_CSV_PATH = "pitcher_fip.csv"
 REQUEST_DELAY_SECONDS = 1.0
 REQUEST_TIMEOUT_SECONDS = 15
-PITCHER_LEADERBOARD_PARAMS = {
-    "pos": "p", "stats": "pit", "lg": "all", "qual": "0",
-    "season": SEASON, "season1": SEASON,
-    "startdate": f"{SEASON}-01-01", "enddate": f"{SEASON}-12-31",
-    "month": "0", "team": "0", "pageitems": "2000000000",
-    "pagenum": "1", "type": "8", "ind": "0", "rost": "0", "players": "0",
+MLB_PITCHER_PARAMS = {
+    "stats": "season", "group": "pitching",
+    "gameType": "R", "season": SEASON,
+    "playerPool": "All", "limit": "5000",
 }
 
 # Headers that match what Chrome sends when visiting FanGraphs in a browser.
@@ -75,46 +68,36 @@ def create_session() -> requests.Session:
     return session
 
 
-def fetch_pitcher_fip(session: requests.Session) -> dict[int, float]:
+def fetch_pitcher_fip(session: requests.Session) -> dict[str, float]:
     """
-    Pulls season FIP for every pitcher from the FanGraphs leaderboard.
-    Warmup uses HTML Accept headers so Cloudflare treats it as a real browser
-    page load rather than a script hitting an API endpoint directly.
+    Fetches season ERA for all pitchers from the MLB Stats API (open, no auth needed).
+    Returns {pitcher_full_name: era} — matched by name in the display layer.
     """
-    html_headers = {**dict(session.headers), "Accept": HTML_ACCEPT}
-    session.get(FANGRAPHS_LEADERBOARD_PAGE, headers=html_headers, timeout=REQUEST_TIMEOUT_SECONDS)
-    time.sleep(2.0)
-
-    leaderboard_headers = {**dict(session.headers), "Referer": FANGRAPHS_LEADERBOARD_PAGE}
-    response = session.get(
-        FANGRAPHS_PITCHER_URL,
-        params=PITCHER_LEADERBOARD_PARAMS,
-        headers=leaderboard_headers,
-        timeout=REQUEST_TIMEOUT_SECONDS,
-    )
+    response = requests.get(MLB_STATS_API_URL, params=MLB_PITCHER_PARAMS, timeout=REQUEST_TIMEOUT_SECONDS)
     response.raise_for_status()
-    return _parse_fip_rows(response.json().get("data", []))
+    splits = response.json().get("stats", [{}])[0].get("splits", [])
+    return _parse_era_splits(splits)
 
 
-def _parse_fip_rows(rows: list) -> dict[int, float]:
-    fip_by_id: dict[int, float] = {}
-    for row in rows:
-        player_id = row.get("playerid") or row.get("PlayerId") or row.get("xMLBID")
-        fip = row.get("FIP") or row.get("fip")
-        if player_id and fip is not None:
+def _parse_era_splits(splits: list) -> dict[str, float]:
+    era_by_name: dict[str, float] = {}
+    for split in splits:
+        name = split.get("player", {}).get("fullName", "")
+        era_str = split.get("stat", {}).get("era", "")
+        if name and era_str and era_str not in ("-.--", "--", ""):
             try:
-                fip_by_id[int(player_id)] = float(fip)
+                era_by_name[name] = float(era_str)
             except (ValueError, TypeError):
                 pass
-    return fip_by_id
+    return era_by_name
 
 
-def save_pitcher_fip(fip_by_id: dict[int, float]) -> None:
+def save_pitcher_fip(era_by_name: dict[str, float]) -> None:
     with open(PITCHER_FIP_CSV_PATH, "w", newline="") as csv_file:
-        writer = csv.DictWriter(csv_file, fieldnames=["pitcher_id", "fip"])
+        writer = csv.DictWriter(csv_file, fieldnames=["pitcher_name", "era"])
         writer.writeheader()
-        for pitcher_id, fip in fip_by_id.items():
-            writer.writerow({"pitcher_id": pitcher_id, "fip": fip})
+        for name, era in era_by_name.items():
+            writer.writerow({"pitcher_name": name, "era": era})
 
 
 def fetch_team_schedule(session: requests.Session, team_id: int) -> list:
@@ -213,14 +196,13 @@ def main() -> None:
 
     session = create_session()
 
-    print("Fetching pitcher FIP leaderboard...")
+    print("Fetching pitcher ERA from MLB Stats API...")
     try:
-        fip_by_id = fetch_pitcher_fip(session)
-        save_pitcher_fip(fip_by_id)
-        print(f"Saved FIP data for {len(fip_by_id)} pitchers to {PITCHER_FIP_CSV_PATH}\n")
+        era_by_name = fetch_pitcher_fip(session)
+        save_pitcher_fip(era_by_name)
+        print(f"Saved ERA data for {len(era_by_name)} pitchers to {PITCHER_FIP_CSV_PATH}\n")
     except (requests.HTTPError, requests.Timeout, KeyError, ValueError) as error:
-        print(f"Could not fetch pitcher FIP (non-fatal): {error}\n")
-        fip_by_id = {}
+        print(f"Could not fetch pitcher ERA (non-fatal): {error}\n")
 
     total_games = 0
 

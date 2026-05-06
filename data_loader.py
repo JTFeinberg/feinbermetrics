@@ -16,11 +16,13 @@ def load_games() -> pd.DataFrame:
     return pd.DataFrame()
 
 
-def load_pitcher_fip() -> dict[int, float]:
+def load_pitcher_fip() -> dict[str, float]:
     if not os.path.exists(PITCHER_FIP_CSV_PATH):
         return {}
     data = pd.read_csv(PITCHER_FIP_CSV_PATH)
-    return dict(zip(data["pitcher_id"].astype(int), data["fip"].astype(float)))
+    if "pitcher_name" not in data.columns:
+        return {}
+    return dict(zip(data["pitcher_name"], data["era"].astype(float)))
 
 
 def _load_from_database() -> pd.DataFrame:

@@ -160,15 +160,15 @@ def _render_team_game_table(
         team_games["DH"] = team_games["dh"].apply(lambda x: "⚡" if x == 1 else "")
 
     has_pitchers = "team_pitcher" in team_games.columns
-    has_pitcher_ids = "team_pitcher_id" in team_games.columns and pitcher_fip
+    has_pitcher_era = has_pitchers and bool(pitcher_fip)
     has_dh = "dh" in team_games.columns
 
-    if has_pitcher_ids:
-        team_games["Our FIP"] = team_games["team_pitcher_id"].map(
-            lambda pid: f"{pitcher_fip[int(pid)]:.2f}" if pd.notna(pid) and int(pid) in pitcher_fip else "—"
+    if has_pitcher_era:
+        team_games["Our ERA"] = team_games["team_pitcher"].map(
+            lambda name: f"{pitcher_fip[name]:.2f}" if name and name in pitcher_fip else "—"
         )
-        team_games["Opp FIP"] = team_games["opp_pitcher_id"].map(
-            lambda pid: f"{pitcher_fip[int(pid)]:.2f}" if pd.notna(pid) and int(pid) in pitcher_fip else "—"
+        team_games["Opp ERA"] = team_games["opp_pitcher"].map(
+            lambda name: f"{pitcher_fip[name]:.2f}" if name and name in pitcher_fip else "—"
         )
 
     renamed = team_games.rename(columns={
@@ -177,7 +177,7 @@ def _render_team_game_table(
         "result": "Result", "score": "Score",
     })
 
-    shown_cols = _build_display_columns(has_pitchers, has_pitcher_ids, has_dh)
+    shown_cols = _build_display_columns(has_pitchers, has_pitcher_era, has_dh)
     editable_cols = [c for c in shown_cols if c not in ("game_id", "⛈ Weather")]
 
     edited = st.data_editor(
@@ -203,10 +203,10 @@ def _render_team_game_table(
         st.rerun()
 
 
-def _build_display_columns(has_pitchers: bool, has_pitcher_ids: bool, has_dh: bool) -> list[str]:
-    if has_pitchers and has_pitcher_ids:
+def _build_display_columns(has_pitchers: bool, has_pitcher_era: bool, has_dh: bool) -> list[str]:
+    if has_pitchers and has_pitcher_era:
         cols = ["game_id", "Date", "H/A", "Opponent",
-                "Our Pitcher", "Our FIP", "Opp Pitcher", "Opp FIP",
+                "Our Pitcher", "Our ERA", "Opp Pitcher", "Opp ERA",
                 "Win Prob", "🌧 Rain%", "Result", "Score"]
     elif has_pitchers:
         cols = ["game_id", "Date", "H/A", "Opponent",

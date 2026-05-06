@@ -98,10 +98,10 @@ def _render_compare_game_table(
         lambda gid: _format_rain_pct(rain_by_game.get(gid))
     )
 
-    has_pitcher_ids = "team_pitcher_id" in team_games.columns and pitcher_fip
-    if has_pitcher_ids:
-        team_games["Our FIP"] = team_games["team_pitcher_id"].map(
-            lambda pid: f"{pitcher_fip[int(pid)]:.2f}" if pd.notna(pid) and int(pid) in pitcher_fip else "—"
+    has_pitcher_era = "team_pitcher" in team_games.columns and bool(pitcher_fip)
+    if has_pitcher_era:
+        team_games["Our ERA"] = team_games["team_pitcher"].map(
+            lambda name: f"{pitcher_fip[name]:.2f}" if name and name in pitcher_fip else "—"
         )
 
     renamed = team_games.rename(columns={
@@ -110,8 +110,8 @@ def _render_compare_game_table(
     })
 
     cols = ["Date", "H/A", "Opponent", "Pitcher"]
-    if has_pitcher_ids:
-        cols.append("Our FIP")
+    if has_pitcher_era:
+        cols.append("Our ERA")
     cols += ["Win Prob", "🌧 Rain%", "Result"]
     shown = [c for c in cols if c in renamed.columns]
     st.dataframe(renamed[shown], use_container_width=True, hide_index=True)
