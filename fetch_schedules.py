@@ -55,15 +55,19 @@ def get_monday_of_week(date_string: str) -> str:
 
 def create_session() -> requests.Session:
     """
-    Opens a session that visits FanGraphs first so Cloudflare sets cookies,
-    then all subsequent API calls include those cookies automatically.
+    Visits FanGraphs to seed Cloudflare cookies before API calls.
+    If the warmup page is now behind a JS challenge (403), we skip it and
+    rely on browser-like headers alone for the downstream API requests.
     """
     session = requests.Session()
     session.headers.update(BROWSER_HEADERS)
     print("Establishing browser session with FanGraphs...")
-    warmup = session.get(FANGRAPHS_BASE_URL, timeout=REQUEST_TIMEOUT_SECONDS)
-    warmup.raise_for_status()
-    print(f"Session ready (status {warmup.status_code}, {len(session.cookies)} cookies)\n")
+    try:
+        warmup = session.get(FANGRAPHS_BASE_URL, timeout=REQUEST_TIMEOUT_SECONDS)
+        warmup.raise_for_status()
+        print(f"Session ready (status {warmup.status_code}, {len(session.cookies)} cookies)\n")
+    except requests.HTTPError as error:
+        print(f"Warmup page blocked ({error}) — continuing without session cookies\n")
     time.sleep(1.0)
     return session
 
