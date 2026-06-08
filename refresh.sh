@@ -34,7 +34,7 @@ if [ "$ROWS" -lt "$MINIMUM_ROW_COUNT" ]; then
     exit 1
 fi
 
-git pull --rebase >> "$LOG_FILE" 2>&1
+git pull --rebase --autostash >> "$LOG_FILE" 2>&1
 git add schedules.csv pitcher_fip.csv
 git diff --staged --quiet || git commit -m "Refresh schedule data $(date +%Y-%m-%d)" >> "$LOG_FILE" 2>&1
 git push origin main >> "$LOG_FILE" 2>&1
