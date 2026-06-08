@@ -3,7 +3,16 @@ import sqlite3
 import time
 from datetime import datetime, timedelta
 
-import requests
+import requests as stdlib_requests
+from curl_cffi import requests
+from curl_cffi.requests.exceptions import HTTPError, ProxyError, Timeout
+
+try:
+    from playwright.sync_api import sync_playwright
+    from playwright.sync_api import TimeoutError as PlaywrightTimeoutError
+    PLAYWRIGHT_AVAILABLE = True
+except ImportError:
+    PLAYWRIGHT_AVAILABLE = False
 
 from db_migrations import migrate
 
@@ -23,26 +32,8 @@ MLB_PITCHER_PARAMS = {
     "playerPool": "All", "limit": "5000",
 }
 
-# Headers that match what Chrome sends when visiting FanGraphs in a browser.
-# Without these, Cloudflare returns 403 even though the URL is public.
-BROWSER_HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/124.0.0.0 Safari/537.36"
-    ),
-    "Accept": "application/json, text/plain, */*",
-    "Accept-Language": "en-US,en;q=0.9",
-    "Accept-Encoding": "gzip, deflate",
+FANGRAPHS_REFERER_HEADER = {
     "Referer": "https://www.fangraphs.com/scores/season-schedule-and-results",
-    "Origin": "https://www.fangraphs.com",
-    "Sec-Fetch-Dest": "empty",
-    "Sec-Fetch-Mode": "cors",
-    "Sec-Fetch-Site": "same-origin",
-    "sec-ch-ua": '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"',
-    "sec-ch-ua-mobile": "?0",
-    "sec-ch-ua-platform": '"macOS"',
-    "Connection": "keep-alive",
 }
 
 
@@ -55,21 +46,37 @@ def get_monday_of_week(date_string: str) -> str:
 
 def create_session() -> requests.Session:
     """
-    Visits FanGraphs to seed Cloudflare cookies before API calls.
-    If the warmup page is now behind a JS challenge (403), we skip it and
-    rely on browser-like headers alone for the downstream API requests.
+    Uses a real Chromium browser to solve Cloudflare's JS challenge and collect
+    the cf_clearance cookie. curl_cffi then impersonates Chrome's TLS fingerprint
+    so Cloudflare accepts the cookie on subsequent API calls. Falls back gracefully
+    when Playwright is not installed (e.g. on CI runners).
     """
-    session = requests.Session()
-    session.headers.update(BROWSER_HEADERS)
-    print("Establishing browser session with FanGraphs...")
-    try:
-        warmup = session.get(FANGRAPHS_BASE_URL, timeout=REQUEST_TIMEOUT_SECONDS)
-        warmup.raise_for_status()
-        print(f"Session ready (status {warmup.status_code}, {len(session.cookies)} cookies)\n")
-    except requests.HTTPError as error:
-        print(f"Warmup page blocked ({error}) — continuing without session cookies\n")
+    session = requests.Session(impersonate="chrome")
+    session.headers.update(FANGRAPHS_REFERER_HEADER)
+    if PLAYWRIGHT_AVAILABLE:
+        print("Launching browser to collect Cloudflare cookies...")
+        cookies = _collect_cloudflare_cookies()
+        for cookie in cookies:
+            session.cookies.set(cookie["name"], cookie["value"], domain=cookie.get("domain", ""))
+        print(f"Session ready ({len(cookies)} cookies collected)\n")
+    else:
+        print("Playwright not available — proceeding without browser cookies\n")
     time.sleep(1.0)
     return session
+
+
+def _collect_cloudflare_cookies() -> list:
+    with sync_playwright() as playwright:
+        browser = playwright.chromium.launch(headless=True)
+        context = browser.new_context()
+        page = context.new_page()
+        try:
+            page.goto(FANGRAPHS_BASE_URL, wait_until="networkidle", timeout=30000)
+        except PlaywrightTimeoutError:
+            pass
+        cookies = context.cookies()
+        browser.close()
+    return cookies
 
 
 def fetch_pitcher_fip(session: requests.Session) -> dict[str, float]:
@@ -77,7 +84,7 @@ def fetch_pitcher_fip(session: requests.Session) -> dict[str, float]:
     Fetches season ERA for all pitchers from the MLB Stats API (open, no auth needed).
     Returns {pitcher_full_name: era} — matched by name in the display layer.
     """
-    response = requests.get(MLB_STATS_API_URL, params=MLB_PITCHER_PARAMS, timeout=REQUEST_TIMEOUT_SECONDS)
+    response = stdlib_requests.get(MLB_STATS_API_URL, params=MLB_PITCHER_PARAMS, timeout=REQUEST_TIMEOUT_SECONDS)
     response.raise_for_status()
     splits = response.json().get("stats", [{}])[0].get("splits", [])
     return _parse_era_splits(splits)
@@ -205,7 +212,7 @@ def main() -> None:
         era_by_name = fetch_pitcher_fip(session)
         save_pitcher_fip(era_by_name)
         print(f"Saved ERA data for {len(era_by_name)} pitchers to {PITCHER_FIP_CSV_PATH}\n")
-    except (requests.HTTPError, requests.Timeout, KeyError, ValueError) as error:
+    except (HTTPError, Timeout, KeyError, ValueError) as error:
         print(f"Could not fetch pitcher ERA (non-fatal): {error}\n")
 
     total_games = 0

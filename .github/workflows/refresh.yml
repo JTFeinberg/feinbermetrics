@@ -1,9 +1,7 @@
 name: Daily schedule refresh
 
 on:
-  schedule:
-    - cron: '0 10 * * *'  # Every day at 10am UTC (6am ET)
-  workflow_dispatch:       # Allows manual trigger from the GitHub Actions tab
+  workflow_dispatch:  # Manual trigger only — automated refresh runs locally via refresh.sh
 
 permissions:
   contents: write

@@ -14,9 +14,15 @@ if [ ! -d "$VENV_DIR" ]; then
     echo "$(date): Creating virtual environment" | tee -a "$LOG_FILE"
     python3 -m venv "$VENV_DIR"
     source "$VENV_DIR/bin/activate"
-    pip install curl_cffi pandas >> "$LOG_FILE" 2>&1
+    pip install curl_cffi pandas playwright >> "$LOG_FILE" 2>&1
+    playwright install chromium >> "$LOG_FILE" 2>&1
 else
     source "$VENV_DIR/bin/activate"
+    pip show playwright > /dev/null 2>&1 || {
+        echo "$(date): Installing playwright and curl_cffi" | tee -a "$LOG_FILE"
+        pip install curl_cffi playwright >> "$LOG_FILE" 2>&1
+        playwright install chromium >> "$LOG_FILE" 2>&1
+    }
 fi
 
 python3 fetch_schedules.py 2>&1 | tee -a "$LOG_FILE"
