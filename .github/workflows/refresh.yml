@@ -27,6 +27,12 @@ jobs:
 
       - name: Commit and push
         run: |
+          ROWS=$(tail -n +2 schedules.csv | wc -l | tr -d ' ')
+          if [ "$ROWS" -lt 100 ]; then
+            echo "ERROR: schedules.csv has only $ROWS rows — aborting to protect existing data"
+            exit 1
+          fi
+          echo "schedules.csv looks healthy ($ROWS rows) — committing"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add schedules.csv pitcher_fip.csv
